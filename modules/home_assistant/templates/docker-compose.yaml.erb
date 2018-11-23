@@ -13,7 +13,8 @@ services:
       - 8123:8123
     volumes:
       - <%= @config_mount %>
-      - <%= @zwave_device %>:<%= @zwave_device %>
+    devices:
+      - <%= @zwave_device %>:<%= @zwave_device %>:rwm
     network_mode: host
     environment:
       - TZ=America/Chicago

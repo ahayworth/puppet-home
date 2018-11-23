@@ -3,7 +3,7 @@
 if [[ ! -z "$DEBUG" ]]; then debug='--debug'; fi
 
 function decrypt() {
-  gpg --batch --passphrase $passphrase -d $1 > $1.plaintext
+  gpg --batch --passphrase $passphrase -d $1 2>/dev/null > $1.plaintext
   mv $1.plaintext $1
 }
 
@@ -14,6 +14,13 @@ function encrypt() {
 
 read -s -p "Encryption passphrase: " passphrase
 echo
+read -s -p "Confirm: " passphrase2
+echo
+
+if [[ $passphrase != $passphrase2 ]]; then
+  echo "Passphrases didn't match."
+  exit 1
+fi
 
 decrypt "modules/home_assistant/files/home_assistant/config/secrets.yaml"
 decrypt "data/secrets.yaml"
