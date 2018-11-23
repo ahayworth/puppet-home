@@ -1,0 +1,18 @@
+version: '3'
+services:
+  home_assistant:
+    image: homeassistant/home-assistant:<%= @home_assistant_version %>
+    container_name: home_assistant
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "<%= @url %>"]
+      interval: 30s
+      timeout: 10s
+      retries: 6
+    ports:
+      - 8123:8123
+    volumes:
+      - <%= @config_mount %>
+    network_mode: host
+    environment:
+      - TZ=America/Chicago

@@ -1,0 +1,5 @@
+deck:
+  name: Deck
+  view: yes
+  entities:
+    - switch.outdoor_lights_switch

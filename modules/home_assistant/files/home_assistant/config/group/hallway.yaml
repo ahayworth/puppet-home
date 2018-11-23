@@ -1,0 +1,11 @@
+hallway:
+  name: Hallway
+  view: yes
+  entities:
+    - alarm_control_panel.abode_alarm
+    - lock.east_door_lock_locked
+    - lock.west_door_lock_locked
+    - light.hallway_lights_level
+    - light.stairway_light_level
+    - binary_sensor.ring_front_door_ding
+    - switch.hallway_bannister_christmas_lights

@@ -1,0 +1,5 @@
+home_assistant::data_dir: '/data'
+home_assistant::home_assistant_dir: "%{lookup('home_assistant::data_dir')}/home_assistant"
+home_assistant::config::config_dir: "%{lookup('home_assistant::home_assistant_dir')}/config"
+home_assistant::docker::home_assistant_version: 'dev'
+home_assistant::docker::compose_version: '1.23.1'

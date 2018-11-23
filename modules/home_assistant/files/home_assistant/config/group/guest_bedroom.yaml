@@ -1,0 +1,7 @@
+guest_bedroom:
+  name: Guest Bedroom
+  view: yes
+  entities:
+    - light.guest_bedroom_light_level
+    - switch.guest_bedroom_closet_light
+    - binary_sensor.guest_bedroom_closet_door_sensor

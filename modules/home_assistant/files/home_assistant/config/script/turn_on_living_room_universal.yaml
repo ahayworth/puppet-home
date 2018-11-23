@@ -1,0 +1,6 @@
+alias: Turn on Living Room Universal Media Player
+sequence:
+  - alias: Select source
+    service: python_script.select_source_living_room_universal
+    data_template:
+      source: '{{ states("input_select.living_room_universal") }}'

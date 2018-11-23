@@ -1,0 +1,125 @@
+- id: start_homekit
+  alias: Start HomeKit
+  trigger:
+    - platform: event
+      event_type: zwave.network_ready
+    - platform: event
+      event_type: zwave.network_complete
+  action:
+    - service: homekit.start
+
+- id: zwave_heal
+  alias: 'heal at 3:30am'
+  trigger:
+    platform: time
+    at: '03:30:00'
+  action:
+    service: zwave.heal_network
+
+- id: utility_lights
+  alias: Utility lights
+  trigger:
+    platform: state
+    entity_id: binary_sensor.utility_closet_door_sensor
+  action:
+    entity_id: switch.utility_closet_light_switch
+    service_template: "switch.turn_{{ trigger.to_state.state }}"
+
+- id: server_lights
+  alias: Server lights
+  trigger:
+    platform: state
+    entity_id: binary_sensor.server_closet_door_sensor
+  action:
+    entity_id: light.server_closet_light_level
+    service_template: "light.turn_{{ trigger.to_state.state }}"
+
+- id: laundry_lights
+  alias: Laundry lights
+  trigger:
+    platform: state
+    entity_id: binary_sensor.laundry_door_sensor
+  action:
+    entity_id: switch.laundry_light_switch
+    service_template: "switch.turn_{{ trigger.to_state.state }}"
+
+- id: coat_closet_lights
+  alias: Coat closet lights
+  trigger:
+    platform: state
+    entity_id: binary_sensor.coat_closet_door_sensor
+  action:
+    entity_id: switch.coat_closet_switch
+    service_template: "switch.turn_{{ trigger.to_state.state }}"
+
+- id: master_bedroom_closet_lights
+  alias: Master bedroom closet lights
+  trigger:
+    platform: state
+    entity_id: binary_sensor.master_bedroom_closet_door_sensor
+  condition:
+    condition: or
+    conditions:
+      - condition: state
+        entity_id: binary_sensor.master_bedroom_closet_door_sensor
+        state: 'on'
+      - condition: state
+        entity_id: binary_sensor.bedroom_closet_motion_detector
+        state: 'off'
+  action:
+    entity_id: switch.bedroom_closet_switch
+    service_template: "switch.turn_{{ trigger.to_state.state }}"
+
+- id: master_bedroom_closet_lights_auto
+  alias: Master bedroom closet lights auto
+  trigger:
+    platform: state
+    entity_id: binary_sensor.bedroom_closet_motion_detector
+    to: 'off'
+  action:
+    service: switch.turn_off
+    entity_id: switch.bedroom_closet_switch
+
+- id: guest_bedroom_closet_lights
+  alias: Guest bedroom closet lights
+  trigger:
+    platform: state
+    entity_id: binary_sensor.guest_bedroom_closet_door_sensor
+  action:
+    entity_id: switch.guest_bedroom_closet_light
+    service_template: "switch.turn_{{ trigger.to_state.state }}"
+
+- id: door_unlocked_too_long_automation
+  alias: Door unlocked notification
+  trigger:
+    platform: state
+    entity_id: lock.east_door_lock_locked
+    to: unlocked
+    for:
+      minutes: 10
+  condition:
+    - condition: state
+      entity_id: binary_sensor.east_door
+      state: 'off'
+  action:
+    service: notify.ios_andrews_iphone
+    data:
+      message: "The front door has been unlocked for 10 minutes."
+      data:
+        push:
+          badge: 1
+          sound: default
+          category: door_unlocked_too_long_push
+        action_data:
+          entity_id: lock.east_door_lock_locked
+
+- id: lock_door_from_ios
+  alias: Lock the door from iOS notification
+  trigger:
+    platform: event
+    event_type: ios.notification_action_fired
+    event_data:
+      actionName: 'LOCK_DOOR'
+  action:
+    service: lock.lock
+    entity_id: lock.east_door_lock_locked

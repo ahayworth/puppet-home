@@ -1,0 +1,17 @@
+google_actions:
+  filter:
+    include_domains:
+      - switch
+      - light
+      - lock
+      - alarm_control_panel
+      - fan
+      - scene
+    include_entities:
+      - group.great_room_lights
+      - group.christmas_lights
+      - media_player.receiver
+    exclude_entities:
+      - switch.bedroom_fan_switch
+      - switch.bedside_fan_switch
+      - switch.living_room_fan_switch

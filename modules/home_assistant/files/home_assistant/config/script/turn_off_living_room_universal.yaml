@@ -1,0 +1,26 @@
+alias: Turn off Living Room Universal Media Player
+sequence:
+  - alias: Turn on Onkyo Receiver
+    service: media_player.turn_off
+    data:
+      entity_id: media_player.receiver
+  - alias: Turn off Living Room TV
+    service: media_player.turn_off
+    data:
+      entity_id: media_player.living_room_tv
+  - alias: Turn off Living Room TV Again
+    service: media_player.turn_off
+    data:
+      entity_id: media_player.living_room_tv
+  - alias: Turn off Playstation
+    service: media_player.turn_off
+    data:
+      entity_id: media_player.playstation_4
+  - alias: Turn off Xbox One
+    service: media_player.turn_off
+    data:
+      entity_id: media_player.xbox_one
+  - alias: Turn off Apple TV
+    service: media_player.turn_off
+    data:
+      entity_id: media_player.living_room_apple_tv

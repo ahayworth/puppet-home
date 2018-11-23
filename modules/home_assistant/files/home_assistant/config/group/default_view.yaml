@@ -1,0 +1,12 @@
+default_view:
+  name: Home
+  view: yes
+  entities:
+    - alarm_control_panel.abode_alarm
+    - binary_sensor.ring_front_door_ding
+    - sensor.ring_front_door_battery
+    - climate.house
+    - lock.east_door_lock_locked
+    - lock.west_door_lock_locked
+    - device_tracker.andrewsiphone
+    - device_tracker.bentonsiphone

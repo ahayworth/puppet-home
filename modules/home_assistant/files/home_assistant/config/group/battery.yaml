@@ -1,0 +1,21 @@
+battery:
+  name: Batteries
+  view: yes
+  entities:
+    - sensor.ring_front_door_battery
+    - sensor.east_door_lock_battery_level
+    - sensor.west_door_lock_battery_level
+    - sensor.utility_closet_door_battery_level
+    - sensor.server_closet_door_battery_level
+    - sensor.coat_closet_door_battery_level
+    - sensor.bedroom_closet_motion_detector_battery_level
+    - sensor.laundry_door_battery_level
+    - sensor.bedroom_closet_door_door_battery_level
+    - sensor.east_door_battery_low
+    - sensor.west_door_battery_low
+    - sensor.patio_door_battery_low
+    - sensor.hallway_motion_battery_low
+    - sensor.great_room_motion_battery_low
+    - sensor.keyfob_one_battery_low
+    - sensor.keyfob_two_battery_low
+    - sensor.keypad_battery_low

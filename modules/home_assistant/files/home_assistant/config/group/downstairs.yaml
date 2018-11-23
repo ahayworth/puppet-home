@@ -1,0 +1,9 @@
+downstairs:
+  name: Downstairs
+  view: yes
+  entities:
+    - light.stairway_light_level
+    - light.downstairs_hallway_light_level
+    - switch.utility_closet_light_switch
+    - light.server_closet_light_level
+

@@ -1,0 +1,21 @@
+binary_sensor.laundry_door_sensor:
+  device_class: door
+  icon: mdi:door
+binary_sensor.master_bedroom_closet_door_sensor:
+  device_class: door
+  icon: mdi:door
+binary_sensor.coat_closet_door_sensor:
+  device_class: door
+  icon: mdi:door
+binary_sensor.utility_closet_door_sensor:
+  device_class: door
+binary_sensor.bedroom_closet_motion_detector:
+  device_class: occupancy
+binary_sensor.server_closet_door_sensor:
+  device_class: door
+switch.bar_lights_switch:
+  google_assistant_type: light
+switch.christmas_tree:
+  icon: mdi:pine-tree
+switch.hallway_bannister_christmas_lights:
+  icon: mdi:pine-tree

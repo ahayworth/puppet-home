@@ -1,0 +1,60 @@
+- platform: onkyo
+  name: Receiver
+  host: 192.168.0.167
+  sources:
+    strm-box: 'Apple TV'
+    video6_pc: 'Games'
+- platform: webostv
+  host: 192.168.0.123
+  name: Living Room TV
+  turn_on_action:
+    service: wake_on_lan.send_magic_packet
+    data:
+      mac: "e4:3e:d7:73:a2:2d"
+- platform: xboxone
+  device: !secret xboxone_device_id
+  ip_address: 192.168.0.186
+  name: Xbox One
+- platform: ps4
+  host: 192.168.0.187
+- platform: universal
+  name: Living Room
+  children:
+    - media_player.living_room_apple_tv
+    - media_player.xbox_one
+    - media_player.playstation_4
+    - media_player.living_room_tv
+    - media_player.receiver
+  commands:
+    turn_on:
+      service: script.turn_on_living_room_universal
+    turn_off:
+      service: script.turn_off_living_room_universal
+    volume_up:
+      service: media_player.volume_up
+      data:
+        entity_id: media_player.receiver
+    volume_down:
+      service: media_player.volume_down
+      data:
+        entity_id: media_player.receiver
+    volume_mute:
+      service: media_player.volume_mute
+      data_template:
+        entity_id: media_player.receiver
+        is_volume_muted: "{{ is_volume_muted }}"
+    volume_set:
+      service: media_player.volume_set
+      data_template:
+        entity_id: media_player.receiver
+        volume_level: "{{ volume_level }}"
+    select_source:
+      service: python_script.select_source_living_room_universal
+      data_template:
+        source: "{{ source }}"
+  attributes:
+    state: media_player.living_room_tv
+    is_volume_muted: media_player.receiver|is_volume_muted
+    volume_level: media_player.receiver|is_volume_muted
+    source: input_select.living_room_universal
+    source_list: input_select.living_room_universal|options

@@ -1,0 +1,7 @@
+living_room_universal:
+  name: Living Room Universal Source
+  options:
+    - media_player.living_room_apple_tv
+    - media_player.xbox_one
+    - media_player.playstation_4
+  initial: media_player.living_room_apple_tv # why not working
