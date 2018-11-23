@@ -7,6 +7,7 @@ agent_version=''
 
 release_pkg="puppet$puppet_major_version-release"
 agent_pkg="puppet-agent$agent_version"
+puppet_bin='/opt/puppetlabs/bin/puppet'
 
 function section() {
   echo
@@ -24,7 +25,24 @@ function installed() {
   sudo dpkg -s $1 2>/dev/null | grep -q 'Status: install ok installed'
 }
 
+function apt() {
+  sudo apt-get install -y $1
+}
+
+function puppetmodule() {
+  if ! $puppet_bin module list --modulepath vendor 2>/dev/null | grep -q $1; then
+    section "installing puppet module $1"
+    $puppet_bin module install --target-dir vendor --module-path vendor $1
+  fi
+}
+
 section "bootstrapping puppet for debian $distro"
+
+if ! installed "jq"; then
+  section "installing dependencies"
+  apt "jq"
+fi
+
 if ! installed $release_pkg ; then
   section "installing $release_pkg apt repo"
   cd /tmp
@@ -41,5 +59,7 @@ if ! installed $agent_pkg; then
   sudo systemctl stop puppet || /bin/true
   sudo systemctl disable puppet || /bin/true
 fi
+
+puppetmodule "puppetlabs-docker"
 
 section "done!"
