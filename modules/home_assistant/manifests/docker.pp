@@ -4,6 +4,7 @@ class home_assistant::docker(
   String $config_dir = lookup('home_assistant::config::config_dir'),
   String $home_assistant_version,
   String $url,
+  String $zwave_device,
 ){
   include 'docker'
   class { 'docker::compose':

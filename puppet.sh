@@ -24,5 +24,7 @@ sudo /opt/puppetlabs/bin/puppet \
   --show_diff \
   nodes/site.pp
 
+read -p "Press enter to re-encrypt..."
+
 encrypt "modules/home_assistant/files/home_assistant/config/secrets.yaml"
 encrypt "data/secrets.yaml"
