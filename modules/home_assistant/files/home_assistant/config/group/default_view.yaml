@@ -10,3 +10,5 @@ default_view:
     - lock.back_door_lock
     - device_tracker.andrewsiphone
     - device_tracker.bentonsiphone
+    - binary_sensor.east_door
+    - binary_sensor.west_door
