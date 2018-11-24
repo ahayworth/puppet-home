@@ -11,9 +11,9 @@ google_actions:
       - group.great_room_lights
       - group.christmas_lights
     exclude_entities:
-      - fan.living_room_ceiling_fan
-      - fan.master_bedroom_bedside_fan
-      - fan.master_bedroom_ceiling_fan
+      - switch.living_room_ceiling_fan
+      - switch.master_bedroom_bedside_fan
+      - switch.master_bedroom_ceiling_fan
   entity_config:
     light.bookshelf_lamp:
       room: living room
