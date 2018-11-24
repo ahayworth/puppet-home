@@ -41,3 +41,19 @@ services:
     network_mode: host
     environment:
       - TZ=America/Chicago
+  ps4_waker_rest:
+    image: ahayworth/ps4-waker-rest:latest
+    ports:
+      - 3030:3030
+    volumes:
+      - <%= @config_mount %>
+    container_name: ps4_waker_rest
+    restart: always
+    network_mode: host
+    healthcheck:
+      test: ["CMD", "curl", "-f", "localhost:3030/ps4/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 6
+    environment:
+      - TZ=America/Chicago
