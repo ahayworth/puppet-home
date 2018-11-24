@@ -2,8 +2,12 @@ downstairs:
   name: Downstairs
   view: yes
   entities:
-    - light.stairway_light_level
-    - light.downstairs_hallway_light_level
-    - switch.utility_closet_light_switch
-    - light.server_closet_light_level
+    - light.stairway_lights
+    - light.downstairs_hallway_lights
+    - switch.utility_closet_lights
+    - light.server_closet_lights
+    - light.office_ceiling_lights
+    - light.office_closet_lights
+    - light.guest_bedroom_ceiling_lights
+    - light.guest_bedroom_closet_lights
 

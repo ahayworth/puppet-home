@@ -6,7 +6,7 @@ default_view:
     - binary_sensor.ring_front_door_ding
     - sensor.ring_front_door_battery
     - climate.house
-    - lock.east_door_lock_locked
-    - lock.west_door_lock_locked
+    - lock.front_door_lock
+    - lock.back_door_lock
     - device_tracker.andrewsiphone
     - device_tracker.bentonsiphone

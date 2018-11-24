@@ -2,11 +2,11 @@ master_suite:
   name: Master Suite
   view: yes
   entities:
-    - light.master_bedroom_ceiling_lights_level
-    - light.bedside_light_level
-    - switch.bedroom_closet_switch
-    - switch.bedroom_fan_light_switch
-    - switch.rock_salt_lamp_switch
+    - light.master_bedroom_ceiling_lights
+    - light.master_bedroom_bedside_lamp
+    - switch.master_bedroom_closet_lights
+    - switch.master_bedroom_fan_lights
+    - switch.master_bedroom_rock_salt_lamp
     - binary_sensor.master_bedroom_closet_door_sensor
-    - fan.bedroom_fan
-    - fan.bedside_fan
+    - fan.master_bedroom_ceiling_fan
+    - fan.master_bedroom_bedside_fan

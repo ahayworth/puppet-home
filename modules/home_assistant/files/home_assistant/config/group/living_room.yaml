@@ -2,13 +2,13 @@ living_room:
   name: Living Room
   view: yes
   entities:
-    - light.bookshelf_light_level
-    - light.couch_light_level
-    - light.dining_table_lights_level_3
-    - light.fireplace_light_level
-    - light.living_room_ceiling_lights_level
-    - light.reading_chair_light_level
-    - light.tv_lights_level
-    - fan.living_room_fan
+    - light.bookshelf_lamp
+    - light.couch_light
+    - light.dining_table_lights
+    - light.fireplace_light
+    - light.living_room_ceiling_lights
+    - light.reading_chair_light
+    - light.tv_lights
+    - fan.living_room_ceiling_fan
     - media_player.living_room
     - switch.christmas_tree

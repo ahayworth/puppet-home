@@ -3,8 +3,8 @@ utility:
   view: yes
   entities:
     - binary_sensor.coat_closet_door_sensor
-    - binary_sensor.laundry_door_sensor
-    - switch.coat_closet_switch
-    - switch.laundry_light_switch
-    - switch.utility_closet_light_switch
-    - light.server_closet_light_level
+    - binary_sensor.laundry_closet_door_sensor
+    - switch.coat_closet_lights
+    - switch.laundry_closet_lights
+    - switch.utility_closet_lights
+    - light.server_closet_lights

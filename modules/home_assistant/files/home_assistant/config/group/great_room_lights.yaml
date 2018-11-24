@@ -2,16 +2,16 @@ great_room_lights:
   name: Great Room Lights
   view: no
   entities:
-    - light.bookshelf_light_level
-    - light.couch_light_level
-    - light.dining_table_lights_level_3
-    - light.fireplace_light_level
-    - light.living_room_ceiling_lights_level
-    - light.reading_chair_light_level
-    - light.tv_lights_level
-    - switch.bar_lights_switch
-    - light.kitchen_ceiling_lights_level
-    - light.kitchen_sink_lights_level
+    - light.bookshelf_lamp
+    - light.couch_light
+    - light.dining_table_lights
+    - light.fireplace_light
+    - light.living_room_ceiling_lights
+    - light.reading_chair_light
+    - light.tv_lights
+    - switch.kitchen_bar_lights
+    - light.kitchen_ceiling_lights
+    - light.kitchen_sink_lights
     - switch.over_cabinet_lights
     - switch.under_cabinet_lights
     - switch.wax_diffuser

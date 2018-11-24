@@ -2,5 +2,5 @@ christmas_lights:
   name: Christmas Lights
   view: yes
   entities:
-    - switch.hallway_bannister_christmas_lights
+    - switch.hallway_christmas_lights
     - switch.christmas_tree
