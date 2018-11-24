@@ -10,8 +10,182 @@ google_actions:
     include_entities:
       - group.great_room_lights
       - group.christmas_lights
-      - media_player.receiver
     exclude_entities:
-      - switch.bedroom_fan_switch
-      - switch.bedside_fan_switch
-      - switch.living_room_fan_switch
+      - fan.living_room_ceiling_fan
+      - fan.master_bedroom_bedside_fan
+      - fan.master_bedroom_ceiling_fan
+  entity_config:
+    light.bookshelf_lamp:
+      room: living room
+      aliases:
+        - bookshelf light
+    light.couch_light:
+      room: living room
+      aliases:
+        - couch lamp
+    light.dining_table_lights:
+      room: living room
+      aliases:
+        - dining table light
+        - dining room light
+        - dining room lights
+    light.downstairs_hallway_lights:
+      room: downstairs hallway
+      aliases:
+        - downstairs hallway light
+    light.fireplace_light:
+      room: living room
+      aliases:
+        - fireplace lamp
+    light.guest_bedroom_ceiling_lights:
+      room: guest bedroom
+      aliases:
+        - guest bedroom ceiling light
+        - guest bedroom lights
+        - guest bedroom light
+        - downstairs bedroom light
+        - downstairs bedroom lights
+        - downstairs bedroom ceiling light
+        - downstairs bedroom ceiling lights
+    light.kitchen_ceiling_lights:
+      room: kitchen
+      aliases:
+        - kitchen ceiling light
+    light.kitchen_sink_lights:
+      room: kitchen
+      aliases:
+        - kitchen sink light
+    light.living_room_ceiling_lights:
+      room: living room
+      aliases:
+        - living room ceiling light
+    light.master_bedroom_bedside_lamp:
+      room: master bedroom
+      aliases:
+        - master bedroom bedside light
+        - bedroom lamp
+    light.master_bedroom_ceiling_lights:
+      room: master bedroom
+      aliases:
+        - master bedroom ceiling light
+        - bedroom ceiling light
+        - bedroom ceiling lights
+    light.office_ceiling_lights:
+      room: office
+      aliases:
+        - office ceiling light
+    light.reading_chair_light:
+      room: living room
+      aliases:
+        - reading chair lamp
+    light.server_closet_lights:
+      room: server closet
+      aliases:
+        - server closet light
+    light.stairway_lights:
+      room: upstairs hallway
+      aliases:
+        - stairway light
+        - stair light
+        - stair lights
+    light.tv_lights:
+      room: living room
+      aliases:
+        - tv light
+    light.upstairs_hallway_lights:
+      room: upstairs hallway
+      aliases:
+        - upstairs hallway light
+        - hallway light
+    switch.coat_closet_lights:
+      room: coat closet
+      aliases:
+        - coat closet light
+    switch.deck_lights:
+      room: deck
+      aliases:
+        - deck light
+        - outdoor light
+        - outdoor lights
+        - outside light
+        - outside lights
+    switch.guest_bedroom_closet_lights:
+      room: guest bedroom
+      aliases:
+        - guest bedroom closet light
+    switch.hallway_christmas_lights:
+      room: upstairs hallway
+    switch.kitchen_bar_lights:
+      room: kitchen
+      aliases:
+        - kitchen bar light
+        - bar lights
+        - bar light
+    switch.over_cabinet_lights:
+      room: kitchen
+      aliases:
+        - over cabinet light
+        - cabinet lights
+        - cabinet light
+    switch.kitchen_under_cabinet_lights:
+      room: kitchen
+      aliases:
+        - under cabinet light
+        - counter lights
+        - counter light
+    switch.laundry_closet_lights:
+      room: laundry closet
+      aliases:
+        - laundry closet light
+        - laundry lights
+        - laundry light
+    fan.living_room_ceiling_fan:
+      room: living room
+      aliases:
+        - living room fan
+    fan.master_bedroom_bedside_fan:
+      room: master bedroom
+    fan.master_bedroom_ceiling_fan:
+      room: master bedroom
+      aliases:
+        - master bedroom fan
+    switch.master_bedroom_closet_lights:
+      room: master bedroom
+      aliases:
+        - master bedroom closet light
+        - bedroom closet lights
+        - bedroom closet light
+    switch.master_bedroom_fan_lights:
+      room: master bedroom
+      aliases:
+        - master bedroom fan light
+        - fan lights
+        - fan light
+    switch.master_bedroom_rock_salt_lamp:
+      room: master bedroom
+      aliases:
+        - master bedroom rock salt light
+        - rock salt lamp
+        - rock salt light
+        - salt lamp
+        - salt light
+    switch.office_closet_lights:
+      room: office
+      aliases:
+        - office closet light
+    switch.utility_closet_lights:
+      room: utility closet
+      aliases:
+        - utility closet light
+    switch.wax_diffuser:
+      room: kitchen
+    lock.front_door_lock:
+      room: hallway
+      aliases:
+        - front door
+        - east door
+    lock.back_door_lock:
+      room: hallway
+      aliases:
+        - back door
+        - west door
