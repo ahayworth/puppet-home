@@ -4,7 +4,7 @@ kitchen:
   entities:
     - switch.kitchen_bar_lights
     - switch.wax_diffuser
-    - switch.over_cabinet_lights
-    - switch.under_cabinet_lights
+    - switch.kitchen_over_cabinet_lights
+    - switch.kitchen_under_cabinet_lights
     - light.kitchen_ceiling_lights
     - light.kitchen_sink_lights

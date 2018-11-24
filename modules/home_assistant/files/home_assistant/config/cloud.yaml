@@ -121,7 +121,7 @@ google_actions:
         - kitchen bar light
         - bar lights
         - bar light
-    switch.over_cabinet_lights:
+    switch.kitchen_over_cabinet_lights:
       room: kitchen
       aliases:
         - over cabinet light
