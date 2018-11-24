@@ -46,7 +46,7 @@ CONF_PS4_IP = "ps4_ip"
 PS4_GAMES_FILE = 'ps4-games.json'
 MEDIA_IMAGE_DEFAULT = None
 MEDIA_IMAGEMAP_JSON = 'https://github.com/hmn/ps4-imagemap/raw/master/games.json'
-LOCAL_STORE = None
+LOCAL_STORE = ''
 
 MIN_TIME_BETWEEN_SCANS = timedelta(seconds=10)
 MIN_TIME_BETWEEN_FORCED_SCANS = timedelta(seconds=1)
@@ -97,7 +97,7 @@ class PS4Device(MediaPlayerDevice):
         self._games_map_json = gamesmap_json
         self._games_map = {}
         self._local_store = local_store
-        if self._local_store is None:
+        if self._local_store == '':
             self.load_games_map()
         self.update()
 
@@ -133,7 +133,7 @@ class PS4Device(MediaPlayerDevice):
         if self.state == STATE_OFF:
             return None
 
-        if self._local_store is None:
+        if self._local_store == '':
             image_hash = self.media_image_hash
 
             if image_hash is None:
