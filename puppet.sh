@@ -3,13 +3,13 @@
 if [[ ! -z "$DEBUG" ]]; then debug='--debug'; fi
 
 function decrypt() {
+  cp $1 /tmp/$2
   gpg --batch --passphrase $passphrase -d $1 2>/dev/null > $1.plaintext
   mv $1.plaintext $1
 }
 
 function encrypt() {
-  gpg -c --batch --passphrase $passphrase $1
-  mv $1.gpg $1
+  mv /tmp/$2 $1
 }
 
 read -s -p "Encryption passphrase: " passphrase
@@ -22,8 +22,8 @@ if [[ $passphrase != $passphrase2 ]]; then
   exit 1
 fi
 
-decrypt "modules/home_assistant/files/home_assistant/config/secrets.yaml"
-decrypt "data/secrets.yaml"
+decrypt "modules/home_assistant/files/home_assistant/config/secrets.yaml" "hass-secrets"
+decrypt "data/secrets.yaml" "puppet-secrets"
 
 sudo /opt/puppetlabs/bin/puppet \
   apply \
@@ -34,5 +34,5 @@ sudo /opt/puppetlabs/bin/puppet \
   --show_diff \
   nodes/site.pp
 
-encrypt "modules/home_assistant/files/home_assistant/config/secrets.yaml"
-encrypt "data/secrets.yaml"
+encrypt "modules/home_assistant/files/home_assistant/config/secrets.yaml" "hass-secrets"
+encrypt "data/secrets.yaml" "puppet-secrets"
