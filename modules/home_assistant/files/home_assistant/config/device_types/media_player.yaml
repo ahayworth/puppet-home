@@ -16,7 +16,8 @@
   ip_address: 192.168.0.186
   name: Xbox One
 - platform: ps4
-  host: 192.168.0.187
+  host: http://127.0.0.1:3030
+  ps4_ip: 192.168.0.187
 - platform: universal
   name: Living Room
   children:

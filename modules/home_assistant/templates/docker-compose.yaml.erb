@@ -25,7 +25,7 @@ services:
     container_name: xbox_smartglass_rest
     restart: always
     healthcheck:
-      test: ["CMD", "curl", "-f", "localhost:5557"]
+      test: ["CMD", "wget", "-O-", "127.0.0.1:5557"]
       interval: 30s
       timeout: 10s
       retries: 6
@@ -51,7 +51,7 @@ services:
     restart: always
     network_mode: host
     healthcheck:
-      test: ["CMD", "curl", "-f", "localhost:3030/ps4/health"]
+      test: ["CMD", "curl", "-f", "127.0.0.1:3030/ps4/health"]
       interval: 30s
       timeout: 10s
       retries: 6

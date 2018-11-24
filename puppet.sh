@@ -23,6 +23,7 @@ if [[ $passphrase != $passphrase2 ]]; then
 fi
 
 decrypt "modules/home_assistant/files/home_assistant/config/secrets.yaml" "hass-secrets"
+decrypt "modules/home_assistant/files/home_assistant/config/ps4-credentials.json" "hass-ps4"
 decrypt "data/secrets.yaml" "puppet-secrets"
 
 sudo /opt/puppetlabs/bin/puppet \
@@ -35,4 +36,5 @@ sudo /opt/puppetlabs/bin/puppet \
   nodes/site.pp
 
 encrypt "modules/home_assistant/files/home_assistant/config/secrets.yaml" "hass-secrets"
+encrypt "modules/home_assistant/files/home_assistant/config/ps4-credentials.json" "hass-ps4"
 encrypt "data/secrets.yaml" "puppet-secrets"
