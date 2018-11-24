@@ -5,6 +5,7 @@ class home_assistant::docker(
   String $home_assistant_version,
   String $url,
   String $zwave_device,
+  String $xbox_smartglass_version,
 ){
   include 'docker'
   class { 'docker::compose':

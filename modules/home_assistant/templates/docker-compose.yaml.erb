@@ -18,3 +18,17 @@ services:
     network_mode: host
     environment:
       - TZ=America/Chicago
+  xbox_smartglass_rest:
+    image: openxbox/xbox-smartglass-rest:<%= @xbox_smartglass_version %>
+    container_name: xbox_smartglass_rest
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "localhost:5557"]
+      interval: 30s
+      timeout: 10s
+      retries: 6
+    ports:
+      - 5557:5557
+    network_mode: host
+    environment:
+      - TZ=America/Chicago
