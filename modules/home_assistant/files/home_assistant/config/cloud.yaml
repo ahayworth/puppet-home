@@ -180,12 +180,12 @@ google_actions:
     switch.wax_diffuser:
       room: kitchen
     lock.front_door_lock:
-      room: hallway
+      room: upstairs hallway
       aliases:
         - front door
         - east door
     lock.back_door_lock:
-      room: hallway
+      room: upstairs hallway
       aliases:
         - back door
         - west door

@@ -1,36 +1,25 @@
 auto_start: False
-entity_config:
-  media_player.living_room:
-    feature_list:
-      - feature: on_off
-      - feature: play_pause
-      - feature: play_stop
-      - feature: toggle_mute
 filter:
   include_domains:
-    - climate
-    - alarm_control_panel
     - switch
     - light
     - lock
+    - alarm_control_panel
     - fan
-    - scene
+    - climate
   include_entities:
-    - group.great_room_lights
-    - group.christmas_lights
     - binary_sensor.east_door
     - binary_sensor.west_door
     - binary_sensor.patio_door
     - binary_sensor.utility_closet_door_sensor
     - binary_sensor.server_closet_door_sensor
-    - sensor.house_thermostat_humidity
-    - sensor.house_thermostat_temperature
-    - media_player.receiver
     - binary_sensor.master_bedroom_closet_door_sensor
-    - binary_sensor.laundry_door_sensor
+    - binary_sensor.laundry_closet_door_sensor
     - binary_sensor.coat_closet_door_sensor
     - binary_sensor.guest_bedroom_closet_door_sensor
+    - binary_sensor.office_closet_door_sensor
+    - sensor.house_thermostat_humidity
   exclude_entities:
-    - switch.bedroom_fan_switch
-    - switch.bedside_fan_switch
-    - switch.living_room_fan_switch
+    - switch.master_bedroom_ceiling_fan
+    - switch.master_bedroom_bedside_fan
+    - switch.living_room_ceiling_fan

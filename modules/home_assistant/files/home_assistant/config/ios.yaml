@@ -1,10 +1,18 @@
 push:
   categories:
-    - name: door_unlocked_too_long_push
-      identifier: door_unlocked_too_long_push
+    - name: front_door_unlocked_too_long_push
+      identifier: front_door_unlocked_too_long_push
       actions:
         - identifier: 'LOCK_DOOR'
-          title: 'Lock the Door'
+          title: 'Lock the Front Door'
+          activationMode: 'background'
+          authenticationRequired: yes
+          destructive: no
+    - name: back_door_unlocked_too_long_push
+      identifier: back_door_unlocked_too_long_push
+      actions:
+        - identifier: 'LOCK_DOOR'
+          title: 'Lock the Back Door'
           activationMode: 'background'
           authenticationRequired: yes
           destructive: no

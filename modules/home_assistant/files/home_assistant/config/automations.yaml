@@ -22,7 +22,7 @@
     platform: state
     entity_id: binary_sensor.utility_closet_door_sensor
   action:
-    entity_id: switch.utility_closet_light_switch
+    entity_id: switch.utility_closet_lights
     service_template: "switch.turn_{{ trigger.to_state.state }}"
 
 - id: server_lights
@@ -31,16 +31,16 @@
     platform: state
     entity_id: binary_sensor.server_closet_door_sensor
   action:
-    entity_id: light.server_closet_light_level
+    entity_id: light.server_closet_lights
     service_template: "light.turn_{{ trigger.to_state.state }}"
 
 - id: laundry_lights
   alias: Laundry lights
   trigger:
     platform: state
-    entity_id: binary_sensor.laundry_door_sensor
+    entity_id: binary_sensor.laundry_closet_door_sensor
   action:
-    entity_id: switch.laundry_light_switch
+    entity_id: switch.laundry_closet_lights
     service_template: "switch.turn_{{ trigger.to_state.state }}"
 
 - id: coat_closet_lights
@@ -49,7 +49,7 @@
     platform: state
     entity_id: binary_sensor.coat_closet_door_sensor
   action:
-    entity_id: switch.coat_closet_switch
+    entity_id: switch.coat_closet_lights
     service_template: "switch.turn_{{ trigger.to_state.state }}"
 
 - id: master_bedroom_closet_lights
@@ -64,21 +64,21 @@
         entity_id: binary_sensor.master_bedroom_closet_door_sensor
         state: 'on'
       - condition: state
-        entity_id: binary_sensor.bedroom_closet_motion_detector
+        entity_id: binary_sensor.master_bedroom_closet_motion_detector
         state: 'off'
   action:
-    entity_id: switch.bedroom_closet_switch
+    entity_id: switch.master_bedroom_closet_lights
     service_template: "switch.turn_{{ trigger.to_state.state }}"
 
 - id: master_bedroom_closet_lights_auto
   alias: Master bedroom closet lights auto
   trigger:
     platform: state
-    entity_id: binary_sensor.bedroom_closet_motion_detector
+    entity_id: binary_sensor.master_bedroom_closet_motion_detector
     to: 'off'
   action:
     service: switch.turn_off
-    entity_id: switch.bedroom_closet_switch
+    entity_id: switch.master_bedroom_closet_lights
 
 - id: guest_bedroom_closet_lights
   alias: Guest bedroom closet lights
@@ -86,14 +86,14 @@
     platform: state
     entity_id: binary_sensor.guest_bedroom_closet_door_sensor
   action:
-    entity_id: switch.guest_bedroom_closet_light
+    entity_id: switch.guest_bedroom_closet_lights
     service_template: "switch.turn_{{ trigger.to_state.state }}"
 
-- id: door_unlocked_too_long_automation
+- id: front_door_unlocked_too_long_automation
   alias: Door unlocked notification
   trigger:
     platform: state
-    entity_id: lock.east_door_lock_locked
+    entity_id: lock.front_door_lock
     to: unlocked
     for:
       minutes: 10
@@ -109,11 +109,11 @@
         push:
           badge: 1
           sound: default
-          category: door_unlocked_too_long_push
+          category: front_door_unlocked_too_long_push
         action_data:
-          entity_id: lock.east_door_lock_locked
+          entity_id: lock.front_door_lock
 
-- id: lock_door_from_ios
+- id: lock_front_door_from_ios
   alias: Lock the door from iOS notification
   trigger:
     platform: event
@@ -122,4 +122,39 @@
       actionName: 'LOCK_DOOR'
   action:
     service: lock.lock
-    entity_id: lock.east_door_lock_locked
+    entity_id: lock.front_door_lock
+
+- id: back_door_unlocked_too_long_automation
+  alias: Door unlocked notification
+  trigger:
+    platform: state
+    entity_id: lock.back_door_lock
+    to: unlocked
+    for:
+      minutes: 10
+  condition:
+    - condition: state
+      entity_id: binary_sensor.west_door
+      state: 'off'
+  action:
+    service: notify.ios_andrews_iphone
+    data:
+      message: "The back door has been unlocked for 10 minutes."
+      data:
+        push:
+          badge: 1
+          sound: default
+          category: back_door_unlocked_too_long_push
+        action_data:
+          entity_id: lock.back_door_lock
+
+- id: lock_back_door_from_ios
+  alias: Lock the door from iOS notification
+  trigger:
+    platform: event
+    event_type: ios.notification_action_fired
+    event_data:
+      actionName: 'LOCK_DOOR'
+  action:
+    service: lock.lock
+    entity_id: lock.back_door_lock
