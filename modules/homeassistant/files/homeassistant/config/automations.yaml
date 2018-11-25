@@ -16,8 +16,8 @@
   action:
     service: zwave.heal_network
 
-- id: utility_lights
-  alias: Utility lights
+- id: utility_closet_lights
+  alias: Utility closet lights
   trigger:
     platform: state
     entity_id: binary_sensor.utility_closet_door_sensor
@@ -25,8 +25,8 @@
     entity_id: switch.utility_closet_lights
     service_template: "switch.turn_{{ trigger.to_state.state }}"
 
-- id: server_lights
-  alias: Server lights
+- id: server_closet_lights
+  alias: Server closet lights
   trigger:
     platform: state
     entity_id: binary_sensor.server_closet_door_sensor
@@ -34,8 +34,8 @@
     entity_id: light.server_closet_lights
     service_template: "light.turn_{{ trigger.to_state.state }}"
 
-- id: laundry_lights
-  alias: Laundry lights
+- id: laundry_closet_lights
+  alias: Laundry closet lights
   trigger:
     platform: state
     entity_id: binary_sensor.laundry_closet_door_sensor
@@ -50,6 +50,24 @@
     entity_id: binary_sensor.coat_closet_door_sensor
   action:
     entity_id: switch.coat_closet_lights
+    service_template: "switch.turn_{{ trigger.to_state.state }}"
+
+- id: office_closet_lights
+  alias: Office closet lights
+  trigger:
+    platform: state
+    entity_id: binary_sensor.office_closet_door_sensor
+  action:
+    entity_id: switch.office_closet_lights
+    service_template: "switch.turn_{{ trigger.to_state.state }}"
+
+- id: guest_bedroom_closet_lights
+  alias: Guest bedroom closet lights
+  trigger:
+    platform: state
+    entity_id: binary_sensor.guest_bedroom_closet_door_sensor
+  action:
+    entity_id: switch.guest_bedroom_closet_lights
     service_template: "switch.turn_{{ trigger.to_state.state }}"
 
 - id: master_bedroom_closet_lights
@@ -79,15 +97,6 @@
   action:
     service: switch.turn_off
     entity_id: switch.master_bedroom_closet_lights
-
-- id: guest_bedroom_closet_lights
-  alias: Guest bedroom closet lights
-  trigger:
-    platform: state
-    entity_id: binary_sensor.guest_bedroom_closet_door_sensor
-  action:
-    entity_id: switch.guest_bedroom_closet_lights
-    service_template: "switch.turn_{{ trigger.to_state.state }}"
 
 - id: front_door_unlocked_too_long_automation
   alias: Door unlocked notification
