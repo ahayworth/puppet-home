@@ -1,7 +1,7 @@
 version: '3'
 services:
   home_assistant:
-    image: homeassistant/home-assistant:<%= @home_assistant_version %>
+    image: <%= @home_assistant_docker_repo %>:<%= @home_assistant_version %>
     container_name: home_assistant
     restart: always
     healthcheck:

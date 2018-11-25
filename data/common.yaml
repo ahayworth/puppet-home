@@ -1,7 +1,8 @@
 home_assistant::data_dir: '/data'
 home_assistant::home_assistant_dir: "%{lookup('home_assistant::data_dir')}/home_assistant"
 home_assistant::config::config_dir: "%{lookup('home_assistant::home_assistant_dir')}/config"
-home_assistant::docker::home_assistant_version: 'dev'
+home_assistant::docker::home_assistant_docker_repo: 'ahayworth/home-assistant'
+home_assistant::docker::home_assistant_version: 'awair-latest'
 home_assistant::docker::compose_version: '1.23.1'
 home_assistant::docker::zwave_device: '/dev/ttyACM0'
 home_assistant::docker::xbox_smartglass_version: 'v0.9.8'

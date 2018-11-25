@@ -3,6 +3,7 @@ class home_assistant::docker(
   String $home_assistant_dir = lookup('home_assistant::home_assistant_dir'),
   String $config_dir = lookup('home_assistant::config::config_dir'),
   String $home_assistant_version,
+  String $home_assistant_docker_repo,
   String $url,
   String $zwave_device,
   String $xbox_smartglass_version,
