@@ -1,1 +1,1 @@
-include home_assistant
+include homeassistant

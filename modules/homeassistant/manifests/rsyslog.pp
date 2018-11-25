@@ -1,25 +1,25 @@
-class home_assistant::rsyslog {
+class homeassistant::rsyslog {
   file { '/var/log/docker':
     ensure => directory,
   }
 
   file { '/etc/rsyslog.conf':
     ensure  => present,
-    source  => 'puppet:///modules/home_assistant/rsyslog/rsyslog.conf',
+    source  => 'puppet:///modules/homeassistant/rsyslog/rsyslog.conf',
     notify  => Service['rsyslog'],
     require => File['/var/log/docker'],
   }
 
   file { '/etc/rsyslog.d/docker.conf':
     ensure => present,
-    source => 'puppet:///modules/home_assistant/rsyslog/docker.conf',
+    source => 'puppet:///modules/homeassistant/rsyslog/docker.conf',
     notify => Service['rsyslog'],
     require => File['/var/log/docker'],
   }
 
   file { '/etc/logrotate.d/docker':
     ensure => present,
-    source => 'puppet:///modules/home_assistant/logrotate/docker',
+    source => 'puppet:///modules/homeassistant/logrotate/docker',
   }
 
   service { 'rsyslog':

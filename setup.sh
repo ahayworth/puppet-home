@@ -32,7 +32,7 @@ function apt() {
 function puppetmodule() {
   if ! $puppet_bin module list --modulepath vendor 2>/dev/null | grep -q $1; then
     section "installing puppet module $1"
-    $puppet_bin module install --target-dir vendor --module-path vendor $1
+    $puppet_bin module install --target-dir vendor --modulepath vendor $1
   fi
 }
 

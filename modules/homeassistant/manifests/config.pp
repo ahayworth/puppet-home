@@ -1,16 +1,12 @@
-class home_assistant::config(
+class homeassistant::config(
   String $config_dir,
-  String $home_assistant_dir = lookup('home_assistant::home_assistant_dir')
+  String $homeassistant_dir = lookup('homeassistant::homeassistant_dir'),
 ){
   file { $config_dir:
     ensure  => directory,
     recurse => remote,
-    source  => 'puppet:///modules/home_assistant/home_assistant/config',
-    require => File[$home_assistant_dir],
-  }
-  file { "${config_dir}/custom_components/sensor":
-    ensure  => directory,
-    require => File[$config_dir],
+    source  => 'puppet:///modules/homeassistant/homeassistant/config',
+    require => File[$homeassistant_dir],
   }
   file { "${config_dir}/custom_components/sensor/awair.py":
     ensure         => present,

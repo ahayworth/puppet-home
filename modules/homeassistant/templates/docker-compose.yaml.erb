@@ -1,8 +1,8 @@
 version: '3'
 services:
-  home_assistant:
-    image: <%= @home_assistant_docker_repo %>:<%= @home_assistant_version %>
-    container_name: home_assistant
+  homeassistant:
+    image: <%= @homeassistant_docker_repo %>:<%= @homeassistant_version %>
+    container_name: homeassistant
     restart: always
     healthcheck:
       test: ["CMD", "curl", "-f", "<%= @url %>"]
@@ -25,7 +25,7 @@ services:
       options:
         syslog-address: "udp://localhost:514"
         syslog-format: "rfc3164"
-        tag: "docker/home_assistant"
+        tag: "docker/homeassistant"
   xbox_smartglass_rest:
     image: openxbox/xbox-smartglass-rest:<%= @xbox_smartglass_version %>
     container_name: xbox_smartglass_rest

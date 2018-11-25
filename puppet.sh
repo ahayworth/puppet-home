@@ -22,9 +22,9 @@ if [[ $passphrase != $passphrase2 ]]; then
   exit 1
 fi
 
-decrypt "modules/home_assistant/files/home_assistant/config/secrets.yaml" "hass-secrets"
-decrypt "modules/home_assistant/files/home_assistant/config/ps4-credentials.json" "hass-ps4"
-decrypt "modules/home_assistant/files/home_assistant/config/xbox_tokens" "hass-xbox"
+decrypt "modules/homeassistant/files/homeassistant/config/secrets.yaml" "hass-secrets"
+decrypt "modules/homeassistant/files/homeassistant/config/ps4-credentials.json" "hass-ps4"
+decrypt "modules/homeassistant/files/homeassistant/config/xbox_tokens" "hass-xbox"
 decrypt "data/secrets.yaml" "puppet-secrets"
 
 sudo /opt/puppetlabs/bin/puppet \
@@ -36,7 +36,7 @@ sudo /opt/puppetlabs/bin/puppet \
   --show_diff \
   nodes/site.pp
 
-encrypt "modules/home_assistant/files/home_assistant/config/secrets.yaml" "hass-secrets"
-encrypt "modules/home_assistant/files/home_assistant/config/ps4-credentials.json" "hass-ps4"
-encrypt "modules/home_assistant/files/home_assistant/config/xbox_tokens" "hass-xbox"
+encrypt "modules/homeassistant/files/homeassistant/config/secrets.yaml" "hass-secrets"
+encrypt "modules/homeassistant/files/homeassistant/config/ps4-credentials.json" "hass-ps4"
+encrypt "modules/homeassistant/files/homeassistant/config/xbox_tokens" "hass-xbox"
 encrypt "data/secrets.yaml" "puppet-secrets"
