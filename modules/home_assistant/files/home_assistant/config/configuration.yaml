@@ -55,8 +55,8 @@ sensor:
   - platform: ring
   - platform: template
     sensors: !include device_types/battery.yaml
-    # - platform: awair
-    #   access_token: !secret awair_access_token
+  - platform: awair
+    access_token: !secret awair_access_token
 binary_sensor:
   - platform: ring
 panel_custom:
