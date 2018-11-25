@@ -20,6 +20,12 @@ services:
       - TZ=America/Chicago
     depends_on:
       - xbox_smartglass_rest
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://localhost:514"
+        syslog-format: "rfc3164"
+        tag: "home_assistant"
   xbox_smartglass_rest:
     image: openxbox/xbox-smartglass-rest:<%= @xbox_smartglass_version %>
     container_name: xbox_smartglass_rest
@@ -34,6 +40,12 @@ services:
     network_mode: host
     environment:
       - TZ=America/Chicago
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://localhost:514"
+        syslog-format: "rfc3164"
+        tag: "xbox_smartglass_rest"
   airconnect:
     image: ahayworth/docker-airconnect:latest
     container_name: airconnect
@@ -41,6 +53,12 @@ services:
     network_mode: host
     environment:
       - TZ=America/Chicago
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://localhost:514"
+        syslog-format: "rfc3164"
+        tag: "airconnect"
   ps4_waker_rest:
     image: ahayworth/ps4-waker-rest:latest
     ports:
@@ -57,3 +75,9 @@ services:
       retries: 6
     environment:
       - TZ=America/Chicago
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://localhost:514"
+        syslog-format: "rfc3164"
+        tag: "ps4_waker_rest"

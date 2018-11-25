@@ -4,6 +4,7 @@ class home_assistant(
 ){
   include home_assistant::config
   include home_assistant::docker
+  include home_assistant::rsyslog
 
   file { $data_dir:
     ensure => directory,
