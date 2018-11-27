@@ -6,3 +6,12 @@
   delaycompress
   copytruncate
 }
+
+/data/homeassistant/config/OZW_Log.txt {
+  rotate 7
+  daily
+  compress
+  missingok
+  delaycompress
+  copytruncate
+}

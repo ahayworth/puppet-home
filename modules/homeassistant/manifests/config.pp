@@ -14,9 +14,10 @@ class homeassistant::config(
     require        => File[$config_dir],
     checksum_value => 'daf1cc0e46f9b4e68a08ce18002ce37e',
   }
-  exec { "mkfifo_${config_dir}/OZW_Log.txt":
-    command => "/usr/bin/mkfifo ${config_dir}/OZW_Log.txt",
-    creates => "${config_dir}/OZW_Log.txt",
-    require =>  Service['rsyslog'],
+  file { "${config_dir}/custom_components/lock/zwave.py":
+    ensure         => present,
+    #checksum_value => 'daeee9db12bc830c68086e58cdd2f0f0',
+    source         => 'https://raw.github.com/ahayworth/home-assistant/ahayworth-schlage-locks/homeassistant/components/lock/zwave.py',
+    require        => File[$config_dir],
   }
 }

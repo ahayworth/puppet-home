@@ -76,3 +76,7 @@ apple_tv: !include device_types/apple_tv.yaml
 script: !include_dir_named script/
 input_select: !include input/input_select.yaml
 python_script:
+logger:
+  default: info
+  logs:
+    custom_components.lock.zwave: debug
