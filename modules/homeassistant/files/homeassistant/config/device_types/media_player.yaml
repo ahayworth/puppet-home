@@ -3,7 +3,8 @@
   host: 192.168.0.167
   sources:
     strm-box: 'Apple TV'
-    video6_pc: 'Games'
+    video6: 'Games'
+    cd: 'TV'
 - platform: webostv
   host: 192.168.0.123
   name: Living Room TV
@@ -50,7 +51,7 @@
         entity_id: media_player.receiver
         volume_level: "{{ volume_level }}"
     select_source:
-      service: python_script.select_source_living_room_universal
+      service: script.select_source_living_room_universal
       data_template:
         source: "{{ source }}"
   attributes:

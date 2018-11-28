@@ -1,14 +1,10 @@
 alias: Turn off Living Room Universal Media Player
 sequence:
-  - alias: Turn on Onkyo Receiver
+  - alias: Turn off Onkyo Receiver
     service: media_player.turn_off
     data:
       entity_id: media_player.receiver
   - alias: Turn off Living Room TV
-    service: media_player.turn_off
-    data:
-      entity_id: media_player.living_room_tv
-  - alias: Turn off Living Room TV Again
     service: media_player.turn_off
     data:
       entity_id: media_player.living_room_tv

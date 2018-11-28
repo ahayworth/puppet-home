@@ -1,0 +1,37 @@
+alias: Set living room universal source
+sequence:
+  - service: system_log.write
+    data_template:
+      message: "{{ source }}"
+  - wait_template: "{{ states('media_player.living_room_tv') != 'off' }}"
+    timeout: '00:00:10'
+    continue_on_timeout: 'false'
+  - service: media_player.select_source
+    data_template:
+      entity_id: media_player.living_room_tv
+      source: >
+        {% if source == 'media_player.living_room_tv' %}
+        LiveTV
+        {% else %}
+        HDMI1
+        {% endif %}
+  - service: media_player.select_source
+    data_template:
+      entity_id: media_player.receiver
+      source: >
+        {% if source == 'media_player.living_room_apple_tv' %}
+        Apple TV
+        {% elif source == 'media_player.living_room_tv' %}
+        TV
+        {% else %}
+        Games
+        {% endif %}
+  - service: input_select.select_option
+    data_template:
+      entity_id: input_select.living_room_universal
+      option: "{{ source }}"
+  - condition: template
+    value_template: "{{ source | regex_search('(xbox|playstation|apple)') }}"
+  - service: scene.turn_on
+    data_template:
+      entity_id: "{{ source | regex_replace('media_player', 'scene') }}"

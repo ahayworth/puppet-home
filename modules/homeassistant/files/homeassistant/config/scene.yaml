@@ -16,3 +16,18 @@
     fan.master_bedroom_ceiling_fan: off
     fan.master_bedroom_bedside_fan: off
     alarm_control_panel.abode_alarm: disarmed
+- name: xbox_one
+  entities:
+    media_player.xbox_one: on
+    media_player.playstation_4: off
+    media_player.living_room_apple_tv: off
+- name: playstation_4
+  entities:
+    media_player.xbox_one: off
+    media_player.playstation_4: on
+    media_player.living_room_apple_tv: off
+- name: living_room_apple_tv
+  entities:
+    media_player.xbox_one: off
+    media_player.playstation_4: off
+    media_player.living_room_apple_tv: on
