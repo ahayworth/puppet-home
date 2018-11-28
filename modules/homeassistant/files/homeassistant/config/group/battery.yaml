@@ -3,14 +3,16 @@ battery:
   view: yes
   entities:
     - sensor.ring_front_door_battery
-    - sensor.east_door_lock_battery_level
-    - sensor.west_door_lock_battery_level
+    - sensor.front_door_lock_battery_level
+    - sensor.back_door_lock_battery_level
     - sensor.utility_closet_door_battery_level
-    - sensor.server_closet_door_battery_level
-    - sensor.coat_closet_door_battery_level
-    - sensor.bedroom_closet_motion_detector_battery_level
-    - sensor.laundry_door_battery_level
-    - sensor.bedroom_closet_door_door_battery_level
+    - sensor.server_closet_door_sensor_battery_level
+    - sensor.coat_closet_door_sensor_battery_level
+    - sensor.laundry_closet_door_sensor_battery_level
+    - sensor.master_bedroom_closet_door_sensor_battery_level
+    - sensor.master_bedroom_closet_motion_detector_battery_level
+    - sensor.guest_bedroom_closet_door_sensor_battery_level
+    - sensor.office_closet_door_sensor_battery_level
     - sensor.east_door_battery_low
     - sensor.west_door_battery_low
     - sensor.patio_door_battery_low
