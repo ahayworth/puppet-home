@@ -31,7 +31,7 @@ sequence:
       entity_id: input_select.living_room_universal
       option: "{{ source }}"
   - condition: template
-    value_template: "{{ source | regex_search('(xbox|playstation|apple)') }}"
+    value_template: "{{ source | regex_search('(xbox|playstation|apple|vr)') }}"
   - service: scene.turn_on
     data_template:
       entity_id: "{{ source | regex_replace('media_player', 'scene') }}"

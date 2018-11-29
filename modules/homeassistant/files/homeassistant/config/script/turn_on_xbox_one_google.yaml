@@ -1,0 +1,9 @@
+alias: Turn on the xbox (google action)
+sequence:
+  - service: media_player.turn_on
+    data:
+      entity_id: media_player.living_room
+  - service: media_player.select_source
+    data:
+      entity_id: media_player.living_room
+      source: media_player.xbox_one

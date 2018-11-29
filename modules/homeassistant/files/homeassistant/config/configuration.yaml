@@ -75,6 +75,11 @@ cloud: !include cloud.yaml
 apple_tv: !include device_types/apple_tv.yaml
 script: !include_dir_named script/
 input_select: !include input/input_select.yaml
+remote:
+  - platform: harmony
+    name: Living Room Harmony
+    host: 192.168.0.155
+switch: !include device_types/switch.yaml
 logger:
   default: info
   logs:

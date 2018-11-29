@@ -1,0 +1,42 @@
+- platform: template
+  switches:
+    apple_tv:
+      value_template: "{{ is_state('media_player.living_room', 'on') and is_state_attr('media_player.living_room', 'source', 'media_player.living_room_apple_tv') }}"
+      turn_on:
+        service: script.turn_on
+        data:
+          entity_id: script.turn_on_apple_tv_google
+      turn_off:
+        service: media_player.turn_off
+        data:
+          entity_id: media_player.living_room
+    playstation_4:
+      value_template: "{{ is_state('media_player.living_room', 'on') and is_state_attr('media_player.living_room', 'source', 'media_player.playstation_4') }}"
+      turn_on:
+        service: script.turn_on
+        data:
+          entity_id: script.turn_on_playstation_4_google
+      turn_off:
+        service: media_player.turn_off
+        data:
+          entity_id: media_player.living_room
+    xbox_one:
+      value_template: "{{ is_state('media_player.living_room', 'on') and is_state_attr('media_player.living_room', 'source', 'media_player.xbox_one') }}"
+      turn_on:
+        service: script.turn_on
+        data:
+          entity_id: script.turn_on_xbox_one_google
+      turn_off:
+        service: media_player.turn_off
+        data:
+          entity_id: media_player.living_room
+    tv:
+      value_template: "{{ is_state('media_player.living_room', 'on') and is_state_attr('media_player.living_room', 'source', 'media_player.living_room_tv') }}"
+      turn_on:
+        service: script.turn_on
+        data:
+          entity_id: script.turn_on_tv_google
+      turn_off:
+        service: media_player.turn_off
+        data:
+          entity_id: media_player.living_room

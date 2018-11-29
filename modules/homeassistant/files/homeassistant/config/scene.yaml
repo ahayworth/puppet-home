@@ -18,16 +18,25 @@
     alarm_control_panel.abode_alarm: disarmed
 - name: xbox_one
   entities:
-    media_player.xbox_one: on
+    script.turn_on_xbox_one: on
     media_player.playstation_4: off
     media_player.living_room_apple_tv: off
+    # media_player.vr: off
 - name: playstation_4
   entities:
     media_player.xbox_one: off
     media_player.playstation_4: on
     media_player.living_room_apple_tv: off
+    # media_player.vr: off
 - name: living_room_apple_tv
   entities:
     media_player.xbox_one: off
     media_player.playstation_4: off
     media_player.living_room_apple_tv: on
+    # media_player.vr: off
+#- name: vr
+    #entities:
+    #media_player.xbox_one: off
+    #media_player.playstation_4: off
+    #media_player.living_room_apple_tv: off
+    # media_player.vr: on

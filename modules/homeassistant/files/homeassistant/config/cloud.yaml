@@ -14,6 +14,9 @@ google_actions:
       - switch.living_room_ceiling_fan
       - switch.master_bedroom_bedside_fan
       - switch.master_bedroom_ceiling_fan
+      - scene.xbox_one
+      - scene.playstation_4
+      - scene.living_room_apple_tv
   entity_config:
     light.bookshelf_lamp:
       room: living room
@@ -189,3 +192,26 @@ google_actions:
       aliases:
         - back door
         - west door
+    switch.apple_tv:
+      room: living room
+      aliases:
+        - apple tv
+    switch.playstation_4:
+      room: living room
+      aliases:
+        - playstation
+        - playstation 4
+        - ps 4
+        - ps4
+    switch.xbox_one:
+      room: living room
+      aliases:
+        - xbox
+        - xbox one
+    switch.tv:
+      room: living room
+      aliases:
+        - tv
+        - live tv
+        - broadcast tv
+        - over the air tv

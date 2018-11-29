@@ -1,0 +1,8 @@
+alias: Turn on Xbox One
+sequence:
+  - alias: Xbox one on via Harmony IR
+    service: remote.send_command
+    data:
+      entity_id: remote.living_room_harmony
+      device: 54810894
+      command: 'PowerOn'
