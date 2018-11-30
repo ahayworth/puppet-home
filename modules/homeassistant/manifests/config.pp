@@ -14,10 +14,10 @@ class homeassistant::config(
     source         => 'https://raw.github.com/ahayworth/home-assistant/ahayworth-schlage-locks/homeassistant/components/lock/zwave.py',
     require        => File[$config_dir],
   }
-  file { "${config_dir}/custom_components/media_player/onkyo.py":
-    ensure         => present,
-    #checksum_value => 'daeee9db12bc830c68086e58cdd2f0f0',
-    source         => 'https://raw.github.com/ahayworth/home-assistant/dev/homeassistant/components/media_player/onkyo.py',
-    require        => File[$config_dir],
+  file { "${config_dir}/custom_components/sensor/awair.py":
+    ensure          => present,
+    checksum_value  => '90cc07ae153f9b0e67c11ce807ca18cf',
+    source          => 'https://raw.github.com/ahayworth/home-assistant/ahayworth-update-awair/homeassistant/components/sensor/awair.py',
+    require         => File[$config_dir],
   }
 }
