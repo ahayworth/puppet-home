@@ -16,6 +16,11 @@
     fan.master_bedroom_ceiling_fan: off
     fan.master_bedroom_bedside_fan: off
     alarm_control_panel.abode_alarm: disarmed
+- name: Work
+  entities:
+    light.downstairs_hallway_lights: on
+    light.stairway_lights: on
+    light.office_ceiling_lights: on
 - name: xbox_one
   entities:
     script.turn_on_xbox_one: on
