@@ -6,17 +6,16 @@ google_actions:
       - lock
       - alarm_control_panel
       - fan
-      - scene
     include_entities:
       - group.great_room_lights
       - group.christmas_lights
+      - scene.bedtime
+      - scene.morning
+      - scene.work
     exclude_entities:
       - switch.living_room_ceiling_fan
       - switch.master_bedroom_bedside_fan
       - switch.master_bedroom_ceiling_fan
-      - scene.xbox_one
-      - scene.playstation_4
-      - scene.living_room_apple_tv
   entity_config:
     light.bookshelf_lamp:
       room: living room
