@@ -1,9 +1,9 @@
 alias: Turn on the ps4 (google action)
 sequence:
+  - service: input_select.select_option
+    data_template:
+      entity_id: input_select.living_room_universal
+      option: media_player.playstation_4
   - service: media_player.turn_on
     data:
       entity_id: media_player.living_room
-  - service: media_player.select_source
-    data:
-      entity_id: media_player.living_room
-      source: media_player.playstation_4
