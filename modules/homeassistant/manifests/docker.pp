@@ -16,6 +16,7 @@ class homeassistant::docker(
 
   $compose_file = "${homeassistant_dir}/docker-compose.yaml"
   $config_mount = "${config_dir}:/config"
+  $custom_components_mount = "${homeassistant_dir}/custom_components:/config/custom_components"
   file { $compose_file:
     content =>  template('homeassistant/docker-compose.yaml.erb'),
     require =>  File[$homeassistant_dir],

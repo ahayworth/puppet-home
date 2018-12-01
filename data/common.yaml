@@ -8,3 +8,24 @@ homeassistant::docker::homeassistant_version: 'dev'
 homeassistant::docker::compose_version: '1.23.1'
 homeassistant::docker::zwave_device: '/dev/ttyACM0'
 homeassistant::docker::xbox_smartglass_version: 'v0.9.8'
+homeassistant::custom_components:
+  schlage_zwave_lock_fix:
+    provider: 'remote'
+    repo: 'ahayworth/home-assistant'
+    branch: 'ahayworth-schlage-locks'
+    checksum_value: '0e965d96e8fa0a886f2c3e7234965951'
+    file: 'homeassistant/components/lock/zwave.py'
+    #google_assistant_lock_fix:
+    #provider: 'remote'
+    #repo: 'ahayworth/home-assistant'
+    #branch: 'ahayworth-google-locks'
+    #checksum_value: 'b5bfacf237a57ec2839a1b3ce9196c29'
+    #file: 'homeassistant/components/google_assistant/trait.py'
+  xbox_one:
+    provider: 'local'
+    component: 'media_player'
+    file: 'xboxone.py'
+  ps4:
+    provider: 'local'
+    component: 'media_player'
+    file: 'ps4.py'

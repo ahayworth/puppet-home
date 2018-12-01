@@ -13,6 +13,7 @@ services:
       - 8123:8123
     volumes:
       - <%= @config_mount %>
+      - <%= @custom_components_mount %>
     devices:
       - <%= @zwave_device %>:<%= @zwave_device %>:rwm
     network_mode: host

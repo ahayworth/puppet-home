@@ -84,3 +84,6 @@ logger:
   default: info
   logs:
     custom_components.lock.zwave: debug
+    homeassistant.components.cloud.iot: debug
+    homeassistant.components.cloud: debug
+    homeassistant.components.google_assistant: debug
