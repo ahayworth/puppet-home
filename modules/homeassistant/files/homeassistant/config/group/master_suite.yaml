@@ -10,3 +10,4 @@ master_suite:
     - binary_sensor.master_bedroom_closet_door_sensor
     - fan.master_bedroom_ceiling_fan
     - fan.master_bedroom_bedside_fan
+    - sensor.nest_master_bedroom_temperature_sensor

@@ -10,4 +10,4 @@ downstairs:
     - light.office_closet_lights
     - light.guest_bedroom_ceiling_lights
     - light.guest_bedroom_closet_lights
-
+    - sensor.nest_office_temperature_sensor
