@@ -20,197 +20,197 @@ google_actions:
     light.bookshelf_lamp:
       room: living room
       aliases:
-        - bookshelf light
+        - 'bookshelf light'
     light.couch_light:
       room: living room
       aliases:
-        - couch lamp
+        - 'couch lamp'
     light.dining_table_lights:
       room: living room
       aliases:
-        - dining table light
-        - dining room light
-        - dining room lights
+        - 'dining table light'
+        - 'dining room light'
+        - 'dining room lights'
     light.downstairs_hallway_lights:
       room: downstairs hallway
       aliases:
-        - downstairs hallway light
+        - 'downstairs hallway light'
     light.fireplace_light:
       room: living room
       aliases:
-        - fireplace lamp
+        - 'fireplace lamp'
     light.guest_bedroom_ceiling_lights:
       room: guest bedroom
       aliases:
-        - guest bedroom ceiling light
-        - guest bedroom lights
-        - guest bedroom light
-        - downstairs bedroom light
-        - downstairs bedroom lights
-        - downstairs bedroom ceiling light
-        - downstairs bedroom ceiling lights
+        - 'guest bedroom ceiling light'
+        - 'guest bedroom lights'
+        - 'guest bedroom light'
+        - 'downstairs bedroom light'
+        - 'downstairs bedroom lights'
+        - 'downstairs bedroom ceiling light'
+        - 'downstairs bedroom ceiling lights'
     light.kitchen_ceiling_lights:
       room: kitchen
       aliases:
-        - kitchen ceiling light
+        - 'kitchen ceiling light'
     light.kitchen_sink_lights:
       room: kitchen
       aliases:
-        - kitchen sink light
+        - 'kitchen sink light'
     light.living_room_ceiling_lights:
       room: living room
       aliases:
-        - living room ceiling light
+        - 'living room ceiling light'
     light.master_bedroom_bedside_lamp:
       room: master bedroom
       aliases:
-        - master bedroom bedside light
-        - bedroom lamp
+        - 'master bedroom bedside light'
+        - 'bedroom lamp'
     light.master_bedroom_ceiling_lights:
       room: master bedroom
       aliases:
-        - master bedroom ceiling light
-        - bedroom ceiling light
-        - bedroom ceiling lights
+        - 'master bedroom ceiling light'
+        - 'bedroom ceiling light'
+        - 'bedroom ceiling lights'
     light.office_ceiling_lights:
       room: office
       aliases:
-        - office ceiling light
+        - 'office ceiling light'
     light.reading_chair_light:
       room: living room
       aliases:
-        - reading chair lamp
+        - 'reading chair lamp'
     light.server_closet_lights:
       room: server closet
       aliases:
-        - server closet light
+        - 'server closet light'
     light.stairway_lights:
       room: upstairs hallway
       aliases:
-        - stairway light
-        - stair light
-        - stair lights
+        - 'stairway light'
+        - 'stair light'
+        - 'stair lights'
     light.tv_lights:
       room: living room
       aliases:
-        - tv light
+        - 'tv light'
     light.upstairs_hallway_lights:
       room: upstairs hallway
       aliases:
-        - upstairs hallway light
-        - hallway light
+        - 'upstairs hallway light'
+        - 'hallway light'
     light.coat_closet_lights:
       room: coat closet
       aliases:
-        - coat closet light
+        - 'coat closet light'
     light.deck_lights:
       room: deck
       aliases:
-        - deck light
-        - outdoor light
-        - outdoor lights
-        - outside light
-        - outside lights
+        - 'deck light'
+        - 'outdoor light'
+        - 'outdoor lights'
+        - 'outside light'
+        - 'outside lights'
     light.guest_bedroom_closet_lights:
       room: guest bedroom
       aliases:
-        - guest bedroom closet light
+        - 'guest bedroom closet light'
     light.hallway_christmas_lights:
       room: upstairs hallway
     light.kitchen_bar_lights:
       room: kitchen
       aliases:
-        - kitchen bar light
-        - bar lights
-        - bar light
+        - 'kitchen bar light'
+        - 'bar lights'
+        - 'bar light'
     light.kitchen_over_cabinet_lights:
       room: kitchen
       aliases:
-        - over cabinet light
-        - cabinet lights
-        - cabinet light
+        - 'over cabinet light'
+        - 'cabinet lights'
+        - 'cabinet light'
     light.kitchen_under_cabinet_lights:
       room: kitchen
       aliases:
-        - under cabinet light
-        - counter lights
-        - counter light
+        - 'under cabinet light'
+        - 'counter lights'
+        - 'counter light'
     light.laundry_closet_lights:
       room: laundry closet
       aliases:
-        - laundry closet light
-        - laundry lights
-        - laundry light
+        - 'laundry closet light'
+        - 'laundry lights'
+        - 'laundry light'
     fan.living_room_ceiling_fan:
       room: living room
       aliases:
-        - living room fan
+        - 'living room fan'
     fan.master_bedroom_bedside_fan:
       room: master bedroom
     fan.master_bedroom_ceiling_fan:
       room: master bedroom
       aliases:
-        - master bedroom fan
+        - 'master bedroom fan'
     light.master_bedroom_closet_lights:
       room: master bedroom
       aliases:
-        - master bedroom closet light
-        - bedroom closet lights
-        - bedroom closet light
+        - 'master bedroom closet light'
+        - 'bedroom closet lights'
+        - 'bedroom closet light'
     light.master_bedroom_fan_lights:
       room: master bedroom
       aliases:
-        - master bedroom fan light
-        - fan lights
-        - fan light
+        - 'master bedroom fan light'
+        - 'fan lights'
+        - 'fan light'
     light.master_bedroom_rock_salt_lamp:
       room: master bedroom
       aliases:
-        - master bedroom rock salt light
-        - rock salt lamp
-        - rock salt light
-        - salt lamp
-        - salt light
+        - 'master bedroom rock salt light'
+        - 'rock salt lamp'
+        - 'rock salt light'
+        - 'salt lamp'
+        - 'salt light'
     light.office_closet_lights:
       room: office
       aliases:
-        - office closet light
+        - 'office closet light'
     light.utility_closet_lights:
       room: utility closet
       aliases:
-        - utility closet light
+        - 'utility closet light'
     switch.wax_diffuser:
       room: kitchen
     lock.front_door_lock:
       room: upstairs hallway
       aliases:
-        - front door
-        - east door
+        - 'front door'
+        - 'east door'
     lock.back_door_lock:
       room: upstairs hallway
       aliases:
-        - back door
-        - west door
+        - 'back door'
+        - 'west door'
     switch.apple_tv:
       room: living room
       aliases:
-        - apple tv
+        - 'apple tv'
     switch.playstation_4:
       room: living room
       aliases:
-        - playstation
-        - playstation 4
-        - ps 4
-        - ps4
+        - 'playstation'
+        - 'playstation 4'
+        - 'ps 4'
+        - 'ps4'
     switch.xbox_one:
       room: living room
       aliases:
-        - xbox
-        - xbox one
+        - 'xbox'
+        - 'xbox one'
     switch.tv:
       room: living room
       aliases:
-        - tv
-        - live tv
-        - broadcast tv
-        - over the air tv
+        - 'tv'
+        - 'live tv'
+        - 'broadcast tv'
+        - 'over the air tv'
