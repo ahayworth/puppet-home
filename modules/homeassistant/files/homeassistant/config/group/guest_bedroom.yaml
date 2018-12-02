@@ -3,5 +3,5 @@ guest_bedroom:
   view: yes
   entities:
     - light.guest_bedroom_ceiling_lights
-    - switch.guest_bedroom_closet_lights
+    - light.guest_bedroom_closet_lights
     - binary_sensor.guest_bedroom_closet_door_sensor

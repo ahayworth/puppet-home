@@ -11,4 +11,4 @@ living_room:
     - light.tv_lights
     - fan.living_room_ceiling_fan
     - media_player.living_room
-    - switch.christmas_tree
+    - light.christmas_tree

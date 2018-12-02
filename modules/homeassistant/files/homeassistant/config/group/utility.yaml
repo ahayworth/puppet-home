@@ -4,7 +4,7 @@ utility:
   entities:
     - binary_sensor.coat_closet_door_sensor
     - binary_sensor.laundry_closet_door_sensor
-    - switch.coat_closet_lights
-    - switch.laundry_closet_lights
-    - switch.utility_closet_lights
+    - light.coat_closet_lights
+    - light.laundry_closet_lights
+    - light.utility_closet_lights
     - light.server_closet_lights

@@ -21,4 +21,13 @@ class homeassistant::config(
       *          => $options,
     }
   }
+
+  $masked_devices = lookup('homeassistant::devices::masked_devices', {})
+  $masked_devices.each |String $type, Array[Hash] $devices| {
+    file { "${config_dir}/device_types/${type}.yaml":
+      content => template("homeassistant/${type}.yaml.erb"),
+      ensure  => present,
+      require => File[$config_dir],
+    }
+  }
 }

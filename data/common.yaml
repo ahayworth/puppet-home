@@ -15,12 +15,6 @@ homeassistant::custom_components:
     branch: 'ahayworth-schlage-locks'
     checksum_value: '0e965d96e8fa0a886f2c3e7234965951'
     file: 'homeassistant/components/lock/zwave.py'
-    #google_assistant_lock_fix:
-    #provider: 'remote'
-    #repo: 'ahayworth/home-assistant'
-    #branch: 'ahayworth-google-locks'
-    #checksum_value: 'b5bfacf237a57ec2839a1b3ce9196c29'
-    #file: 'homeassistant/components/google_assistant/trait.py'
   xbox_one:
     provider: 'local'
     component: 'media_player'
@@ -29,3 +23,40 @@ homeassistant::custom_components:
     provider: 'local'
     component: 'media_player'
     file: 'ps4.py'
+homeassistant::devices::masked_devices:
+  light:
+    - entity_id: switch.office_closet_lights
+      name: Office Closet Lights
+    - entity_id: switch.guest_bedroom_closet_lights
+      name: Guest Bedroom Closet Lights
+    - entity_id: switch.utility_closet_lights
+      name: Utility Closet Lights
+    - entity_id: switch.coat_closet_lights
+      name: Coat Closet Lights
+    - entity_id: switch.laundry_closet_lights
+      name: Laundry Closet Lights
+    - entity_id: switch.master_bedroom_fan_lights
+      name: Master Bedroom Fan Lights
+    - entity_id: switch.master_bedroom_closet_lights
+      name: Master Bedroom Closet Lights
+    - entity_id: switch.master_bedroom_rock_salt_lamp
+      name: Master Bedroom Rock Salt Lamp
+    - entity_id: switch.hallway_christmas_lights
+      name: Hallway Christmas Lights
+    - entity_id: switch.kitchen_bar_lights
+      name: Kitchen Bar Lights
+    - entity_id: switch.kitchen_over_cabinet_lights
+      name: Kitchen Over Cabinet Lights
+    - entity_id: switch.kitchen_under_cabinet_lights
+      name: Kitchen Under Cabinet Lights
+    - entity_id: switch.christmas_tree
+      name: Christmas Tree
+    - entity_id: switch.deck_lights
+      name: Deck Lights
+  fan:
+    - entity_id: switch.master_bedroom_ceiling_fan
+      name: Master Bedroom Ceiling Fan
+    - entity_id: switch.master_bedroom_bedside_fan
+      name: Master Bedroom Bedside Fan
+    - entity_id: switch.living_room_ceiling_fan
+      name: Living Room Ceiling Fan

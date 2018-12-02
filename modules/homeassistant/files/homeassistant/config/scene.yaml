@@ -1,10 +1,10 @@
 - name: Bedtime
   entities:
-    switch.master_bedroom_closet_lights: off
-    switch.master_bedroom_rock_salt_lamp: off
+    light.master_bedroom_closet_lights: off
+    light.master_bedroom_rock_salt_lamp: off
     light.master_bedroom_ceiling_lights: off
     light.master_bedroom_bedside_lamp: off
-    switch.master_bedroom_fan_lights: off
+    light.master_bedroom_fan_lights: off
     fan.master_bedroom_ceiling_fan: on
     fan.master_bedroom_bedside_fan: on
     lock.front_door_lock: locked
@@ -12,7 +12,7 @@
     alarm_control_panel.abode_alarm: armed_home
 - name: Morning
   entities:
-    switch.master_bedroom_fan_lights: on
+    light.master_bedroom_fan_lights: on
     fan.master_bedroom_ceiling_fan: off
     fan.master_bedroom_bedside_fan: off
     alarm_control_panel.abode_alarm: disarmed

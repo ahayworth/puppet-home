@@ -75,6 +75,7 @@ cloud: !include cloud.yaml
 apple_tv: !include device_types/apple_tv.yaml
 script: !include_dir_named script/
 input_select: !include input/input_select.yaml
+light: !include device_types/light.yaml
 remote:
   - platform: harmony
     name: Living Room Harmony

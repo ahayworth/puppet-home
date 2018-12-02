@@ -2,9 +2,9 @@ kitchen:
   name: Kitchen
   view: yes
   entities:
-    - switch.kitchen_bar_lights
+    - light.kitchen_bar_lights
     - switch.wax_diffuser
-    - switch.kitchen_over_cabinet_lights
-    - switch.kitchen_under_cabinet_lights
+    - light.kitchen_over_cabinet_lights
+    - light.kitchen_under_cabinet_lights
     - light.kitchen_ceiling_lights
     - light.kitchen_sink_lights

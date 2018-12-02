@@ -8,6 +8,6 @@ hallway:
     - light.upstairs_hallway_lights
     - light.stairway_lights
     - binary_sensor.ring_front_door_ding
-    - switch.hallway_christmas_lights
+    - light.hallway_christmas_lights
     - binary_sensor.east_door
     - binary_sensor.west_door

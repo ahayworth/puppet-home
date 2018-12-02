@@ -22,8 +22,8 @@
     platform: state
     entity_id: binary_sensor.utility_closet_door_sensor
   action:
-    entity_id: switch.utility_closet_lights
-    service_template: "switch.turn_{{ trigger.to_state.state }}"
+    entity_id: light.utility_closet_lights
+    service_template: "light.turn_{{ trigger.to_state.state }}"
 
 - id: server_closet_lights
   alias: Server closet lights
@@ -40,8 +40,8 @@
     platform: state
     entity_id: binary_sensor.laundry_closet_door_sensor
   action:
-    entity_id: switch.laundry_closet_lights
-    service_template: "switch.turn_{{ trigger.to_state.state }}"
+    entity_id: light.laundry_closet_lights
+    service_template: "light.turn_{{ trigger.to_state.state }}"
 
 - id: coat_closet_lights
   alias: Coat closet lights
@@ -49,8 +49,8 @@
     platform: state
     entity_id: binary_sensor.coat_closet_door_sensor
   action:
-    entity_id: switch.coat_closet_lights
-    service_template: "switch.turn_{{ trigger.to_state.state }}"
+    entity_id: light.coat_closet_lights
+    service_template: "light.turn_{{ trigger.to_state.state }}"
 
 - id: office_closet_lights
   alias: Office closet lights
@@ -58,8 +58,8 @@
     platform: state
     entity_id: binary_sensor.office_closet_door_sensor
   action:
-    entity_id: switch.office_closet_lights
-    service_template: "switch.turn_{{ trigger.to_state.state }}"
+    entity_id: light.office_closet_lights
+    service_template: "light.turn_{{ trigger.to_state.state }}"
 
 - id: guest_bedroom_closet_lights
   alias: Guest bedroom closet lights
@@ -67,8 +67,8 @@
     platform: state
     entity_id: binary_sensor.guest_bedroom_closet_door_sensor
   action:
-    entity_id: switch.guest_bedroom_closet_lights
-    service_template: "switch.turn_{{ trigger.to_state.state }}"
+    entity_id: light.guest_bedroom_closet_lights
+    service_template: "light.turn_{{ trigger.to_state.state }}"
 
 - id: master_bedroom_closet_lights
   alias: Master bedroom closet lights
@@ -85,8 +85,8 @@
         entity_id: binary_sensor.master_bedroom_closet_motion_detector
         state: 'off'
   action:
-    entity_id: switch.master_bedroom_closet_lights
-    service_template: "switch.turn_{{ trigger.to_state.state }}"
+    entity_id: light.master_bedroom_closet_lights
+    service_template: "light.turn_{{ trigger.to_state.state }}"
 
 - id: master_bedroom_closet_lights_auto
   alias: Master bedroom closet lights auto
@@ -95,8 +95,8 @@
     entity_id: binary_sensor.master_bedroom_closet_motion_detector
     to: 'off'
   action:
-    service: switch.turn_off
-    entity_id: switch.master_bedroom_closet_lights
+    service: light.turn_off
+    entity_id: light.master_bedroom_closet_lights
 
 - id: front_door_unlocked_too_long_automation
   alias: Door unlocked notification

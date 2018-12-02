@@ -1,7 +1,6 @@
 google_actions:
   filter:
     include_domains:
-      - switch
       - light
       - lock
       - alarm_control_panel
@@ -12,10 +11,11 @@ google_actions:
       - scene.bedtime
       - scene.morning
       - scene.work
-    exclude_entities:
-      - switch.living_room_ceiling_fan
-      - switch.master_bedroom_bedside_fan
-      - switch.master_bedroom_ceiling_fan
+      - switch.apple_tv
+      - switch.playstation_4
+      - switch.tv
+      - switch.xbox_one
+      - switch.wax_diffuser
   entity_config:
     light.bookshelf_lamp:
       room: living room
@@ -99,11 +99,11 @@ google_actions:
       aliases:
         - upstairs hallway light
         - hallway light
-    switch.coat_closet_lights:
+    light.coat_closet_lights:
       room: coat closet
       aliases:
         - coat closet light
-    switch.deck_lights:
+    light.deck_lights:
       room: deck
       aliases:
         - deck light
@@ -111,31 +111,31 @@ google_actions:
         - outdoor lights
         - outside light
         - outside lights
-    switch.guest_bedroom_closet_lights:
+    light.guest_bedroom_closet_lights:
       room: guest bedroom
       aliases:
         - guest bedroom closet light
-    switch.hallway_christmas_lights:
+    light.hallway_christmas_lights:
       room: upstairs hallway
-    switch.kitchen_bar_lights:
+    light.kitchen_bar_lights:
       room: kitchen
       aliases:
         - kitchen bar light
         - bar lights
         - bar light
-    switch.kitchen_over_cabinet_lights:
+    light.kitchen_over_cabinet_lights:
       room: kitchen
       aliases:
         - over cabinet light
         - cabinet lights
         - cabinet light
-    switch.kitchen_under_cabinet_lights:
+    light.kitchen_under_cabinet_lights:
       room: kitchen
       aliases:
         - under cabinet light
         - counter lights
         - counter light
-    switch.laundry_closet_lights:
+    light.laundry_closet_lights:
       room: laundry closet
       aliases:
         - laundry closet light
@@ -151,19 +151,19 @@ google_actions:
       room: master bedroom
       aliases:
         - master bedroom fan
-    switch.master_bedroom_closet_lights:
+    light.master_bedroom_closet_lights:
       room: master bedroom
       aliases:
         - master bedroom closet light
         - bedroom closet lights
         - bedroom closet light
-    switch.master_bedroom_fan_lights:
+    light.master_bedroom_fan_lights:
       room: master bedroom
       aliases:
         - master bedroom fan light
         - fan lights
         - fan light
-    switch.master_bedroom_rock_salt_lamp:
+    light.master_bedroom_rock_salt_lamp:
       room: master bedroom
       aliases:
         - master bedroom rock salt light
@@ -171,11 +171,11 @@ google_actions:
         - rock salt light
         - salt lamp
         - salt light
-    switch.office_closet_lights:
+    light.office_closet_lights:
       room: office
       aliases:
         - office closet light
-    switch.utility_closet_lights:
+    light.utility_closet_lights:
       room: utility closet
       aliases:
         - utility closet light

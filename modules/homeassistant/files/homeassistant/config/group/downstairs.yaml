@@ -4,7 +4,7 @@ downstairs:
   entities:
     - light.stairway_lights
     - light.downstairs_hallway_lights
-    - switch.utility_closet_lights
+    - light.utility_closet_lights
     - light.server_closet_lights
     - light.office_ceiling_lights
     - light.office_closet_lights

@@ -1,7 +1,6 @@
 auto_start: False
 filter:
   include_domains:
-    - switch
     - light
     - lock
     - alarm_control_panel
@@ -11,15 +10,9 @@ filter:
     - binary_sensor.east_door
     - binary_sensor.west_door
     - binary_sensor.patio_door
-    - binary_sensor.utility_closet_door_sensor
-    - binary_sensor.server_closet_door_sensor
-    - binary_sensor.master_bedroom_closet_door_sensor
-    - binary_sensor.laundry_closet_door_sensor
-    - binary_sensor.coat_closet_door_sensor
-    - binary_sensor.guest_bedroom_closet_door_sensor
-    - binary_sensor.office_closet_door_sensor
     - sensor.house_thermostat_humidity
-  exclude_entities:
-    - switch.master_bedroom_ceiling_fan
-    - switch.master_bedroom_bedside_fan
-    - switch.living_room_ceiling_fan
+    - switch.apple_tv
+    - switch.playstation_4
+    - switch.tv
+    - switch.xbox_one
+    - switch.wax_diffuser

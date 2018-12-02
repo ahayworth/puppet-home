@@ -1,0 +1,5 @@
+<%- @devices.each do |device| -%>
+- platform: switch
+  name: <%= device['name'] %>
+  entity_id: <%= device['entity_id'] %>
+<%- end -%>

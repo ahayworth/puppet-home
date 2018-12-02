@@ -2,4 +2,4 @@ deck:
   name: Deck
   view: yes
   entities:
-    - switch.deck_lights
+    - light.deck_lights

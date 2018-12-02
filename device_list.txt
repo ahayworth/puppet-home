@@ -1,0 +1,756 @@
+- entity_id: sun.sun
+  name: Sun
+- entity_id: zone.home
+  name: Home
+- entity_id: media_player.living_room
+  name: Living Room
+- entity_id: group.battery
+  name: Batteries
+- entity_id: scene.xbox_one
+  name: xbox_one
+- entity_id: scene.playstation_4
+  name: playstation_4
+- entity_id: scene.living_room_apple_tv
+  name: living_room_apple_tv
+- entity_id: scene.bedtime
+  name: Bedtime
+- entity_id: scene.morning
+  name: Morning
+- entity_id: scene.work
+  name: Work
+- entity_id: sensor.front_door_lock_battery_level
+  name: Front Door Lock Battery Level
+- entity_id: sensor.master_bedroom_closet_door_sensor_battery_level
+  name: Master Bedroom Closet Door Sensor Battery Level
+- entity_id: sensor.hallway_motion_battery_low
+  name: Hallway Motion Battery Low
+- entity_id: sensor.utility_closet_door_sensor_battery_level
+  name: Utility Closet Door Sensor Battery Level
+- entity_id: sensor.guest_bedroom_closet_door_sensor_battery_level
+  name: Guest Bedroom Closet Door Sensor Battery Level
+- entity_id: sensor.great_room_motion_battery_low
+  name: Great Room Motion Battery Low
+- entity_id: sensor.server_closet_door_sensor_battery_level
+  name: Server Closet Door Sensor Battery Level
+- entity_id: sensor.office_closet_door_sensor_battery_level
+  name: Office Closet Door Sensor Battery Level
+- entity_id: sensor.keyfob_one_battery_low
+  name: Keyfob One Battery Low
+- entity_id: sensor.coat_closet_door_sensor_battery_level
+  name: Coat Closet Door Sensor Battery Level
+- entity_id: sensor.east_door_battery_low
+  name: East Door Sensor Motion Battery Low
+- entity_id: sensor.keyfob_two_battery_low
+  name: Keyfob Two Battery Low
+- entity_id: sensor.master_bedroom_closet_motion_detector_battery_level
+  name: Bedroom Closet Motion Battery Level
+- entity_id: sensor.west_door_battery_low
+  name: West Door Sensor Motion Battery Low
+- entity_id: sensor.keypad_battery_low
+  name: Keypad Battery Low
+- entity_id: sensor.laundry_closet_door_sensor_battery_level
+  name: Laundry Door Sensor Battery Level
+- entity_id: sensor.patio_door_battery_low
+  name: Patio Door Sensor Motion Battery Low
+- entity_id: sensor.back_door_lock_battery_level
+  name: Back Door Lock Battery Level
+- entity_id: media_player.xbox_one
+  name: Xbox One
+- entity_id: group.utility
+  name: Utility
+- entity_id: climate.house
+  name: House
+- entity_id: group.default_view
+  name: Home
+- entity_id: group.master_suite
+  name: Master Suite
+- entity_id: camera.kitchen
+  name: Kitchen
+- entity_id: alarm_control_panel.abode_alarm
+  name: Abode Alarm
+- entity_id: group.christmas_lights
+  name: Christmas Lights
+- entity_id: group.great_room
+  name: Great Room
+- entity_id: group.living_room
+  name: Living Room
+- entity_id: group.great_room_lights
+  name: Great Room Lights
+- entity_id: group.hallway
+  name: Hallway
+- entity_id: group.downstairs
+  name: Downstairs
+- entity_id: group.guest_bedroom
+  name: Guest Bedroom
+- entity_id: group.deck
+  name: Deck
+- entity_id: group.kitchen
+  name: Kitchen
+- entity_id: script.select_source_living_room_universal
+  name: Set living room universal source
+- entity_id: script.turn_on_playstation_4_google
+  name: Turn on the ps4 (google action)
+- entity_id: script.turn_on_xbox_one_google
+  name: Turn on the xbox (google action)
+- entity_id: script.turn_off_living_room_universal
+  name: Turn off Living Room Universal Media Player
+- entity_id: script.turn_on_living_room_universal
+  name: Turn on Living Room Universal Media Player
+- entity_id: script.turn_on_apple_tv_google
+  name: Turn on the apple tv (google action)
+- entity_id: script.turn_on_xbox_one
+  name: Turn on Xbox One
+- entity_id: script.turn_on_tv_google
+  name: Turn on live tv (google action)
+- entity_id: script.turn_on_xbox_google
+  name: Turn on the xbox (google action)
+- entity_id: fan.living_room_ceiling_fan
+  name: Living Room Ceiling Fan
+- entity_id: fan.master_bedroom_bedside_fan
+  name: Master Bedroom Bedside Fan
+- entity_id: fan.master_bedroom_ceiling_fan
+  name: Master Bedroom Ceiling Fan
+- entity_id: switch.tv
+  name: tv
+- entity_id: switch.apple_tv
+  name: apple_tv
+- entity_id: switch.xbox_one
+  name: xbox_one
+- entity_id: switch.playstation_4
+  name: playstation_4
+- entity_id: group.all_scripts
+  name: all scripts
+- entity_id: group.all_fans
+  name: all fans
+- entity_id: group.all_switches
+  name: all switches
+- entity_id: media_player.receiver_zone_3
+  name: Receiver Zone 3
+- entity_id: group.all_automations
+  name: all automations
+- entity_id: media_player.receiver_zone_2
+  name: Receiver Zone 2
+- entity_id: media_player.playstation_4
+  name: Playstation 4
+- entity_id: sensor.awair_voc
+  name: Awair VOC
+- entity_id: sensor.awair_score
+  name: Awair score
+- entity_id: sensor.awair_co2
+  name: Awair CO2
+- entity_id: sensor.awair_temperature
+  name: Awair temperature
+- entity_id: sensor.awair_humidity
+  name: Awair humidity
+- entity_id: sensor.awair_pm25
+  name: Awair PM2.5
+- entity_id: media_player.living_room_tv
+  name: Living Room TV
+- entity_id: media_player.receiver
+  name: Receiver
+- entity_id: media_player.bedroom
+  name: Bedroom
+- entity_id: media_player.living_room_apple_tv
+  name: Living Room
+- entity_id: binary_sensor.ring_front_door_ding
+  name: Front Door Ding
+- entity_id: group.all_devices
+  name: all devices
+- entity_id: sensor.ring_front_door_volume
+  name: Front Door Volume
+- entity_id: binary_sensor.ring_front_door_motion
+  name: Front Door Motion
+- entity_id: binary_sensor.west_door
+  name: West Door
+- entity_id: binary_sensor.keyfob
+  name: KeyFob
+- entity_id: binary_sensor.east_door
+  name: East Door
+- entity_id: binary_sensor.hallway
+  name: Hallway
+- entity_id: binary_sensor.great_room
+  name: Great Room
+- entity_id: binary_sensor.keypad
+  name: Keypad
+- entity_id: binary_sensor.keyfob_2
+  name: Keyfob
+- entity_id: binary_sensor.patio_door
+  name: Patio Door
+- entity_id: binary_sensor.house_thermostat_online
+  name: House Thermostat online
+- entity_id: binary_sensor.house_thermostat_is_locked
+  name: House Thermostat is locked
+- entity_id: binary_sensor.home_away
+  name: Home away
+- entity_id: binary_sensor.downstairs_nest_protect_online
+  name: Downstairs Nest Protect online
+- entity_id: binary_sensor.house_thermostat_has_leaf
+  name: House Thermostat has leaf
+- entity_id: binary_sensor.house_thermostat_is_using_emergency_heat
+  name: House Thermostat is using emergency heat
+- entity_id: binary_sensor.hallway_nest_protect_online
+  name: Hallway Nest Protect online
+- entity_id: binary_sensor.house_thermostat_fan
+  name: House Thermostat fan
+- entity_id: remote.living_room_harmony
+  name: Living Room Harmony
+- entity_id: group.all_remotes
+  name: all remotes
+- entity_id: remote.bedroom_apple_tv
+  name: Bedroom
+- entity_id: remote.living_room_apple_tv
+  name: Living Room
+- entity_id: sensor.ring_hallway_wifi_signal_strength
+  name: Hallway WiFi Signal Strength
+- entity_id: sensor.ring_front_door_wifi_signal_category
+  name: Front Door WiFi Signal Category
+- entity_id: sensor.ring_hallway_wifi_signal_category
+  name: Hallway WiFi Signal Category
+- entity_id: sensor.ring_front_door_battery
+  name: Front Door Battery
+- entity_id: sensor.ring_front_door_last_activity
+  name: Front Door Last Activity
+- entity_id: sensor.ring_front_door_last_ding
+  name: Front Door Last Ding
+- entity_id: sensor.ring_hallway_volume
+  name: Hallway Volume
+- entity_id: sensor.ring_front_door_last_motion
+  name: Front Door Last Motion
+- entity_id: sensor.ring_front_door_wifi_signal_strength
+  name: Front Door WiFi Signal Strength
+- entity_id: sensor.unicorn_wrangler_battery_level
+  name: Unicorn Wrangler Battery Level
+- entity_id: sensor.house_thermostat_target
+  name: House Thermostat target
+- entity_id: sensor.unicorn_wrangler_battery_state
+  name: Unicorn Wrangler Battery State
+- entity_id: sensor.hallway_nest_protect_co_status
+  name: Hallway Nest Protect co status
+- entity_id: sensor.hallway_nest_protect_smoke_status
+  name: Hallway Nest Protect smoke status
+- entity_id: sensor.downstairs_nest_protect_co_status
+  name: Downstairs Nest Protect co status
+- entity_id: sensor.downstairs_nest_protect_battery_health
+  name: Downstairs Nest Protect battery health
+- entity_id: sensor.house_thermostat_temperature
+  name: House Thermostat temperature
+- entity_id: sensor.house_thermostat_humidity
+  name: House Thermostat humidity
+- entity_id: sensor.hallway_nest_protect_battery_health
+  name: Hallway Nest Protect battery health
+- entity_id: sensor.house_thermostat_hvac_state
+  name: House Thermostat hvac state
+- entity_id: sensor.hallway_nest_protect_color_status
+  name: Hallway Nest Protect color status
+- entity_id: sensor.house_thermostat_operation_mode
+  name: House Thermostat operation mode
+- entity_id: sensor.downstairs_nest_protect_smoke_status
+  name: Downstairs Nest Protect smoke status
+- entity_id: sensor.home_eta
+  name: Home eta
+- entity_id: sensor.downstairs_nest_protect_color_status
+  name: Downstairs Nest Protect color status
+- entity_id: zwave.aeotec_zw090_zstick_gen5_us
+  name: Aeotec ZW090 Z-Stick Gen5 US
+- entity_id: zwave.office_ceiling_lights
+  name: Leviton DZ6HD-1BZ Decora 600W Smart Dimmer
+- entity_id: zwave.office_closet_lights
+  name: Leviton DZ15S-1BZ Decora Smart Switch
+- entity_id: light.office_ceiling_lights
+  name: Office Ceiling Lights
+- entity_id: group.all_lights
+  name: all lights
+- entity_id: switch.office_closet_lights
+  name: Office Closet Lights
+- entity_id: zwave.office_closet_door_sensor
+  name: Aeotec ZW120 Door Window Sensor Gen5
+- entity_id: binary_sensor.office_closet_door_sensor
+  name: Office Closet Door Sensor
+- entity_id: sensor.office_closet_door_sensor_alarm_type
+  name: Office Closet Door Sensor Alarm Type
+- entity_id: sensor.office_closet_door_sensor_alarm_level
+  name: Office Closet Door Sensor Alarm Level
+- entity_id: sensor.office_closet_door_sensor_sourcenodeid
+  name: Office Closet Door Sensor sourcenodeid
+- entity_id: sensor.office_closet_door_sensor_access_control
+  name: Office Closet Door Sensor Access Control
+- entity_id: sensor.office_closet_door_sensor_burglar
+  name: Office Closet Door Sensor Burglar
+- entity_id: zwave.server_closet_lights
+  name: Linear LB60Z-1 Dimmable LED Light Bulb
+- entity_id: light.server_closet_lights
+  name: Server Closet Light
+- entity_id: zwave.server_closet_door_sensor
+  name: Aeotec ZW120 Door Window Sensor Gen5
+- entity_id: binary_sensor.server_closet_door_sensor
+  name: Server Closet Door Sensor
+- entity_id: sensor.server_closet_door_sensor_alarm_type
+  name: Server Closet Door Sensor Alarm Type
+- entity_id: sensor.server_closet_door_sensor_alarm_level
+  name: Server Closet Door Sensor Alarm Level
+- entity_id: sensor.server_closet_door_sensor_sourcenodeid
+  name: Server Closet Door Sensor sourcenodeid
+- entity_id: sensor.server_closet_door_sensor_access_control
+  name: Server Closet Door Sensor Access Control
+- entity_id: sensor.server_closet_door_sensor_burglar
+  name: Server Closet Door Sensor Burglar
+- entity_id: zwave.guest_bedroom_ceiling_lights
+  name: Leviton DZ6HD-1BZ Decora 600W Smart Dimmer
+- entity_id: light.guest_bedroom_ceiling_lights
+  name: Guest Bedroom Ceiling Lights
+- entity_id: zwave.guest_bedroom_closet_lights
+  name: Leviton DZ15S-1BZ Decora Smart Switch
+- entity_id: switch.guest_bedroom_closet_lights
+  name: Guest Bedroom Closet Lights
+- entity_id: zwave.guest_bedroom_closet_door_sensor
+  name: Aeotec ZW120 Door Window Sensor Gen5
+- entity_id: binary_sensor.guest_bedroom_closet_door_sensor
+  name: Guest Bedroom Closet Door Sensor
+- entity_id: sensor.guest_bedroom_closet_door_sensor_alarm_type
+  name: Guest Bedroom Closet Door Sensor Alarm Type
+- entity_id: sensor.guest_bedroom_closet_door_sensor_alarm_level
+  name: Guest Bedroom Closet Door Sensor Alarm Level
+- entity_id: sensor.guest_bedroom_closet_door_sensor_sourcenodeid
+  name: Guest Bedroom Closet Door Sensor sourcenodeid
+- entity_id: sensor.guest_bedroom_closet_door_sensor_access_control
+  name: Guest Bedroom Closet Door Sensor Access Control
+- entity_id: sensor.guest_bedroom_closet_door_sensor_burglar
+  name: Guest Bedroom Closet Door Sensor Burglar
+- entity_id: zwave.utility_closet_lights
+  name: Leviton DZ15S-1BZ Decora Smart Switch
+- entity_id: switch.utility_closet_lights
+  name: Utility Closet Lights
+- entity_id: zwave.utility_closet_door_sensor
+  name: Aeotec ZW120 Door Window Sensor Gen5
+- entity_id: binary_sensor.utility_closet_door_sensor
+  name: Utility Closet Door Sensor
+- entity_id: sensor.utility_closet_door_sensor_alarm_type
+  name: Utility Closet Door Sensor Alarm Type
+- entity_id: sensor.utility_closet_door_sensor_alarm_level
+  name: Utility Closet Door Sensor Alarm Level
+- entity_id: sensor.utility_closet_door_sensor_sourcenodeid
+  name: Utility Closet Door Sensor sourcenodeid
+- entity_id: sensor.utility_closet_door_sensor_access_control
+  name: Utility Closet Door Sensor Access Control
+- entity_id: sensor.utility_closet_door_sensor_burglar
+  name: Utility Closet Door Sensor Burglar
+- entity_id: zwave.downstairs_hallway_lights
+  name: Leviton DZ6HD-1BZ Decora 600W Smart Dimmer
+- entity_id: zwave.stairway_lights
+  name: Leviton DZ6HD-1BZ Decora 600W Smart Dimmer
+- entity_id: light.downstairs_hallway_lights
+  name: Downstairs Hallway Lights
+- entity_id: light.stairway_lights
+  name: Stairway Lights
+- entity_id: zwave.upstairs_hallway_lights
+  name: Leviton DZ6HD-1BZ Decora 600W Smart Dimmer
+- entity_id: light.upstairs_hallway_lights
+  name: Upstairs Hallway Lights
+- entity_id: zwave.coat_closet_lights
+  name: Leviton DZ15S-1BZ Decora Smart Switch
+- entity_id: zwave.laundry_closet_lights
+  name: Leviton DZ15S-1BZ Decora Smart Switch
+- entity_id: switch.coat_closet_lights
+  name: Coat Closet Lights
+- entity_id: zwave.laundry_closet_door_sensor
+  name: Ecolink Door/Window Sensor
+- entity_id: switch.laundry_closet_lights
+  name: Laundry Closet Lights
+- entity_id: binary_sensor.laundry_closet_door_sensor
+  name: Laundry Closet Door Sensor
+- entity_id: sensor.laundry_closet_door_sensor_alarm_type
+  name: Laundry Closet Door Sensor Alarm Type
+- entity_id: sensor.laundry_closet_door_sensor_alarm_level
+  name: Laundry Closet Door Sensor Alarm Level
+- entity_id: sensor.laundry_closet_door_sensor_sourcenodeid
+  name: Laundry Closet Door Sensor sourcenodeid
+- entity_id: sensor.laundry_closet_door_sensor_access_control
+  name: Laundry Closet Door Sensor Access Control
+- entity_id: sensor.laundry_closet_door_sensor_burglar
+  name: Laundry Closet Door Sensor Burglar
+- entity_id: sensor.laundry_closet_door_sensor_power_management
+  name: Laundry Closet Door Sensor Power Management
+- entity_id: zwave.coat_closet_door_sensor
+  name: Ecolink Door/Window Sensor
+- entity_id: binary_sensor.coat_closet_door_sensor
+  name: Coat Closet Door Sensor
+- entity_id: sensor.coat_closet_door_sensor_alarm_type
+  name: Coat Closet Door Sensor Alarm Type
+- entity_id: sensor.coat_closet_door_sensor_alarm_level
+  name: Coat Closet Door Sensor Alarm Level
+- entity_id: sensor.coat_closet_door_sensor_sourcenodeid
+  name: Coat Closet Door Sensor sourcenodeid
+- entity_id: sensor.coat_closet_door_sensor_access_control
+  name: Coat Closet Door Sensor Access Control
+- entity_id: sensor.coat_closet_door_sensor_burglar
+  name: Coat Closet Door Sensor Burglar
+- entity_id: sensor.coat_closet_door_sensor_power_management
+  name: Coat Closet Door Sensor Power Management
+- entity_id: zwave.front_door_lock
+  name: Schlage BE469 Touchscreen Deadbolt
+- entity_id: lock.front_door_lock
+  name: Front Door Lock
+- entity_id: group.all_locks
+  name: all locks
+- entity_id: sensor.front_door_lock_alarm_type
+  name: Front Door Lock Alarm Type
+- entity_id: sensor.front_door_lock_alarm_level
+  name: Front Door Lock Alarm Level
+- entity_id: sensor.front_door_lock_sourcenodeid
+  name: Front Door Lock sourcenodeid
+- entity_id: sensor.front_door_lock_access_control
+  name: Front Door Lock Access Control
+- entity_id: sensor.front_door_lock_burglar
+  name: Front Door Lock Burglar
+- entity_id: sensor.front_door_lock_power_management
+  name: Front Door Lock Power Management
+- entity_id: zwave.back_door_lock
+  name: Schlage BE469 Touchscreen Deadbolt
+- entity_id: sensor.front_door_lock_system
+  name: Front Door Lock System
+- entity_id: lock.back_door_lock
+  name: Back Door Lock
+- entity_id: sensor.back_door_lock_alarm_type
+  name: Back Door Lock Alarm Type
+- entity_id: sensor.back_door_lock_alarm_level
+  name: Back Door Lock Alarm Level
+- entity_id: sensor.back_door_lock_sourcenodeid
+  name: Back Door Lock sourcenodeid
+- entity_id: sensor.back_door_lock_access_control
+  name: Back Door Lock Access Control
+- entity_id: sensor.back_door_lock_burglar
+  name: Back Door Lock Burglar
+- entity_id: sensor.back_door_lock_power_management
+  name: Back Door Lock Power Management
+- entity_id: sensor.back_door_lock_system
+  name: Back Door Lock system
+- entity_id: zwave.master_bedroom_fan_lights
+  name: Leviton DZ15S-1BZ Decora Smart Switch
+- entity_id: switch.master_bedroom_fan_lights
+  name: Master Bedroom Fan Lights
+- entity_id: zwave.master_bedroom_ceiling_lights
+  name: Leviton DZ6HD-1BZ Decora 600W Smart Dimmer
+- entity_id: light.master_bedroom_ceiling_lights
+  name: Master Bedroom Ceiling Lights
+- entity_id: zwave.master_bedroom_ceiling_fan
+  name: Leviton DZ15S-1BZ Decora Smart Switch
+- entity_id: switch.master_bedroom_ceiling_fan
+  name: Master Bedroom Ceiling Fan
+- entity_id: zwave.master_bedroom_closet_lights
+  name: Leviton DZ15S-1BZ Decora Smart Switch
+- entity_id: switch.master_bedroom_closet_lights
+  name: Master Bedroom Closet Lights
+- entity_id: zwave.master_bedroom_closet_door_sensor
+  name: Ecolink Door/Window Sensor
+- entity_id: binary_sensor.master_bedroom_closet_door_sensor
+  name: Master Bedroom Closet Door Sensor
+- entity_id: sensor.master_bedroom_closet_door_sensor_alarm_type
+  name: Master Bedroom Closet Door Sensor Alarm Type
+- entity_id: sensor.master_bedroom_closet_door_sensor_alarm_level
+  name: Master Bedroom Closet Door Sensor Alarm Level
+- entity_id: sensor.master_bedroom_closet_door_sensor_sourcenodeid
+  name: Master Bedroom Closet Door Sensor sourcenodeid
+- entity_id: sensor.master_bedroom_closet_door_sensor_access_control
+  name: Master Bedroom Closet Door Sensor Access Control
+- entity_id: sensor.master_bedroom_closet_door_sensor_burglar
+  name: Master Bedroom Closet Door Sensor Burglar
+- entity_id: sensor.master_bedroom_closet_door_sensor_power_management
+  name: Master Bedroom Closet Door Sensor Power Management
+- entity_id: zwave.master_bedroom_closet_motion_detector
+  name: Ecolink Motion Detector
+- entity_id: binary_sensor.master_bedroom_closet_motion_detector
+  name: Master Bedroom Closet Motion Detector
+- entity_id: sensor.master_bedroom_closet_motion_detector_alarm_type
+  name: Master Bedroom Closet Motion Detector Alarm Type
+- entity_id: sensor.master_bedroom_closet_motion_detector_alarm_level
+  name: Master Bedroom Closet Motion Detector Alarm Level
+- entity_id: sensor.master_bedroom_closet_motion_detector_sourcenodeid
+  name: Master Bedroom Closet Motion Detector sourcenodeid
+- entity_id: sensor.master_bedroom_closet_motion_detector_burglar
+  name: Master Bedroom Closet Motion Detector Burglar
+- entity_id: sensor.master_bedroom_closet_motion_detector_power_management
+  name: Master Bedroom Closet Motion Detector Power Management
+- entity_id: zwave.master_bedroom_bedside_lamp
+  name: Linear LB60Z-1 Dimmable LED Light Bulb
+- entity_id: light.master_bedroom_bedside_lamp
+  name: Master Bedroom Bedside Lamp
+- entity_id: zwave.master_bedroom_rock_salt_lamp
+  name: Neo CoolCam Power plug 12A
+- entity_id: switch.master_bedroom_rock_salt_lamp
+  name: Master Bedroom Rock Salt Lamp
+- entity_id: sensor.master_bedroom_rock_salt_lamp_energy
+  name: Master Bedroom Rock Salt Lamp Energy
+- entity_id: sensor.master_bedroom_rock_salt_lamp_previous_reading
+  name: Master Bedroom Rock Salt Lamp Previous Reading
+- entity_id: sensor.master_bedroom_rock_salt_lamp_interval
+  name: Master Bedroom Rock Salt Lamp Interval
+- entity_id: sensor.master_bedroom_rock_salt_lamp_power
+  name: Master Bedroom Rock Salt Lamp Power
+- entity_id: sensor.master_bedroom_rock_salt_lamp_previous_reading_alt
+  name: Master Bedroom Rock Salt Lamp Previous Reading Alt
+- entity_id: sensor.master_bedroom_bedside_fan_interval
+  name: Master Bedroom Bedside Fan Interval
+- entity_id: sensor.master_bedroom_rock_salt_lamp_voltage
+  name: Master Bedroom Rock Salt Lamp Voltage
+- entity_id: sensor.master_bedroom_rock_salt_lamp_previous_reading_2
+  name: Master Bedroom Rock Salt Lamp Previous Reading 2
+- entity_id: sensor.master_bedroom_rock_salt_lamp_interval_2
+  name: Master Bedroom Rock Salt Lamp Interval 2
+- entity_id: sensor.master_bedroom_rock_salt_lamp_current
+  name: Master Bedroom Rock Salt Lamp Current
+- entity_id: sensor.master_bedroom_rock_salt_lamp_previous_reading_3
+  name: Master Bedroom Rock Salt Lamp Previous Reading 3
+- entity_id: sensor.master_bedroom_rock_salt_lamp_interval_3
+  name: Master Bedroom Rock Salt Lamp Interval 3
+- entity_id: sensor.master_bedroom_rock_salt_lamp_exporting
+  name: Master Bedroom Rock Salt Lamp Exporting
+- entity_id: sensor.master_bedroom_rock_salt_lamp_alarm_type
+  name: Master Bedroom Rock Salt Lamp Alarm Type
+- entity_id: sensor.master_bedroom_rock_salt_lamp_alarm_level
+  name: Master Bedroom Rock Salt Lamp Alarm Level
+- entity_id: sensor.master_bedroom_rock_salt_lamp_sourcenodeid
+  name: Master Bedroom Rock Salt Lamp sourcenodeid
+- entity_id: sensor.master_bedroom_rock_salt_lamp_power_management
+  name: Master Bedroom Rock Salt Lamp Power Management
+- entity_id: zwave.master_bedroom_bedside_fan
+  name: Neo CoolCam Power plug 12A
+- entity_id: switch.master_bedroom_bedside_fan
+  name: Master Bedroom Bedside Fan
+- entity_id: sensor.master_bedroom_bedside_fan_energy
+  name: Master Bedroom Bedside Fan Energy
+- entity_id: sensor.master_bedroom_bedside_fan_previous_reading_2
+  name: Master Bedroom Bedside Fan Previous Reading 2
+- entity_id: sensor.master_bedroom_bedside_fan_interval_2
+  name: Master Bedroom Bedside Fan Interval 2
+- entity_id: sensor.master_bedroom_bedside_fan_power
+  name: Master Bedroom Bedside Fan Power
+- entity_id: sensor.master_bedroom_bedside_fan_previous_reading_3
+  name: Master Bedroom Bedside Fan Previous Reading 3
+- entity_id: sensor.master_bedroom_bedside_fan_interval_3
+  name: Master Bedroom Bedside Fan Interval 3
+- entity_id: sensor.master_bedroom_bedside_fan_voltage_alt
+  name: Master Bedroom Bedside Fan Voltage Alt
+- entity_id: sensor.master_bedroom_bedside_fan_previous_reading_4
+  name: Master Bedroom Bedside Fan Previous Reading 4
+- entity_id: sensor.master_bedroom_bedside_fan_interval_4
+  name: Master Bedroom Bedside Fan Interval 4
+- entity_id: sensor.master_bedroom_bedside_fan_current
+  name: Master Bedroom Bedside Fan Current
+- entity_id: sensor.master_bedroom_bedside_fan_previous_reading_5
+  name: Master Bedroom Bedside Fan Previous Reading 5
+- entity_id: sensor.master_bedroom_bedside_fan_interval_5
+  name: Master Bedroom Bedside Fan Interval 5
+- entity_id: sensor.master_bedroom_bedside_fan_exporting
+  name: Master Bedroom Bedside Fan Exporting
+- entity_id: sensor.master_bedroom_bedside_fan_alarm_type
+  name: Master Bedroom Bedside Fan Alarm Type
+- entity_id: sensor.master_bedroom_bedside_fan_alarm_level
+  name: Master Bedroom Bedside Fan Alarm Level
+- entity_id: sensor.master_bedroom_bedside_fan_voltage
+  name: Master Bedroom Bedside Fan Voltage
+- entity_id: sensor.master_bedroom_bedside_fan_power_management
+  name: Master Bedroom Bedside Fan Power Management
+- entity_id: zwave.hallway_christmas_lights
+  name: Neo CoolCam Power plug 12A
+- entity_id: switch.hallway_christmas_lights
+  name: Hallway Christmas Lights
+- entity_id: sensor.hallway_christmas_lights_energy
+  name: Hallway Christmas Lights Energy
+- entity_id: sensor.hallway_christmas_lights_previous_reading
+  name: Hallway Christmas Lights Previous Reading
+- entity_id: sensor.hallway_christmas_lights_interval
+  name: Hallway Christmas Lights Interval
+- entity_id: sensor.hallway_christmas_lights_power
+  name: Hallway Christmas Lights Power
+- entity_id: sensor.hallway_christmas_lights_previous_reading_2
+  name: Hallway Christmas Lights Previous Reading 2
+- entity_id: sensor.hallway_christmas_lights_interval_2
+  name: Hallway Christmas Lights Interval 2
+- entity_id: sensor.hallway_christmas_lights_voltage
+  name: Hallway Christmas Lights voltage
+- entity_id: sensor.hallway_christmas_lights_previous_reading_3
+  name: Hallway Christmas Lights Previous Reading 3
+- entity_id: sensor.hallway_christmas_lights_interval_3
+  name: Hallway Christmas Lights Interval 3
+- entity_id: sensor.hallway_christmas_lights_current
+  name: Hallway Christmas Lights Current
+- entity_id: sensor.hallway_christmas_lights_previous_reading_4
+  name: Hallway Christmas Lights Previous Reading 4
+- entity_id: sensor.hallway_christmas_lights_interval_4
+  name: Hallway Christmas Lights Interval 4
+- entity_id: sensor.hallway_christmas_lights_exporting
+  name: Hallway Christmas Lights Exporting
+- entity_id: zwave.kitchen_ceiling_lights
+  name: Leviton DZ6HD-1BZ Decora 600W Smart Dimmer
+- entity_id: sensor.hallway_christmas_lights_alarm_type
+  name: Hallway Christmas Lights Alarm type
+- entity_id: sensor.hallway_christmas_lights_alarm_level
+  name: Hallway Christmas Lights Alarm Level
+- entity_id: sensor.hallway_christmas_lights_sourcenodeid
+  name: Neo CoolCam Power plug 12A SourceNodeId
+- entity_id: sensor.hallway_christmas_lights_power_management
+  name: Hallway Christmas Lights Power Management
+- entity_id: light.kitchen_ceiling_lights
+  name: Kitchen Ceiling Lights
+- entity_id: zwave.kitchen_bar_lights
+  name: Leviton DZ15S-1BZ Decora Smart Switch
+- entity_id: switch.kitchen_bar_lights
+  name: Kitchen Bar Lights
+- entity_id: zwave.kitchen_over_cabinet_lights
+  name: Neo CoolCam Power plug 12A
+- entity_id: switch.kitchen_over_cabinet_lights
+  name: Kitchen Over Cabinet Lights
+- entity_id: sensor.kitchen_over_cabinet_lights_energy
+  name: Neo CoolCam Power plug 12A Energy
+- entity_id: sensor.kitchen_over_cabinet_lights_previous_reading
+  name: Neo CoolCam Power plug 12A Previous Reading
+- entity_id: sensor.kitchen_over_cabinet_lights_interval
+  name: Neo CoolCam Power plug 12A Interval
+- entity_id: sensor.kitchen_over_cabinet_lights_interval_power
+  name: Neo CoolCam Power plug 12A Power
+- entity_id: sensor.kitchen_over_cabinet_lights_previous_reading_2
+  name: Neo CoolCam Power plug 12A Previous Reading
+- entity_id: sensor.kitchen_over_cabinet_lights_interval_2
+  name: Neo CoolCam Power plug 12A Interval
+- entity_id: sensor.kitchen_over_cabinet_lights_voltage
+  name: Neo CoolCam Power plug 12A Voltage
+- entity_id: sensor.kitchen_over_cabinet_lights_previous_reading_3
+  name: Neo CoolCam Power plug 12A Previous Reading
+- entity_id: sensor.kitchen_over_cabinet_lights_interval_3
+  name: Neo CoolCam Power plug 12A Interval
+- entity_id: sensor.kitchen_over_cabinet_lights_current
+  name: Neo CoolCam Power plug 12A Current
+- entity_id: sensor.kitchen_over_cabinet_lights_previous_reading_4
+  name: Neo CoolCam Power plug 12A Previous Reading
+- entity_id: sensor.kitchen_over_cabinet_lights_interval_4
+  name: Neo CoolCam Power plug 12A Interval
+- entity_id: sensor.kitchen_over_cabinet_lights_exporting
+  name: Neo CoolCam Power plug 12A Exporting
+- entity_id: sensor.kitchen_over_cabinet_lights_alarm_type
+  name: Neo CoolCam Power plug 12A Alarm Type
+- entity_id: sensor.kitchen_over_cabinet_lights_alarm_level
+  name: Neo CoolCam Power plug 12A Alarm Level
+- entity_id: sensor.kitchen_over_cabinet_lights_sourcenodeid
+  name: Neo CoolCam Power plug 12A SourceNodeId
+- entity_id: sensor.kitchen_over_cabinet_lights_power
+  name: Neo CoolCam Power plug 12A Power Management
+- entity_id: zwave.kitchen_sink_lights
+  name: Leviton DZ6HD-1BZ Decora 600W Smart Dimmer
+- entity_id: light.kitchen_sink_lights
+  name: Kitchen Sink Lights
+- entity_id: zwave.kitchen_under_cabinet_lights
+  name: Leviton DZ15S-1BZ Decora Smart Switch
+- entity_id: switch.kitchen_under_cabinet_lights
+  name: Kitchen Under Cabinet Lights
+- entity_id: zwave.wax_diffuser
+  name: Neo CoolCam Power plug 12A
+- entity_id: switch.wax_diffuser
+  name: Wax Diffuser
+- entity_id: sensor.wax_diffuser_energy
+  name: Neo CoolCam Power plug 12A Energy
+- entity_id: sensor.neo_coolcam_power_plug_12a_previous_reading
+  name: Neo CoolCam Power plug 12A Previous Reading
+- entity_id: sensor.neo_coolcam_power_plug_12a_interval
+  name: Neo CoolCam Power plug 12A Interval
+- entity_id: sensor.wax_diffuser_power
+  name: Neo CoolCam Power plug 12A Power
+- entity_id: sensor.neo_coolcam_power_plug_12a_previous_reading_2
+  name: Neo CoolCam Power plug 12A Previous Reading
+- entity_id: sensor.neo_coolcam_power_plug_12a_interval_2
+  name: Neo CoolCam Power plug 12A Interval
+- entity_id: sensor.wax_diffuser_voltage
+  name: Neo CoolCam Power plug 12A Voltage
+- entity_id: sensor.neo_coolcam_power_plug_12a_previous_reading_3
+  name: Neo CoolCam Power plug 12A Previous Reading
+- entity_id: sensor.neo_coolcam_power_plug_12a_interval_3
+  name: Neo CoolCam Power plug 12A Interval
+- entity_id: sensor.wax_diffuser_current
+  name: Neo CoolCam Power plug 12A Current
+- entity_id: sensor.neo_coolcam_power_plug_12a_previous_reading_4
+  name: Neo CoolCam Power plug 12A Previous Reading
+- entity_id: sensor.neo_coolcam_power_plug_12a_interval_4
+  name: Neo CoolCam Power plug 12A Interval
+- entity_id: sensor.wax_diffuser_exporting
+  name: Neo CoolCam Power plug 12A Exporting
+- entity_id: sensor.wax_diffuser_alarm_type
+  name: Neo CoolCam Power plug 12A Alarm Type
+- entity_id: sensor.wax_diffuser_alarm_level
+  name: Neo CoolCam Power plug 12A Alarm Level
+- entity_id: zwave.bookshelf_lamp
+  name: Linear LB60Z-1 Dimmable LED Light Bulb
+- entity_id: light.bookshelf_lamp
+  name: Bookshelf Lamp
+- entity_id: zwave.tv_lights
+  name: Leviton DZ6HD-1BZ Decora 600W Smart Dimmer
+- entity_id: light.tv_lights
+  name: TV Lights
+- entity_id: zwave.reading_chair_light
+  name: Linear LB60Z-1 Dimmable LED Light Bulb
+- entity_id: light.reading_chair_light
+  name: Reading Chair Light
+- entity_id: zwave.fireplace_light
+  name: Linear LB60Z-1 Dimmable LED Light Bulb
+- entity_id: light.fireplace_light
+  name: Fireplace Light
+- entity_id: zwave.christmas_tree
+  name: Neo CoolCam Power plug 12A
+- entity_id: switch.christmas_tree
+  name: Christmas Tree
+- entity_id: sensor.christmas_tree_energy
+  name: Neo CoolCam Power plug 12A Energy
+- entity_id: sensor.christmas_tree_previous_reading
+  name: Neo CoolCam Power plug 12A Previous Reading
+- entity_id: sensor.christmas_tree_interval
+  name: Neo CoolCam Power plug 12A Interval
+- entity_id: sensor.christmas_tree_power
+  name: Neo CoolCam Power plug 12A Power
+- entity_id: sensor.christmas_tree_previous_reading_4
+  name: Neo CoolCam Power plug 12A Previous Reading
+- entity_id: sensor.christmas_tree_interval_4
+  name: Neo CoolCam Power plug 12A Interval
+- entity_id: sensor.christmas_tree_voltage
+  name: Neo CoolCam Power plug 12A Voltage
+- entity_id: sensor.christmas_tree_previous_reading_2
+  name: Neo CoolCam Power plug 12A Previous Reading
+- entity_id: sensor.christmas_tree_interval_2
+  name: Neo CoolCam Power plug 12A Interval
+- entity_id: sensor.christmas_tree_current
+  name: Neo CoolCam Power plug 12A Current
+- entity_id: sensor.christmas_tree_previous_reading_3
+  name: Neo CoolCam Power plug 12A Previous Reading
+- entity_id: sensor.christmas_tree_interval_3
+  name: Neo CoolCam Power plug 12A Interval
+- entity_id: sensor.christmas_tree_exporting
+  name: Neo CoolCam Power plug 12A Exporting
+- entity_id: sensor.christmas_tree_alarm_type
+  name: Neo CoolCam Power plug 12A Alarm Type
+- entity_id: sensor.christmas_tree_alarm_level
+  name: Neo CoolCam Power plug 12A Alarm Level
+- entity_id: sensor.christmas_tree_sourcenodeid
+  name: Neo CoolCam Power plug 12A SourceNodeId
+- entity_id: sensor.christmas_tree_power_management
+  name: Neo CoolCam Power plug 12A Power Management
+- entity_id: zwave.couch_light
+  name: Linear LB60Z-1 Dimmable LED Light Bulb
+- entity_id: light.couch_light
+  name: Couch Light
+- entity_id: zwave.deck_lights
+  name: Leviton DZ15S-1BZ Decora Smart Switch
+- entity_id: switch.deck_lights
+  name: Deck Lights
+- entity_id: zwave.living_room_ceiling_lights
+  name: Leviton DZ6HD-1BZ Decora 600W Smart Dimmer
+- entity_id: light.living_room_ceiling_lights
+  name: Living Room Ceiling Lights
+- entity_id: zwave.dining_table_lights
+  name: Leviton DZ6HD-1BZ Decora 600W Smart Dimmer
+- entity_id: light.dining_table_lights
+  name: Dining Table Lights
+- entity_id: zwave.living_room_ceiling_fan
+  name: Leviton DZ15S-1BZ Decora Smart Switch
+- entity_id: switch.living_room_ceiling_fan
+  name: Living Room Ceiling Fan
+- entity_id: device_tracker.andrews_iphone
+  name: Unicorn Wrangler
+- entity_id: input_select.living_room_universal
+  name: Living Room Universal Source

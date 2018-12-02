@@ -4,9 +4,9 @@ master_suite:
   entities:
     - light.master_bedroom_ceiling_lights
     - light.master_bedroom_bedside_lamp
-    - switch.master_bedroom_closet_lights
-    - switch.master_bedroom_fan_lights
-    - switch.master_bedroom_rock_salt_lamp
+    - light.master_bedroom_closet_lights
+    - light.master_bedroom_fan_lights
+    - light.master_bedroom_rock_salt_lamp
     - binary_sensor.master_bedroom_closet_door_sensor
     - fan.master_bedroom_ceiling_fan
     - fan.master_bedroom_bedside_fan
