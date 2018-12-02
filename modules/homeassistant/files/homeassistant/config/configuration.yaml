@@ -57,6 +57,9 @@ sensor:
     sensors: !include device_types/battery.yaml
   - platform: awair
     access_token: !secret awair_access_token
+  - platform: kryptonite
+    username: !secret nest_username
+    password: !secret nest_password
 binary_sensor:
   - platform: ring
 panel_custom:

@@ -15,6 +15,12 @@ homeassistant::custom_components:
     branch: 'ahayworth-schlage-locks'
     checksum_value: '0e965d96e8fa0a886f2c3e7234965951'
     file: 'homeassistant/components/lock/zwave.py'
+  kryptonite:
+    provider: 'remote'
+    repo: 'ahayworth/home-assistant'
+    branch: 'ahayworth-kryptonite'
+    checksum_value: '2f399e6661efe6ca41352c44552c2d8d'
+    file: 'homeassistant/components/sensor/kryptonite.py'
   xbox_one:
     provider: 'local'
     component: 'media_player'
