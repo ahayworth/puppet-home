@@ -7,6 +7,7 @@ class homeassistant::config(
     ensure  => directory,
     recurse => remote,
     source  => 'puppet:///modules/homeassistant/homeassistant/config',
+    ignore  => 'custom_components',
     require => File[$homeassistant_dir],
   }
 

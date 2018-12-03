@@ -13,6 +13,9 @@ define homeassistant::custom_component (
     file { "${config_custom}":
       ensure  => directory,
       recurse => true,
+      purge   => true,
+      force   => true,
+      ignore  => '__pycache__',
       require => File[$config_dir],
     }
   }
