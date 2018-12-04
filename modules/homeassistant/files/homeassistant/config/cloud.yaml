@@ -161,6 +161,9 @@ google_actions:
       room: master bedroom
       aliases:
         - 'master bedroom fan light'
+        - 'master bedroom fan lights'
+        - 'master bedroom ceiling fan light'
+        - 'master bedroom ceiling fan lights'
         - 'fan lights'
         - 'fan light'
     light.master_bedroom_rock_salt_lamp:
