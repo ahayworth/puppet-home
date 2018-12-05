@@ -6,84 +6,20 @@ homeassistant:
   unit_system: imperial
   time_zone: America/Chicago
   customize: !include customize.yaml
-frontend:
 config:
-http:
-  base_url: !secret base_url
-updater:
-  include_used_components: true
+frontend:
 history:
 logbook:
 map:
 sun:
-google_assistant:
-  api_key: !secret google_assistant_api_key
-  project_id: !secret google_assistant_project_id
-  expose_by_default: true
-nest:
-  client_id: !secret nest_client_id
-  client_secret: !secret nest_client_secret
+wake_on_lan:
+http:
+  base_url: !secret base_url
+updater:
+  include_used_components: true
 recorder:
   db_url: !secret postgres_url
-zwave:
-  usb_path: /dev/ttyACM0
-  network_key: !secret zwave_network_key
-  autoheal: false
-  device_config_domain:
-    light:
-      refresh_value: True
-      delay: 5
-abode:
-  username: !secret abode_username
-  password: !secret abode_password
-device_tracker:
-  - platform: unifi
-    consider_home: 300
-    #track_new_devices: no
-    host: 192.168.0.210
-    port: 8443
-    verify_ssl: false
-    username: !secret unifi_username
-    password: !secret unifi_password
-    ssid_filter:
-      - 'skynet'
-ios: !include ios.yaml
-ring:
-  username: !secret ring_username
-  password: !secret ring_password
-sensor:
-  - platform: ring
-  - platform: template
-    sensors: !include device_types/battery.yaml
-  - platform: awair
-    access_token: !secret awair_access_token
-  - platform: kryptonite
-    username: !secret nest_username
-    password: !secret nest_password
-binary_sensor:
-  - platform: ring
-panel_custom:
-  name: zwavegraph2
-  sidebar_title: ZWave Graph2
-  sidebar_icon: mdi:access-point-network
-  url_path: zwave
-wake_on_lan:
-fan: !include device_types/fan.yaml
-media_player: !include device_types/media_player.yaml
-group: !include_dir_merge_named group/
-automation: !include automations.yaml
-scene: !include scene.yaml
-homekit: !include homekit.yaml
-cloud: !include cloud.yaml
-apple_tv: !include device_types/apple_tv.yaml
-script: !include_dir_named script/
-input_select: !include input/input_select.yaml
-light: !include device_types/light.yaml
-remote:
-  - platform: harmony
-    name: Living Room Harmony
-    host: 192.168.0.155
-switch: !include device_types/switch.yaml
+zwave: !include zwave.yaml
 logger:
   default: info
   logs:
@@ -91,3 +27,28 @@ logger:
     homeassistant.components.cloud.iot: debug
     homeassistant.components.cloud: debug
     homeassistant.components.google_assistant: debug
+
+abode: !include platforms/abode.yaml
+nest: !include platforms/nest.yaml
+ring: !include platforms/ring.yaml
+
+apple_tv: !include device_types/apple_tv.yaml
+binary_sensor: !include device_types/binary_sensor.yaml
+fan: !include device_types/fan.yaml
+light: !include device_types/light.yaml
+media_player: !include device_types/media_player.yaml
+remote: !include device_types/remote.yaml
+sensor: !include device_types/sensor.yaml
+switch: !include device_types/switch.yaml
+
+group: !include_dir_merge_named group/
+input_select: !include input/input_select.yaml
+script: !include_dir_named script/
+
+automation: !include automations.yaml
+cloud: !include cloud.yaml
+device_tracker: !include device_tracker.yaml
+homekit: !include homekit.yaml
+ios: !include ios.yaml
+panel_custom: !include panel_custom.yaml
+scene: !include scene.yaml

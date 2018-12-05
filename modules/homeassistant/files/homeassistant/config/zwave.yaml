@@ -1,0 +1,7 @@
+usb_path: /dev/ttyACM0
+network_key: !secret zwave_network_key
+autoheal: false
+device_config_domain:
+  light:
+    refresh_value: True
+    delay: 5

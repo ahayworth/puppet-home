@@ -1,0 +1,10 @@
+- platform: unifi
+  consider_home: 300
+  #track_new_devices: no
+  host: 192.168.0.210
+  port: 8443
+  verify_ssl: false
+  username: !secret unifi_username
+  password: !secret unifi_password
+  ssid_filter:
+    - 'skynet'

@@ -1,0 +1,8 @@
+- platform: ring
+- platform: template
+  sensors: !include battery.yaml
+- platform: awair
+  access_token: !secret awair_access_token
+- platform: kryptonite
+  username: !secret nest_username
+  password: !secret nest_password
