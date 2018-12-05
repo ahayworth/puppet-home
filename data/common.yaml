@@ -19,7 +19,7 @@ homeassistant::custom_components:
     provider: 'remote'
     repo: 'ahayworth/home-assistant'
     branch: 'ahayworth-kryptonite'
-    checksum_value: '2f399e6661efe6ca41352c44552c2d8d'
+    checksum_value: 'd18849aae140f07fd1dfbeb1607daada'
     file: 'homeassistant/components/sensor/kryptonite.py'
   xbox_one:
     provider: 'local'
