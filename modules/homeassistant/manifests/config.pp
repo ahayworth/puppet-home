@@ -2,6 +2,7 @@ class homeassistant::config(
   String $config_dir,
   String $homeassistant_dir = lookup('homeassistant::homeassistant_dir'),
   Hash $custom_components = lookup('homeassistant::custom_components', {}),
+  Hash $remote_serial_connections = lookup('homeassistant::remote_serial_connections', {}),
 ){
   file { $config_dir:
     ensure  => directory,
@@ -29,6 +30,12 @@ class homeassistant::config(
       content => template("homeassistant/${type}.yaml.erb"),
       ensure  => present,
       require => File[$config_dir],
+    }
+  }
+
+  $remote_serial_connections.each |String $name, Hash $options| {
+    homeassistant::remote_serial { "$name":
+      * => $options
     }
   }
 }

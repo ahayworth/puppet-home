@@ -1,0 +1,7 @@
+[Unit]
+Description=socat <%= @name %>
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/socat pty,link=<%= @local_socket %>,raw,mode=666 tcp:<%= @remote_addr %>
