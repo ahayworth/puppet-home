@@ -17,3 +17,8 @@ great_room:
     - light.kitchen_over_cabinet_lights
     - light.kitchen_under_cabinet_lights
     - switch.wax_diffuser
+    - sensor.awair_co2
+    - sensor.awair_humidity
+    - sensor.awair_pm25
+    - sensor.awair_temperature
+    - sensor.awair_score

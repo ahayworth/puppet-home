@@ -20,6 +20,7 @@ google_actions:
       room: living room
       aliases:
         - 'bookshelf light'
+        - 'bookcase light'
     light.couch_light:
       room: living room
       aliases:
