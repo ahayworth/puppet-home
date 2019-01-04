@@ -7,7 +7,6 @@ google_actions:
       - fan
     include_entities:
       - group.great_room_lights
-      - group.christmas_lights
       - scene.bedtime
       - scene.morning
       - scene.work
@@ -115,8 +114,6 @@ google_actions:
       room: guest bedroom
       aliases:
         - 'guest bedroom closet light'
-    light.hallway_christmas_lights:
-      room: upstairs hallway
     light.kitchen_bar_lights:
       room: kitchen
       aliases:

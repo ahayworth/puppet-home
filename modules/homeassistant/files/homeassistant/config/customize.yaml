@@ -25,7 +25,3 @@ binary_sensor.west_door:
 binary_sensor.patio_door:
   device_class: door
   icon: mdi:door
-switch.christmas_tree:
-  icon: mdi:pine-tree
-switch.hallway_christmas_lights:
-  icon: mdi:pine-tree

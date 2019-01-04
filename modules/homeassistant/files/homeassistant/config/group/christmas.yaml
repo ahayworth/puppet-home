@@ -1,6 +1,0 @@
-christmas_lights:
-  name: Christmas Lights
-  view: yes
-  entities:
-    - light.hallway_christmas_lights
-    - light.christmas_tree

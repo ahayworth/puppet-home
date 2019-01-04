@@ -45,16 +45,12 @@ homeassistant::devices::masked_devices:
       name: Master Bedroom Closet Lights
     - entity_id: switch.master_bedroom_rock_salt_lamp
       name: Master Bedroom Rock Salt Lamp
-    - entity_id: switch.hallway_christmas_lights
-      name: Hallway Christmas Lights
     - entity_id: switch.kitchen_bar_lights
       name: Kitchen Bar Lights
     - entity_id: switch.kitchen_over_cabinet_lights
       name: Kitchen Over Cabinet Lights
     - entity_id: switch.kitchen_under_cabinet_lights
       name: Kitchen Under Cabinet Lights
-    - entity_id: switch.christmas_tree
-      name: Christmas Tree
     - entity_id: switch.deck_lights
       name: Deck Lights
   fan:

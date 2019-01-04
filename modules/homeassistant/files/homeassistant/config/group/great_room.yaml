@@ -17,4 +17,3 @@ great_room:
     - light.kitchen_over_cabinet_lights
     - light.kitchen_under_cabinet_lights
     - switch.wax_diffuser
-    - light.christmas_tree
