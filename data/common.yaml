@@ -54,9 +54,5 @@ homeassistant::devices::masked_devices:
     - entity_id: switch.deck_lights
       name: Deck Lights
   fan:
-    - entity_id: switch.master_bedroom_ceiling_fan
-      name: Master Bedroom Ceiling Fan
     - entity_id: switch.master_bedroom_bedside_fan
       name: Master Bedroom Bedside Fan
-    - entity_id: switch.living_room_ceiling_fan
-      name: Living Room Ceiling Fan

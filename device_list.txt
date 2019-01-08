@@ -432,10 +432,6 @@
   name: Leviton DZ6HD-1BZ Decora 600W Smart Dimmer
 - entity_id: light.master_bedroom_ceiling_lights
   name: Master Bedroom Ceiling Lights
-- entity_id: zwave.master_bedroom_ceiling_fan
-  name: Leviton DZ15S-1BZ Decora Smart Switch
-- entity_id: switch.master_bedroom_ceiling_fan
-  name: Master Bedroom Ceiling Fan
 - entity_id: zwave.master_bedroom_closet_lights
   name: Leviton DZ15S-1BZ Decora Smart Switch
 - entity_id: switch.master_bedroom_closet_lights
@@ -746,10 +742,6 @@
   name: Leviton DZ6HD-1BZ Decora 600W Smart Dimmer
 - entity_id: light.dining_table_lights
   name: Dining Table Lights
-- entity_id: zwave.living_room_ceiling_fan
-  name: Leviton DZ15S-1BZ Decora Smart Switch
-- entity_id: switch.living_room_ceiling_fan
-  name: Living Room Ceiling Fan
 - entity_id: device_tracker.andrews_iphone
   name: Unicorn Wrangler
 - entity_id: input_select.living_room_universal
