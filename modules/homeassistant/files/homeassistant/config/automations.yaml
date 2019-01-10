@@ -8,14 +8,6 @@
   action:
     - service: homekit.start
 
-- id: zwave_heal
-  alias: 'heal at 3:30am'
-  trigger:
-    platform: time
-    at: '03:30:00'
-  action:
-    service: zwave.heal_network
-
 - id: utility_closet_lights
   alias: Utility closet lights
   trigger:
