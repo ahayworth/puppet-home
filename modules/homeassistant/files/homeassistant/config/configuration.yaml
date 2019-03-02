@@ -37,6 +37,7 @@ ring: !include platforms/ring.yaml
 apple_tv: !include device_types/apple_tv.yaml
 binary_sensor: !include device_types/binary_sensor.yaml
 fan: !include device_types/fan.yaml
+googlehome: !include device_types/googlehome.yaml
 light: !include device_types/light.yaml
 media_player: !include device_types/media_player.yaml
 remote: !include device_types/remote.yaml

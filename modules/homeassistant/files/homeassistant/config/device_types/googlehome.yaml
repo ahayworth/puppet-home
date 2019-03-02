@@ -1,0 +1,7 @@
+devices:
+  - host: 192.168.0.3   # living_room
+  - host: 192.168.0.237 # kitchen
+  - host: 192.168.0.147 # master bedroom
+    track_alarms: true
+  - host: 192.168.0.221 # guest bedroom
+  - host: 192.168.0.220 # office
