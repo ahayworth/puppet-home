@@ -19,6 +19,7 @@ updater:
   include_used_components: true
 recorder:
   db_url: !secret postgres_url
+system_health:
 zwave: !include zwave.yaml
 logger:
   default: info
