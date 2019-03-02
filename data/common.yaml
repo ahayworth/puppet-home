@@ -4,7 +4,7 @@ homeassistant::config::config_dir: "%{lookup('homeassistant::homeassistant_dir')
 #homeassistant::docker::homeassistant_docker_repo: 'ahayworth/home-assistant'
 #homeassistant::docker::homeassistant_version: 'awair-latest'
 homeassistant::docker::homeassistant_docker_repo: 'homeassistant/home-assistant'
-homeassistant::docker::homeassistant_version: 'dev'
+homeassistant::docker::homeassistant_version: '0.88.2'
 homeassistant::docker::compose_version: '1.23.1'
 homeassistant::docker::zwave_device: '/dev/ttyACM0'
 homeassistant::docker::xbox_smartglass_version: 'v0.9.8'
