@@ -18,15 +18,15 @@ homeassistant::custom_components:
     repo: 'ahayworth/home-assistant'
     branch: 'ahayworth-kryptonite'
     checksum_value: 'd18849aae140f07fd1dfbeb1607daada'
-    file: 'homeassistant/components/sensor/kryptonite.py'
+    file: 'homeassistant/components/kryptonite/sensor.py'
   xbox_one:
     provider: 'local'
-    component: 'media_player'
-    file: 'xboxone.py'
+    component: 'xboxone'
+    file: 'media_player.py'
   ps4:
     provider: 'local'
-    component: 'media_player'
-    file: 'ps4.py'
+    component: 'ps4'
+    file: 'media_player.py'
 homeassistant::devices::masked_devices:
   light:
     - entity_id: switch.office_closet_lights
