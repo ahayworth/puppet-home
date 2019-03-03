@@ -1,5 +1,6 @@
 class homeassistant::docker(
   String $compose_version,
+  String $docker_version,
   String $homeassistant_dir = lookup('homeassistant::homeassistant_dir'),
   String $config_dir = lookup('homeassistant::config::config_dir'),
   String $homeassistant_version,
@@ -8,7 +9,9 @@ class homeassistant::docker(
   String $zwave_device,
   String $xbox_smartglass_version,
 ){
-  include 'docker'
+  class { 'docker':
+    version => $docker_version,
+  }
   class { 'docker::compose':
     ensure  => present,
     version => $compose_version,
