@@ -1,0 +1,3003 @@
+---
+alias: Sunrise simulation
+sequence:
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 0
+    - 0
+    - 0
+    brightness: 1
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 8
+    - 0
+    - 0
+    brightness: 2
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 17
+    - 0
+    - 0
+    brightness: 3
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 26
+    - 0
+    - 0
+    brightness: 3
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 35
+    - 0
+    - 0
+    brightness: 4
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 43
+    - 0
+    - 0
+    brightness: 5
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 52
+    - 0
+    - 0
+    brightness: 6
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 61
+    - 0
+    - 0
+    brightness: 7
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 70
+    - 0
+    - 0
+    brightness: 8
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 79
+    - 0
+    - 0
+    brightness: 9
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 87
+    - 0
+    - 0
+    brightness: 9
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 96
+    - 0
+    - 0
+    brightness: 10
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 105
+    - 0
+    - 0
+    brightness: 11
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 114
+    - 0
+    - 0
+    brightness: 12
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 123
+    - 0
+    - 0
+    brightness: 13
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 131
+    - 0
+    - 0
+    brightness: 14
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 140
+    - 0
+    - 0
+    brightness: 14
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 149
+    - 0
+    - 0
+    brightness: 15
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 158
+    - 0
+    - 0
+    brightness: 16
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 167
+    - 0
+    - 0
+    brightness: 17
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 175
+    - 0
+    - 0
+    brightness: 18
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 184
+    - 0
+    - 0
+    brightness: 19
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 193
+    - 0
+    - 0
+    brightness: 20
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 202
+    - 0
+    - 0
+    brightness: 20
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 211
+    - 0
+    - 0
+    brightness: 21
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 219
+    - 0
+    - 0
+    brightness: 22
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 228
+    - 0
+    - 0
+    brightness: 23
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 237
+    - 0
+    - 0
+    brightness: 24
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 246
+    - 0
+    - 0
+    brightness: 25
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 0
+    - 0
+    brightness: 26
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 0
+    - 0
+    brightness: 26
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 2
+    - 0
+    brightness: 27
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 4
+    - 0
+    brightness: 28
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 6
+    - 0
+    brightness: 29
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 8
+    - 0
+    brightness: 30
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 10
+    - 0
+    brightness: 31
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 13
+    - 0
+    brightness: 31
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 15
+    - 0
+    brightness: 32
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 17
+    - 0
+    brightness: 33
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 19
+    - 0
+    brightness: 34
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 21
+    - 0
+    brightness: 35
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 23
+    - 0
+    brightness: 36
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 26
+    - 0
+    brightness: 37
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 28
+    - 0
+    brightness: 37
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 30
+    - 0
+    brightness: 38
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 32
+    - 0
+    brightness: 39
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 34
+    - 0
+    brightness: 40
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 36
+    - 0
+    brightness: 41
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 39
+    - 0
+    brightness: 42
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 41
+    - 0
+    brightness: 43
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 43
+    - 0
+    brightness: 43
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 45
+    - 0
+    brightness: 44
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 47
+    - 0
+    brightness: 45
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 49
+    - 0
+    brightness: 46
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 52
+    - 0
+    brightness: 47
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 54
+    - 0
+    brightness: 48
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 56
+    - 0
+    brightness: 48
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 58
+    - 0
+    brightness: 49
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 60
+    - 0
+    brightness: 50
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 62
+    - 0
+    brightness: 51
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 65
+    - 0
+    brightness: 52
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 67
+    - 0
+    brightness: 53
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 69
+    - 0
+    brightness: 54
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 71
+    - 0
+    brightness: 54
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 73
+    - 0
+    brightness: 55
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 75
+    - 0
+    brightness: 56
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 78
+    - 0
+    brightness: 57
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 80
+    - 0
+    brightness: 58
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 82
+    - 0
+    brightness: 59
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 84
+    - 0
+    brightness: 60
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 86
+    - 0
+    brightness: 60
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 88
+    - 0
+    brightness: 61
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 91
+    - 0
+    brightness: 62
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 93
+    - 0
+    brightness: 63
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 95
+    - 0
+    brightness: 64
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 97
+    - 0
+    brightness: 65
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 99
+    - 0
+    brightness: 65
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 101
+    - 0
+    brightness: 66
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 104
+    - 0
+    brightness: 67
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 106
+    - 0
+    brightness: 68
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 108
+    - 0
+    brightness: 69
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 110
+    - 0
+    brightness: 70
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 112
+    - 0
+    brightness: 71
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 114
+    - 0
+    brightness: 71
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 117
+    - 0
+    brightness: 72
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 119
+    - 0
+    brightness: 73
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 121
+    - 0
+    brightness: 74
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 123
+    - 0
+    brightness: 75
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 125
+    - 0
+    brightness: 76
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 128
+    - 0
+    brightness: 77
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 128
+    - 0
+    brightness: 77
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 130
+    - 0
+    brightness: 78
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 132
+    - 0
+    brightness: 79
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 135
+    - 0
+    brightness: 80
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 137
+    - 0
+    brightness: 81
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 140
+    - 0
+    brightness: 82
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 142
+    - 0
+    brightness: 82
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 145
+    - 0
+    brightness: 83
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 147
+    - 0
+    brightness: 84
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 255
+    - 150
+    - 0
+    brightness: 85
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 254
+    - 150
+    - 1
+    brightness: 86
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 253
+    - 150
+    - 2
+    brightness: 87
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 253
+    - 150
+    - 3
+    brightness: 88
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 252
+    - 150
+    - 5
+    brightness: 88
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 252
+    - 150
+    - 6
+    brightness: 89
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 251
+    - 150
+    - 7
+    brightness: 90
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 250
+    - 150
+    - 9
+    brightness: 91
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 250
+    - 150
+    - 10
+    brightness: 92
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 249
+    - 150
+    - 11
+    brightness: 93
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 249
+    - 150
+    - 12
+    brightness: 94
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 248
+    - 150
+    - 14
+    brightness: 94
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 247
+    - 150
+    - 15
+    brightness: 95
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 247
+    - 150
+    - 16
+    brightness: 96
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 246
+    - 150
+    - 18
+    brightness: 97
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 246
+    - 150
+    - 19
+    brightness: 98
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 245
+    - 150
+    - 20
+    brightness: 99
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 245
+    - 150
+    - 22
+    brightness: 99
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 244
+    - 150
+    - 23
+    brightness: 100
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 243
+    - 150
+    - 24
+    brightness: 101
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 243
+    - 150
+    - 25
+    brightness: 102
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 242
+    - 150
+    - 27
+    brightness: 103
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 242
+    - 150
+    - 28
+    brightness: 104
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 241
+    - 150
+    - 29
+    brightness: 105
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 240
+    - 150
+    - 31
+    brightness: 105
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 240
+    - 150
+    - 32
+    brightness: 106
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 239
+    - 150
+    - 33
+    brightness: 107
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 239
+    - 150
+    - 34
+    brightness: 108
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 238
+    - 150
+    - 36
+    brightness: 109
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 237
+    - 150
+    - 37
+    brightness: 110
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 237
+    - 150
+    - 38
+    brightness: 111
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 236
+    - 150
+    - 40
+    brightness: 111
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 236
+    - 150
+    - 41
+    brightness: 112
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 235
+    - 150
+    - 42
+    brightness: 113
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 235
+    - 150
+    - 44
+    brightness: 114
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 234
+    - 150
+    - 45
+    brightness: 115
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 233
+    - 150
+    - 46
+    brightness: 116
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 233
+    - 150
+    - 47
+    brightness: 116
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 232
+    - 150
+    - 49
+    brightness: 117
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 232
+    - 150
+    - 50
+    brightness: 118
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 231
+    - 150
+    - 51
+    brightness: 119
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 230
+    - 150
+    - 53
+    brightness: 120
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 230
+    - 150
+    - 54
+    brightness: 121
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 229
+    - 150
+    - 55
+    brightness: 122
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 229
+    - 150
+    - 57
+    brightness: 122
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 228
+    - 150
+    - 58
+    brightness: 123
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 228
+    - 150
+    - 59
+    brightness: 124
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 227
+    - 150
+    - 60
+    brightness: 125
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 226
+    - 150
+    - 62
+    brightness: 126
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 226
+    - 150
+    - 63
+    brightness: 127
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 225
+    - 150
+    - 64
+    brightness: 128
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 225
+    - 150
+    - 66
+    brightness: 128
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 224
+    - 150
+    - 67
+    brightness: 129
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 223
+    - 150
+    - 68
+    brightness: 130
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 223
+    - 150
+    - 69
+    brightness: 131
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 222
+    - 150
+    - 71
+    brightness: 132
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 222
+    - 150
+    - 72
+    brightness: 133
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 221
+    - 150
+    - 73
+    brightness: 133
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 220
+    - 150
+    - 75
+    brightness: 134
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 220
+    - 150
+    - 76
+    brightness: 135
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 219
+    - 150
+    - 77
+    brightness: 136
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 219
+    - 150
+    - 79
+    brightness: 137
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 218
+    - 150
+    - 80
+    brightness: 138
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 218
+    - 150
+    - 81
+    brightness: 139
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 217
+    - 150
+    - 82
+    brightness: 139
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 216
+    - 150
+    - 84
+    brightness: 140
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 216
+    - 150
+    - 85
+    brightness: 141
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 215
+    - 150
+    - 86
+    brightness: 142
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 215
+    - 150
+    - 88
+    brightness: 143
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 214
+    - 150
+    - 89
+    brightness: 144
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 213
+    - 150
+    - 90
+    brightness: 145
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 213
+    - 150
+    - 92
+    brightness: 145
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 212
+    - 150
+    - 93
+    brightness: 146
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 212
+    - 150
+    - 94
+    brightness: 147
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 211
+    - 150
+    - 95
+    brightness: 148
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 211
+    - 150
+    - 97
+    brightness: 149
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 210
+    - 150
+    - 98
+    brightness: 150
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 209
+    - 150
+    - 99
+    brightness: 150
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 209
+    - 150
+    - 101
+    brightness: 151
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 208
+    - 150
+    - 102
+    brightness: 152
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 208
+    - 150
+    - 103
+    brightness: 153
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 207
+    - 150
+    - 104
+    brightness: 154
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 206
+    - 150
+    - 106
+    brightness: 155
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 206
+    - 150
+    - 107
+    brightness: 156
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 205
+    - 150
+    - 108
+    brightness: 156
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 205
+    - 150
+    - 110
+    brightness: 157
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 204
+    - 150
+    - 111
+    brightness: 158
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 203
+    - 150
+    - 112
+    brightness: 159
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 203
+    - 150
+    - 114
+    brightness: 160
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 202
+    - 150
+    - 115
+    brightness: 161
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 202
+    - 150
+    - 116
+    brightness: 162
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 201
+    - 150
+    - 117
+    brightness: 162
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 201
+    - 150
+    - 119
+    brightness: 163
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 200
+    - 150
+    - 120
+    brightness: 164
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 199
+    - 150
+    - 121
+    brightness: 165
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 199
+    - 150
+    - 123
+    brightness: 166
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 198
+    - 150
+    - 124
+    brightness: 167
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 198
+    - 150
+    - 125
+    brightness: 167
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 197
+    - 150
+    - 127
+    brightness: 168
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 196
+    - 150
+    - 128
+    brightness: 169
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 196
+    - 150
+    - 129
+    brightness: 170
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 195
+    - 150
+    - 130
+    brightness: 171
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 195
+    - 150
+    - 132
+    brightness: 172
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 194
+    - 150
+    - 133
+    brightness: 173
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 193
+    - 150
+    - 134
+    brightness: 173
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 193
+    - 150
+    - 136
+    brightness: 174
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 192
+    - 150
+    - 137
+    brightness: 175
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 192
+    - 150
+    - 138
+    brightness: 176
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 191
+    - 150
+    - 139
+    brightness: 177
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 191
+    - 150
+    - 141
+    brightness: 178
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 190
+    - 150
+    - 142
+    brightness: 179
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 189
+    - 150
+    - 143
+    brightness: 179
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 189
+    - 150
+    - 145
+    brightness: 180
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 188
+    - 150
+    - 146
+    brightness: 181
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 188
+    - 150
+    - 147
+    brightness: 182
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 187
+    - 150
+    - 149
+    brightness: 183
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 186
+    - 150
+    - 150
+    brightness: 184
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 186
+    - 150
+    - 151
+    brightness: 184
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 185
+    - 150
+    - 152
+    brightness: 185
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 185
+    - 150
+    - 154
+    brightness: 186
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 184
+    - 150
+    - 155
+    brightness: 187
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 184
+    - 150
+    - 156
+    brightness: 188
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 183
+    - 150
+    - 158
+    brightness: 189
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 182
+    - 150
+    - 159
+    brightness: 190
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 182
+    - 150
+    - 160
+    brightness: 190
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 181
+    - 150
+    - 162
+    brightness: 191
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 181
+    - 150
+    - 163
+    brightness: 192
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 180
+    - 150
+    - 164
+    brightness: 193
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 179
+    - 150
+    - 165
+    brightness: 194
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 179
+    - 150
+    - 167
+    brightness: 195
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 178
+    - 150
+    - 168
+    brightness: 196
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 178
+    - 150
+    - 169
+    brightness: 196
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 177
+    - 150
+    - 171
+    brightness: 197
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 176
+    - 150
+    - 172
+    brightness: 198
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 176
+    - 150
+    - 173
+    brightness: 199
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 175
+    - 150
+    - 174
+    brightness: 200
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 175
+    - 150
+    - 176
+    brightness: 201
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 174
+    - 150
+    - 177
+    brightness: 201
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 174
+    - 150
+    - 178
+    brightness: 202
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 173
+    - 150
+    - 180
+    brightness: 203
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 172
+    - 150
+    - 181
+    brightness: 204
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 172
+    - 150
+    - 182
+    brightness: 205
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 171
+    - 150
+    - 184
+    brightness: 206
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 171
+    - 150
+    - 185
+    brightness: 207
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 170
+    - 150
+    - 186
+    brightness: 207
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 169
+    - 150
+    - 187
+    brightness: 208
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 169
+    - 150
+    - 189
+    brightness: 209
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 168
+    - 150
+    - 190
+    brightness: 210
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 168
+    - 150
+    - 191
+    brightness: 211
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 167
+    - 150
+    - 193
+    brightness: 212
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 167
+    - 150
+    - 194
+    brightness: 213
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 166
+    - 150
+    - 195
+    brightness: 213
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 165
+    - 150
+    - 197
+    brightness: 214
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 165
+    - 150
+    - 198
+    brightness: 215
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 164
+    - 150
+    - 199
+    brightness: 216
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 164
+    - 150
+    - 200
+    brightness: 217
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 163
+    - 150
+    - 202
+    brightness: 218
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 162
+    - 150
+    - 203
+    brightness: 218
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 162
+    - 150
+    - 204
+    brightness: 219
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 161
+    - 150
+    - 206
+    brightness: 220
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 161
+    - 150
+    - 207
+    brightness: 221
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 160
+    - 150
+    - 208
+    brightness: 222
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 159
+    - 150
+    - 209
+    brightness: 223
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 159
+    - 150
+    - 211
+    brightness: 224
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 158
+    - 150
+    - 212
+    brightness: 224
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 158
+    - 150
+    - 213
+    brightness: 225
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 157
+    - 150
+    - 215
+    brightness: 226
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 157
+    - 150
+    - 216
+    brightness: 227
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 156
+    - 150
+    - 217
+    brightness: 228
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 155
+    - 150
+    - 219
+    brightness: 229
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 155
+    - 150
+    - 220
+    brightness: 230
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 154
+    - 150
+    - 221
+    brightness: 230
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 154
+    - 150
+    - 222
+    brightness: 231
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 153
+    - 150
+    - 224
+    brightness: 232
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 152
+    - 150
+    - 225
+    brightness: 233
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 152
+    - 150
+    - 226
+    brightness: 234
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 151
+    - 150
+    - 228
+    brightness: 235
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 151
+    - 150
+    - 229
+    brightness: 235
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 150
+    - 150
+    - 230
+    brightness: 236
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 150
+    - 150
+    - 232
+    brightness: 237
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 149
+    - 149
+    - 233
+    brightness: 238
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 148
+    - 148
+    - 234
+    brightness: 239
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 147
+    - 147
+    - 235
+    brightness: 240
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 146
+    - 146
+    - 236
+    brightness: 241
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 145
+    - 145
+    - 237
+    brightness: 241
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 144
+    - 144
+    - 238
+    brightness: 242
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 142
+    - 142
+    - 240
+    brightness: 243
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 141
+    - 141
+    - 241
+    brightness: 244
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 140
+    - 140
+    - 242
+    brightness: 245
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 139
+    - 139
+    - 243
+    brightness: 246
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 138
+    - 138
+    - 244
+    brightness: 247
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 137
+    - 137
+    - 245
+    brightness: 247
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 136
+    - 136
+    - 246
+    brightness: 248
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 135
+    - 135
+    - 247
+    brightness: 249
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 134
+    - 134
+    - 248
+    brightness: 250
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 133
+    - 133
+    - 249
+    brightness: 251
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 132
+    - 132
+    - 250
+    brightness: 252
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 131
+    - 131
+    - 251
+    brightness: 252
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 130
+    - 130
+    - 252
+    brightness: 253
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 129
+    - 129
+    - 253
+    brightness: 254
+- delay:
+    seconds: 3
+- service: light.turn_on
+  data:
+    entity_id: light.master_bedroom_bedside_lamp
+    rgb_color:
+    - 128
+    - 128
+    - 255
+    brightness: 255
+- delay:
+    seconds: 3

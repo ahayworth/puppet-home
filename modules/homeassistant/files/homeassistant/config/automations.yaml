@@ -159,3 +159,20 @@
   action:
     service: lock.lock
     entity_id: lock.back_door_lock
+
+- id: lights_before_alarm
+  alias: Warm up the lights before the alarm goes off
+  trigger:
+    platform: template
+    value_template: >
+      {% if states.sensor.time.state != None and states.sensor.bedroom_google_home_alarm.state != "unavailable" %}
+      {% set alarm = as_timestamp(states.sensor.bedroom_google_home_alarm.state) %}
+      {% set alarm_ts = alarm | timestamp_custom('%H:%M', false) %}
+      {% set before_alarm = alarm - (15 * 60) %}
+      {% set before_alarm_ts = before_alarm | timestamp_custom('%H:%M', false) %}
+      {% set now_ts = as_timestamp(utcnow()) | timestamp_custom('%H:%M', false) %}
+      {{ now_ts == before_alarm_ts }}
+      {% endif %}
+  action:
+    service: script.turn_on
+    entity_id: script.sunrise

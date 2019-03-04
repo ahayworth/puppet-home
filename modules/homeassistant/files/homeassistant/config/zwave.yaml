@@ -5,3 +5,6 @@ device_config_domain:
   light:
     refresh_value: True
     delay: 5
+device_config:
+  light.master_bedroom_bedside_lamp:
+    refresh_value: False
