@@ -3,6 +3,7 @@
 require 'yaml'
 
 minutes = 15
+max_brightness = 0.75
 script = {
   'alias'    => 'Sunrise simulation',
   'sequence' => [],
@@ -16,12 +17,13 @@ blue = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 
 combined = red.zip(green, blue)
 combined.each_with_index do |rgb, idx|
+  brightness = (((idx + 1) * (255.0 / combined.size.to_f)) * max_brightness).round
   script['sequence'] << {
     'service' => 'light.turn_on',
     'data'    => {
       'entity_id' => 'light.master_bedroom_bedside_lamp',
       'rgb_color' => rgb,
-      'brightness' => ((idx + 1) * (255.0 / combined.size.to_f)).round,
+      'brightness' => brightness,
     },
   }
   script['sequence'] << {
