@@ -1,0 +1,9 @@
+title: Home
+path: home
+cards:
+  - type: weather-forecast
+    entity: weather.dark_sky
+  - type: thermostat
+    entity: climate.house
+  - type: alarm-panel
+    entity: alarm_control_panel.abode_alarm

@@ -1,5 +1,6 @@
 title: Home
 views:
+  - !include views/default.yaml
   - !include views/hallway.yaml
   - !include views/people.yaml
   - !include views/great_room.yaml
