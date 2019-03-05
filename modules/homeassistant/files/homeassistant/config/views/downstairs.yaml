@@ -1,0 +1,53 @@
+title: Downstairs
+path: downstairs
+cards:
+  - type: glance
+    title: Hallway
+    entities:
+      - entity: light.stairway_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.downstairs_hallway_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.utility_closet_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.server_closet_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+  - type: glance
+    title: Office
+    entities:
+      - entity: light.office_ceiling_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.office_closet_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - sensor.nest_office_temperature_sensor
+  - type: glance
+    title: Guest Bedroom
+    entities:
+      - entity: light.guest_bedroom_ceiling_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.guest_bedroom_closet_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info

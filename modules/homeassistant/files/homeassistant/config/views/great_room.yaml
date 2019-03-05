@@ -1,0 +1,78 @@
+title: Great Room
+path: great_room
+cards:
+  - type: glance
+    title: Kitchen Lights
+    entities:
+      - entity: light.kitchen_bar_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.kitchen_ceiling_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.kitchen_sink_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.kitchen_over_cabinet_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.kitchen_under_cabinet_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+  - type: glance
+    title: Living Room Lights
+    entities:
+      - entity: light.bookshelf_lamp
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.couch_light
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.dining_table_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.fireplace_light
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.living_room_ceiling_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.reading_chair_light
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.tv_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+  - type: entities
+    title: Other stuff
+    entities:
+      - switch.wax_diffuser
+      - fan.living_room_ceiling_fan
+      - light.deck_lights
+  - type: media-control
+    title: Media
+    entity: media_player.living_room

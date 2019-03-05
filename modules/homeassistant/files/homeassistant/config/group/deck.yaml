@@ -1,5 +1,0 @@
-deck:
-  name: Deck
-  view: yes
-  entities:
-    - light.deck_lights

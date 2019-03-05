@@ -1,0 +1,40 @@
+title: Master Bedroom
+path: master_bedroom
+cards:
+  - type: glance
+    title: Lights
+    entities:
+      - entity: light.master_bedroom_ceiling_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.master_bedroom_bedside_lamp
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.master_bedroom_closet_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.master_bedroom_fan_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.master_bedroom_rock_salt_lamp
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+  - type: glance
+    title: Fans
+    entities:
+      - fan.master_bedroom_ceiling_fan
+      - fan.master_bedroom_bedside_fan
+  - type: glance
+    title: Other stuff
+    entities:
+      - sensor.nest_master_bedroom_temperature_sensor

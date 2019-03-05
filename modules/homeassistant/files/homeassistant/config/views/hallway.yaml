@@ -1,0 +1,32 @@
+title: Upstairs Hallway
+path: hallway
+cards:
+  - type: entities
+    entities:
+      - lock.front_door_lock
+      - lock.back_door_lock
+  - type: alarm-panel
+    entity: alarm_control_panel.abode_alarm
+  - type: glance
+    entities:
+      - binary_sensor.ring_front_door_ding
+      - binary_sensor.east_door
+      - binary_sensor.west_door
+  - type: glance
+    title: Lights
+    entities:
+      - entity: light.coat_closet_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.laundry_closet_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+      - entity: light.upstairs_hallway_lights
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info

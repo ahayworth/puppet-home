@@ -1,0 +1,9 @@
+title: Home
+views:
+  - !include views/hallway.yaml
+  - !include views/people.yaml
+  - !include views/great_room.yaml
+  - !include views/master_bedroom.yaml
+  - !include views/downstairs.yaml
+  - !include views/hvac.yaml
+  - !include views/battery.yaml

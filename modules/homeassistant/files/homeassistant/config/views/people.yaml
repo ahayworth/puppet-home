@@ -1,0 +1,7 @@
+title: People
+path: people
+cards:
+  - type: entities
+    entities:
+      - device_tracker.andrewsiphone
+      - device_tracker.bentonsiphone

@@ -1,0 +1,27 @@
+title: HVAC
+path: hvac
+cards:
+  - type: horizontal-stack
+    cards:
+      - type: gauge
+        entity: sensor.awair_score
+        severity:
+          green: 80
+          yellow: 60
+          red: 0
+      - type: thermostat
+        entity: climate.house
+  - type: horizontal-stack
+    cards:
+      - type: glance
+        entities:
+          - sensor.nest_office_temperature_sensor
+      - type: glance
+        entities:
+          - sensor.nest_master_bedroom_temperature_sensor
+  - type: history-graph
+    entities:
+      - sensor.awair_co2
+      - sensor.awair_pm25
+      - sensor.awair_humidity
+      - sensor.awair_temperature
