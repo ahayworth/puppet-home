@@ -63,25 +63,3 @@ services:
         syslog-address: "udp://localhost:514"
         syslog-format: "rfc3164"
         tag: "docker/airconnect"
-  ps4_waker_rest:
-    image: ahayworth/ps4-waker-rest:latest
-    ports:
-      - 3030:3030
-    volumes:
-      - <%= @config_mount %>
-    container_name: ps4_waker_rest
-    restart: always
-    network_mode: host
-    healthcheck:
-      test: ["CMD", "curl", "-f", "127.0.0.1:3030/ps4/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 6
-    environment:
-      - TZ=America/Chicago
-    logging:
-      driver: syslog
-      options:
-        syslog-address: "udp://localhost:514"
-        syslog-format: "rfc3164"
-        tag: "docker/ps4_waker_rest"

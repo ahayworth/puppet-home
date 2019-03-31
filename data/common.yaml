@@ -4,7 +4,7 @@ homeassistant::config::config_dir: "%{lookup('homeassistant::homeassistant_dir')
 #homeassistant::docker::homeassistant_docker_repo: 'ahayworth/home-assistant'
 #homeassistant::docker::homeassistant_version: 'awair-latest'
 homeassistant::docker::homeassistant_docker_repo: 'homeassistant/home-assistant'
-homeassistant::docker::homeassistant_version: '0.88.2'
+homeassistant::docker::homeassistant_version: '0.90.2'
 homeassistant::docker::compose_version: '1.23.2'
 homeassistant::docker::docker_version: '5:18.09.3~3-0~debian-stretch'
 homeassistant::docker::zwave_device: '/dev/ttyACM0'
@@ -23,10 +23,6 @@ homeassistant::custom_components:
   xbox_one:
     provider: 'local'
     component: 'xboxone'
-    file: 'media_player.py'
-  ps4:
-    provider: 'local'
-    component: 'ps4'
     file: 'media_player.py'
 homeassistant::devices::masked_devices:
   light:
