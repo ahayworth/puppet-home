@@ -1,7 +1,7 @@
 class nginx_proxy::nginx (
   $proxies = {},
 ){
-  package { 'nginx-full':
+  package { 'nginx-extras':
     ensure => latest,
   }
 
@@ -48,7 +48,7 @@ class nginx_proxy::nginx (
 
   service { 'nginx':
     ensure  => running,
-    require => Package['nginx-full'],
+    require => Package['nginx-extras'],
   }
 
   file { "/etc/nginx/sites-available/acme-challenge.conf":

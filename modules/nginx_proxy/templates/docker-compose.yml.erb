@@ -1,0 +1,71 @@
+version: '3'
+services:
+  sso-proxy:
+    image: buzzfeed/sso-dev:<%= @sso_version %>
+    container_name: sso-proxy
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:<%= @proxy_port %>/ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 6
+    entrypoint: /bin/sso-proxy
+    environment:
+      - EMAIL_ADDRESSES=<%= @allowed_emails %>
+      - UPSTREAM_CONFIGS=/sso/upstream_configs.yml
+      - PROVIDER_URL=https://auth.sso.boyfriend.network
+      - CLIENT_ID=<%= @proxy_client_id %>
+      - CLIENT_SECRET=<%= @proxy_client_secret %>
+      - COOKIE_SECRET=<%= @proxy_cookie_secret %>
+      - STATSD_HOST=127.0.0.1
+      - STATSD_PORT=8125
+      - CLUSTER=prod
+      - PORT=<%= @proxy_port %>
+    volumes:
+      - /etc/sso/upstream_configs.yml:/sso/upstream_configs.yml:ro
+    ports:
+      - <%= @proxy_port %>:<%= @proxy_port %>
+    network_mode: host
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://localhost:514"
+        syslog-format: "rfc3164"
+        tag: "docker/sso-proxy"
+  sso-auth:
+    image: buzzfeed/sso-dev:<%= @sso_version %>
+    container_name: sso-auth
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:<%= @auth_port %>/ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 6
+    entrypoint: /bin/sso-auth
+    environment:
+      - AUTHORIZE_EMAIL_ADDRESSES=<%= @allowed_emails %>
+      - AUTHORIZE_PROXY_DOMAINS=boyfriend.network
+      - REDIRECT_URL=https://auth.sso.boyfriend.network/google/callback
+      - PROXY_ROOT_DOMAIN=boyfriend.network
+      - PROVIDER_GOOGLE_CLIENT_ID=<%= @client_id %>
+      - PROVIDER_GOOGLE_CLIENT_SECRET=<%= @client_secret %>
+      - PROVIDER_GOOGLE_TYPE=google
+      - PROVIDER_GOOGLE_SLUG=google
+      - CLIENT_PROXY_ID=<%= @proxy_client_id %>
+      - CLIENT_PROXY_SECRET=<%= @proxy_client_secret %>
+      - SESSION_COOKIE_SECRET=<%= @auth_cookie_secret %>
+      - SESSION_KEY=<%= @auth_session_key %>
+      - METRICS_STATSD_HOST=127.0.0.1
+      - METRICS_STATSD_PORT=8125
+      - CLUSTER=prod
+      - SERVER_HOST=auth.sso.boyfriend.network
+      - SERVER_PORT=<%= @auth_port %>
+    ports:
+      - <%= @auth_port %>:<%= @auth_port %>
+    network_mode: host
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://localhost:514"
+        syslog-format: "rfc3164"
+        tag: "docker/sso-auth"

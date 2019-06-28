@@ -25,5 +25,9 @@ server {
     proxy_set_header Upgrade $http_upgrade;
     proxy_set_header Connection $connection_upgrade;
     <%- end -%>
+
+    if ($host = "lcars.boyfriend.network") {
+      more_clear_headers X-Content-Type-Options;
+    }
   }
 }
