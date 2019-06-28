@@ -1,6 +1,7 @@
 homeassistant::data_dir: '/data'
 homeassistant::homeassistant_dir: "%{lookup('homeassistant::data_dir')}/homeassistant"
 homeassistant::config::config_dir: "%{lookup('homeassistant::homeassistant_dir')}/config"
+
 #homeassistant::docker::homeassistant_docker_repo: 'ahayworth/home-assistant'
 #homeassistant::docker::homeassistant_version: 'awair-latest'
 homeassistant::docker::homeassistant_docker_repo: 'homeassistant/home-assistant'
@@ -9,10 +10,13 @@ homeassistant::docker::compose_version: '1.23.2'
 homeassistant::docker::docker_version: '5:18.09.3~3-0~debian-stretch'
 homeassistant::docker::zwave_device: '/dev/ttyACM0'
 homeassistant::docker::xbox_smartglass_version: 'v0.9.8'
+homeassistant::docker::homeassistant_port: 8123
+
 homeassistant::remote_serial_connections:
   living_room_hdmi_switch:
     local_socket: '/dev/ttyRS0'
     remote_addr: '192.168.0.241:3333'
+
 homeassistant::custom_components:
   kryptonite:
     provider: 'remote'
@@ -24,6 +28,7 @@ homeassistant::custom_components:
     provider: 'local'
     component: 'xboxone'
     file: 'media_player.py'
+
 homeassistant::devices::masked_devices:
   light:
     - entity_id: switch.office_closet_lights
@@ -53,3 +58,28 @@ homeassistant::devices::masked_devices:
   fan:
     - entity_id: switch.master_bedroom_bedside_fan
       name: Master Bedroom Bedside Fan
+
+nginx_proxy::nginx::proxies:
+  'home.boyfriend.network':
+    default_server: true
+    upstream:
+      name: 'homeassistant'
+      members:
+        - "127.0.0.1:%{hiera('homeassistant::docker::homeassistant_port')}"
+    websockets: true
+  'proxy.sso.boyfriend.network':
+    additional_names:
+      - 'lcars.boyfriend.network'
+    upstream:
+      name: 'sso-proxy'
+      members:
+        - "127.0.0.1:%{hiera('nginx_proxy::sso::proxy_port')}"
+  'auth.sso.boyfriend.network':
+    upstream:
+      name: 'sso-auth'
+      members:
+        - "127.0.0.1:%{hiera('nginx_proxy::sso::auth_port')}"
+nginx_proxy::sso::proxy_port: '4180'
+nginx_proxy::sso::auth_port: '4181'
+nginx_proxy::sso::sso_configs:
+  lcars: 'http://192.168.0.149:8080'

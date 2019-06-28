@@ -1,0 +1,20 @@
+<%- names = [] -%>
+<%- @proxies.each do |p, i|
+      names << p
+      names << i['additional_names'] if i['additional_names']
+    end -%>
+server {
+  listen 80 default_server;
+  server_name <%= names.join(' ') %>;
+
+  location ^~ /.well-known/acme-challenge/ {
+    root /data/letsencrypt/;
+    allow all;
+    default_type 'text/plain';
+    try_files $uri =404;
+  }
+
+  location / {
+    return 301 https://$host$request_uri;
+  }
+}

@@ -10,7 +10,7 @@ services:
       timeout: 10s
       retries: 6
     ports:
-      - 8123:8123
+      - <%= @homeassistant_port %>:<%= @homeassistant_port %>
     volumes:
       - <%= @config_mount %>
       - <%= @custom_components_mount %>

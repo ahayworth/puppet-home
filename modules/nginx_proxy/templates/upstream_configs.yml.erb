@@ -1,0 +1,6 @@
+<%- @sso_configs.each do |service, to| -%>
+- service: <%= service %>
+  default:
+    from: <%= service %>.boyfriend.network
+    to: <%= to %>
+<%- end -%>

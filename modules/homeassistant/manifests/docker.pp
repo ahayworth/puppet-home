@@ -8,6 +8,7 @@ class homeassistant::docker(
   String $url,
   String $zwave_device,
   String $xbox_smartglass_version,
+  Integer $homeassistant_port,
 ){
   class { 'docker':
     version => $docker_version,

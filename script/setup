@@ -61,5 +61,6 @@ if ! installed $agent_pkg; then
 fi
 
 puppetmodule "puppetlabs-docker"
+puppetmodule "puppet-archive"
 
 section "done!"
