@@ -71,6 +71,7 @@ nginx_proxy::nginx::proxies:
   'proxy.sso.boyfriend.network':
     additional_names:
       - 'lcars.boyfriend.network'
+      - 'plex.boyfriend.network'
     upstream:
       name: 'sso-proxy'
       members:
@@ -84,3 +85,4 @@ nginx_proxy::sso::proxy_port: '4180'
 nginx_proxy::sso::auth_port: '4181'
 nginx_proxy::sso::sso_configs:
   lcars: 'http://192.168.0.149:8080'
+  plex: 'http://192.168.0.149:32400'
