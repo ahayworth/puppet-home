@@ -103,14 +103,24 @@ google_actions:
       room: coat closet
       aliases:
         - 'coat closet light'
-    light.deck_lights:
+    light.deck_string_lights:
       room: deck
       aliases:
         - 'deck light'
+        - 'deck lights'
         - 'outdoor light'
         - 'outdoor lights'
         - 'outside light'
         - 'outside lights'
+    light.deck_lights:
+      room: deck
+      aliases:
+        - 'deck wall lights'
+        - 'deck wall light'
+        - 'outdoor wall light'
+        - 'outdoor wall lights'
+        - 'outside wall light'
+        - 'outside wall lights'
     light.guest_bedroom_closet_lights:
       room: guest bedroom
       aliases:

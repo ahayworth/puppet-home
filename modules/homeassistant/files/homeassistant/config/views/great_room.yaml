@@ -73,6 +73,7 @@ cards:
       - switch.wax_diffuser
       - fan.living_room_ceiling_fan
       - light.deck_lights
+      - light.deck_string_lights
   - type: media-control
     title: Media
     entity: media_player.living_room

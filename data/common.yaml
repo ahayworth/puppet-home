@@ -5,7 +5,7 @@ homeassistant::config::config_dir: "%{lookup('homeassistant::homeassistant_dir')
 #homeassistant::docker::homeassistant_docker_repo: 'ahayworth/home-assistant'
 #homeassistant::docker::homeassistant_version: 'awair-latest'
 homeassistant::docker::homeassistant_docker_repo: 'homeassistant/home-assistant'
-homeassistant::docker::homeassistant_version: '0.90.2'
+homeassistant::docker::homeassistant_version: '0.95.4'
 homeassistant::docker::zwave_device: '/dev/ttyACM0'
 homeassistant::docker::xbox_smartglass_version: 'v0.9.8'
 homeassistant::docker::homeassistant_port: 8123
@@ -56,6 +56,8 @@ homeassistant::devices::masked_devices:
       name: Kitchen Under Cabinet Lights
     - entity_id: switch.deck_lights
       name: Deck Lights
+    - entity_id: switch.deck_string_lights
+      name: Deck String Lights
   fan:
     - entity_id: switch.master_bedroom_bedside_fan
       name: Master Bedroom Bedside Fan
