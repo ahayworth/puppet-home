@@ -26,7 +26,10 @@ function installed() {
 }
 
 function apt() {
-  sudo apt-get install -y $1
+  section "installing $1"
+  if ! installed $1; then
+    sudo apt-get install -qq $1
+  fi
 }
 
 function puppetmodule() {
@@ -37,14 +40,11 @@ function puppetmodule() {
 }
 
 section "bootstrapping puppet for debian $distro"
+section "installing dependencies"
+apt "jq hiera-eyaml"
 
-if ! installed "jq"; then
-  section "installing dependencies"
-  apt "jq"
-fi
-
+section "installing $release_pkg apt repo"
 if ! installed $release_pkg ; then
-  section "installing $release_pkg apt repo"
   cd /tmp
   wget "http://apt.puppetlabs.com/$release_pkg-$distro.deb"
   sudo dpkg -i ./$release_pkg-$distro.deb
@@ -53,12 +53,10 @@ if ! installed $release_pkg ; then
   cd $dir
 fi
 
-if ! installed $agent_pkg; then
-  section "installing puppet"
-  sudo apt-get -y install $agent_pkg
-  sudo systemctl stop puppet || /bin/true
-  sudo systemctl disable puppet || /bin/true
-fi
+section "installing puppet"
+apt "$agent_pkg"
+sudo systemctl stop puppet || /bin/true
+sudo systemctl disable puppet || /bin/true
 
 puppetmodule "puppetlabs-docker"
 puppetmodule "puppet-archive"
