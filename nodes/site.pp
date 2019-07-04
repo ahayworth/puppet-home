@@ -7,4 +7,5 @@ node "nuc" {
 
 node "lcars" {
   include misc
+  include zfs
 }
