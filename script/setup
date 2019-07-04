@@ -57,6 +57,7 @@ section "installing puppet"
 apt "$agent_pkg"
 sudo systemctl stop puppet || /bin/true
 sudo systemctl disable puppet || /bin/true
+sudo systemctl disable mcollective || /bin/true
 
 puppetmodule "puppetlabs-docker"
 puppetmodule "puppet-archive"
