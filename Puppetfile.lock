@@ -1,0 +1,28 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    puppet-archive (4.1.0)
+      puppetlabs-stdlib (< 7.0.0, >= 4.18.0)
+    puppet-nodejs (7.0.1)
+      puppetlabs-stdlib (< 7.0.0, >= 4.25.0)
+    puppetlabs-apt (6.3.0)
+      puppetlabs-stdlib (< 6.0.0, >= 4.16.0)
+      puppetlabs-translate (< 2.0.0, >= 1.0.0)
+    puppetlabs-docker (3.6.0)
+      puppetlabs-apt (< 7.0.0, >= 4.4.1)
+      puppetlabs-powershell (< 3.0.0, >= 2.1.4)
+      puppetlabs-reboot (< 3.0.0, >= 2.0.0)
+      puppetlabs-stdlib (< 6.0.0, >= 4.24.0)
+      puppetlabs-translate (< 2.0.0, >= 0.0.1)
+    puppetlabs-powershell (2.3.0)
+    puppetlabs-reboot (2.1.2)
+    puppetlabs-stdlib (5.2.0)
+    puppetlabs-translate (1.2.0)
+
+DEPENDENCIES
+  puppet-archive (= 4.1.0)
+  puppet-nodejs (= 7.0.1)
+  puppetlabs-apt (= 6.3.0)
+  puppetlabs-docker (= 3.6.0)
+  puppetlabs-stdlib (= 5.2.0)
+
