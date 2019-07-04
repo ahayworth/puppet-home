@@ -9,6 +9,8 @@ release_pkg="puppet$puppet_major_version-release"
 agent_pkg="puppet-agent$agent_version"
 puppet_bin='/opt/puppetlabs/bin/puppet'
 
+dependencies='jq hiera-eyaml librarian-puppet'
+
 function section() {
   echo
   echo -n "===================="
@@ -22,26 +24,18 @@ function section() {
 }
 
 function installed() {
-  sudo dpkg -s $1 2>/dev/null | grep -q 'Status: install ok installed'
+  [[ `dpkg -s "$@" 2>&1 | grep -c 'is not installed'` == '0' ]]
 }
 
 function apt() {
-  section "installing $1"
-  if ! installed $1; then
-    sudo apt-get install -qq $1
-  fi
-}
-
-function puppetmodule() {
-  if ! $puppet_bin module list --modulepath vendor 2>/dev/null | grep -q $1; then
-    section "installing puppet module $1"
-    $puppet_bin module install --target-dir vendor --modulepath vendor $1
+  if ! installed "$@"; then
+    sudo apt-get install -qq "$@"
   fi
 }
 
 section "bootstrapping puppet for debian $distro"
-section "installing dependencies"
-apt "jq hiera-eyaml"
+section "installing dependencies: $dependencies"
+apt $dependencies
 
 section "installing $release_pkg apt repo"
 if ! installed $release_pkg ; then
@@ -59,7 +53,7 @@ sudo systemctl stop puppet || /bin/true
 sudo systemctl disable puppet || /bin/true
 sudo systemctl disable mcollective || /bin/true
 
-puppetmodule "puppetlabs-docker"
-puppetmodule "puppet-archive"
+section "installing puppet module dependencies"
+librarian-puppet install --path vendor
 
 section "done!"
