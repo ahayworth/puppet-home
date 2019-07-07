@@ -6,6 +6,8 @@ node "nuc" {
 }
 
 node "lcars" {
+  include docker_common
+  include pihole
   include misc
   include zfs
 }
