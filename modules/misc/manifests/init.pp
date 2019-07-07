@@ -5,6 +5,7 @@ class misc {
   $misc_packages = [
     'tmux',
     'htop',
+    'mosh',
   ]
   $misc_packages.each |String $pkg| {
     package { $pkg:
