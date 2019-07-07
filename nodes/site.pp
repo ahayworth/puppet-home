@@ -9,5 +9,6 @@ node "lcars" {
   include docker_common
   include pihole
   include misc
+  include wireguard
   include zfs
 }

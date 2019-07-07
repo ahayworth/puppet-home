@@ -1,0 +1,14 @@
+[Interface]
+Address = <%= @server_ip %>/24
+SaveConfig = true
+ListenPort = 51820
+PrivateKey = <%= @server_private_key %>
+PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -t nat -A POSTROUTING -o enp1s0 -j MASQUERADE
+PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -o enp1s0 -j MASQUERADE
+
+<%- @clients.each do |name, info| %>
+  # <%= name %>
+[Peer]
+PublicKey = <%= info['key'] %>
+AllowedIPs = <%= info['ip'] %>/32
+<%- end %>

@@ -23,8 +23,15 @@ apt::sources:
   'backports':
     location: 'http://deb.debian.org/debian'
     release: 'stretch-backports'
-    repos: 'stretch-backports'
     repos: 'main contrib non-free'
+    include:
+      src: true
+      deb: true
+  'unstable':
+    location: 'http://deb.debian.org/debian'
+    release: 'unstable'
+    repos: 'main'
+    pin: '90'
     include:
       src: true
       deb: true
@@ -120,3 +127,5 @@ nginx_proxy::sso::auth_port: '4181'
 nginx_proxy::sso::sso_configs:
   lcars: 'http://192.168.0.149:8080'
   plex: 'http://192.168.0.149:32400'
+
+wireguard::server_ip: 192.168.1.1
