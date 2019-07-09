@@ -7,41 +7,41 @@ class wireguard (
     ensure => latest,
   }
 
-  file { '/etc/wireguard/wg0.conf':
-    ensure  => present,
-    content => template('wireguard/wg0.conf.erb'),
-    mode    => '0600',
-    notify  => [
-      Service['wg-quick@wg0.service'],
-      Exec['reload-systemd'],
-    ],
-    require => Package['wireguard'],
+  $backport_packages = [
+    'systemd',
+    'libsystemd0',
+    'libpam-systemd'
+  ]
+
+  apt::pin { 'wireguard':
+    packages => $backport_packages,
+    release  => 'stretch-backports',
+    priority => 500,
   }
 
-  service { 'wg-quick@wg0.service':
-    ensure  => running,
-    enable  => true,
-    require => [
-      File['/etc/wireguard/wg0.conf'],
-      File['/etc/sysctl.d/98-ip_forward.conf'],
-      Exec['reload-sysctl'],
-      Exec['reload-systemd'],
-    ],
+  $backport_packages.each |String $pkg| {
+    package { $pkg:
+      ensure  => latest,
+      require => [
+        Package['wireguard'],
+        Apt::Pin['wireguard'],
+      ]
+    }
   }
 
-  file { '/etc/sysctl.d/98-ip_forward.conf':
-    ensure  => present,
-    content => 'net.ipv4.ip_forward=1',
-    notify  => Exec['reload-sysctl'],
+  systemd::network { 'wg0.network':
+    content         => template('wireguard/wg0.network.erb'),
+    owner           => 'root',
+    group           => 'systemd-network',
+    mode            => '0640',
+    restart_service => true,
   }
 
-  exec { 'reload-sysctl':
-    command     => '/sbin/sysctl -p',
-    refreshonly => true,
-  }
-
-  exec { 'reload-systemd':
-    command     => '/bin/systemctl daemon-reload',
-    refreshonly => true,
+  systemd::network { 'wg0.netdev':
+    content         => template('wireguard/wg0.netdev.erb'),
+    owner           => 'root',
+    group           => 'systemd-network',
+    mode            => '0640',
+    restart_service => true,
   }
 }

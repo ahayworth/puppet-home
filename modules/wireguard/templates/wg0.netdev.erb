@@ -1,0 +1,17 @@
+[NetDev]
+Name=wg0
+Kind=wireguard
+Description=Wireguard
+
+[WireGuard]
+PrivateKey=<%= @server_private_key %>
+ListenPort=51820
+
+<%- @clients.each do |name, info| -%>
+# <%= name %>
+[WireGuardPeer]
+PublicKey=<%= info['key'] %>
+AllowedIPs=<%= info['ip'] %>
+PersistentKeepalive=25
+
+<%- end -%>

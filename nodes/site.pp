@@ -12,6 +12,7 @@ node "lcars" {
   include misc::network
   include wireguard
   include zfs
+  include systemd
 }
 
 node "janeway" {

@@ -1,1 +1,6 @@
-wireguard::server_ip: 192.168.1.1
+wireguard::server_ip: 192.168.10.2
+systemd::manage_timesyncd: true
+systemd::manage_networkd: true
+
+systemd::manage_resolved: true
+systemd::dns_stub_resolver: true
