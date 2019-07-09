@@ -3,4 +3,12 @@ class misc::laptop {
   package { 'uuid-runtime':
     ensure => installed,
   }
+
+  package { 'fonts-inconsolata':
+    ensure => installed,
+  }
+
+  package { 'fonts-firacode':
+    ensure => installed,
+  }
 }
