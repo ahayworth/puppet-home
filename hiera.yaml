@@ -3,14 +3,18 @@ version: 5
 defaults:
   datadir: data
 hierarchy:
-  - name: "Common"
+  - name: "Not Secret"
     data_hash: yaml_data
-    path: "common.yaml"
+    paths:
+      - "os/%{facts.os.distro.codename}/common.yaml"
+      - "node/%{trusted.certname}/common.yaml"
+      - 'common.yaml'
   - name: "Secrets"
     lookup_key: eyaml_lookup_key
     options:
       pkcs7_private_key: "keys/private_key.pkcs7.pem"
       pkcs7_public_key: "keys/public_key.pkcs7.pem"
     paths:
-      - "secrets.eyaml"
-      - "homeassistant_secrets.eyaml"
+      - "node/%{trusted.certname}/secrets.eyaml"
+      - 'homeassistant_secrets.eyaml'
+      - 'secrets.eyaml'

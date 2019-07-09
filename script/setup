@@ -1,7 +1,7 @@
 #!/bin/bash
 
 dir=$(pwd)
-distro='stretch'
+distro='$(lsb_release -cs)'
 puppet_major_version='5'
 agent_version=''
 
@@ -37,21 +37,25 @@ section "bootstrapping puppet for debian $distro"
 section "installing dependencies: $dependencies"
 apt $dependencies
 
-section "installing $release_pkg apt repo"
-if ! installed $release_pkg ; then
-  cd /tmp
-  wget "http://apt.puppetlabs.com/$release_pkg-$distro.deb"
-  sudo dpkg -i ./$release_pkg-$distro.deb
-  rm ./$release_pkg-$distro.deb
-  sudo apt-get update 2>/dev/null
-  cd $dir
-fi
+if [[ "$distro" == "stretch" ]]; then
+  section "installing $release_pkg apt repo"
+  if ! installed $release_pkg ; then
+    cd /tmp
+    wget "http://apt.puppetlabs.com/$release_pkg-$distro.deb"
+    sudo dpkg -i ./$release_pkg-$distro.deb
+    rm ./$release_pkg-$distro.deb
+    sudo apt-get update 2>/dev/null
+    cd $dir
+  fi
 
-section "installing puppet"
-apt "$agent_pkg"
-sudo systemctl stop puppet || /bin/true
-sudo systemctl disable puppet || /bin/true
-sudo systemctl disable mcollective || /bin/true
+  section "installing puppet"
+  apt "$agent_pkg"
+  sudo systemctl stop puppet || /bin/true
+  sudo systemctl disable puppet || /bin/true
+  sudo systemctl disable mcollective || /bin/true
+else
+  installed "puppet" || apt "puppet"
+fi
 
 section "installing puppet module dependencies"
 librarian-puppet install --path vendor

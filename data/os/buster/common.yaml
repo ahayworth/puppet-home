@@ -1,0 +1,25 @@
+apt::sources:
+  'debian':
+    location: 'http://ftp.us.debian.org/debian'
+    release: 'buster'
+    repos: 'main contrib non-free'
+    include:
+      src: true
+      deb: true
+  'debian-security':
+    location: 'http://security.debian.org/debian-security'
+    release: 'buster/updates'
+    repos: 'main contrib non-free'
+    include:
+      src: true
+      deb: true
+  'debian-updates':
+    location: 'http://ftp.us.debian.org/debian'
+    release: 'buster-updates'
+    repos: 'main contrib non-free'
+    include:
+      src: true
+      deb: true
+misc::install_nodejs: false
+misc::firmware::packages:
+  - firmware-linux

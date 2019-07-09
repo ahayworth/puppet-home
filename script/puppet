@@ -1,7 +1,11 @@
 #!/bin/bash
 
+if [[ "$(lsb_release -sc)" != "buster" ]]; then
+  prefix="/opt/puppetlabs/bin/"
+fi
+
 if [[ ! -z "$DEBUG" ]]; then debug='--debug'; fi
-sudo /opt/puppetlabs/bin/puppet \
+sudo ${prefix}puppet \
   apply \
   $1 \
   $debug \

@@ -1,62 +1,15 @@
-apt::sources:
-  'debian':
-    location: 'http://debian.uchicago.edu/debian'
-    release: 'stretch'
-    repos: 'main contrib non-free'
-    include:
-      src: true
-      deb: true
-  'debian-security':
-    location: 'http://security.debian.org/debian-security'
-    release: 'stretch/updates'
-    repos: 'main contrib non-free'
-    include:
-      src: true
-      deb: true
-  'debian-updates':
-    location: 'http://ftp.us.debian.org/debian'
-    release: 'stretch-updates'
-    repos: 'main contrib non-free'
-    include:
-      src: true
-      deb: true
-  'backports':
-    location: 'http://deb.debian.org/debian'
-    release: 'stretch-backports'
-    repos: 'main contrib non-free'
-    include:
-      src: true
-      deb: true
-  'unstable':
-    location: 'http://deb.debian.org/debian'
-    release: 'unstable'
-    repos: 'main'
-    pin: '90'
-    include:
-      src: true
-      deb: true
-
-
 homeassistant::data_dir: '/data'
 homeassistant::homeassistant_dir: "%{lookup('homeassistant::data_dir')}/homeassistant"
 homeassistant::config::config_dir: "%{lookup('homeassistant::homeassistant_dir')}/config"
-
-#homeassistant::docker::homeassistant_docker_repo: 'ahayworth/home-assistant'
-#homeassistant::docker::homeassistant_version: 'awair-latest'
 homeassistant::docker::homeassistant_docker_repo: 'homeassistant/home-assistant'
 homeassistant::docker::homeassistant_version: '0.95.4'
 homeassistant::docker::zwave_device: '/dev/ttyACM0'
 homeassistant::docker::xbox_smartglass_version: 'v0.9.8'
 homeassistant::docker::homeassistant_port: 8123
-
-docker_common::docker_version: '5:18.09.3~3-0~debian-stretch'
-docker_common::compose_version: '1.23.2'
-
 homeassistant::remote_serial_connections:
   living_room_hdmi_switch:
     local_socket: '/dev/ttyRS0'
     remote_addr: '192.168.0.241:3333'
-
 homeassistant::custom_components:
   kryptonite:
     provider: 'remote'
@@ -68,7 +21,6 @@ homeassistant::custom_components:
     provider: 'local'
     component: 'xboxone'
     file: 'media_player.py'
-
 homeassistant::devices::masked_devices:
   light:
     - entity_id: switch.office_closet_lights
@@ -100,7 +52,6 @@ homeassistant::devices::masked_devices:
   fan:
     - entity_id: switch.master_bedroom_bedside_fan
       name: Master Bedroom Bedside Fan
-
 nginx_proxy::nginx::proxies:
   'home.boyfriend.network':
     default_server: true
@@ -128,4 +79,3 @@ nginx_proxy::sso::sso_configs:
   lcars: 'http://192.168.0.149:8080'
   plex: 'http://192.168.0.149:32400'
 
-wireguard::server_ip: 192.168.1.1

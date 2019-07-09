@@ -1,5 +1,7 @@
 # Oh, I hate myself already for doing this.
-class misc {
+class misc(
+  Boolean $install_nodejs = true,
+){
   include apt
 
   $misc_packages = [
@@ -13,9 +15,11 @@ class misc {
     }
   }
 
-  class { 'nodejs':
-    repo_url_suffix    => '12.x',
-    repo_pin           => '500',
-    npm_package_ensure => 'present',
+  if $install_nodejs {
+    class { 'nodejs':
+      repo_url_suffix    => '12.x',
+      repo_pin           => '500',
+      npm_package_ensure => 'present',
+    }
   }
 }
