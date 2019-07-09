@@ -79,3 +79,4 @@ nginx_proxy::sso::sso_configs:
   lcars: 'http://192.168.0.149:8080'
   plex: 'http://192.168.0.149:32400'
 
+wireguard::server_ip: 192.168.10.2

@@ -1,0 +1,8 @@
+[NetDev]
+Name=bond1
+Description=Uplink bond to USW
+Kind=bond
+
+[Bond]
+Mode=802.3ad
+LACPTransmitRate=fast

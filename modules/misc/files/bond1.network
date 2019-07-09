@@ -1,0 +1,7 @@
+[Match]
+Name=bond1
+
+[Network]
+VLAN=vlan10
+BindCarrier=enp1s0
+BindCarrier=enp5s0
