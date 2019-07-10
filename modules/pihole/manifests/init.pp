@@ -27,5 +27,13 @@ class pihole(
       File[$pihole_dir],
       File[$dnsmasq_dir],
     ],
+    subscribe     => File["$dnsmasq_dir/99-dhcp.conf"],
+  }
+
+  file { "$dnsmasq_dir/99-dhcp.conf":
+    source  => 'puppet:///modules/pihole/99-dhcp.conf',
+    #ensure  => present,
+    ensure  => absent,
+    require => File[$pihole_dir],
   }
 }

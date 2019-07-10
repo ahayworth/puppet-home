@@ -13,6 +13,7 @@ node "lcars" {
   include wireguard
   include zfs
   include systemd
+  include plex
 }
 
 node "janeway" {
