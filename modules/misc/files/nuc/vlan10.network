@@ -1,0 +1,11 @@
+[Match]
+Name=vlan10
+
+[Network]
+Description="vlan10"
+Address=192.168.10.3/24
+Gateway=192.168.10.1
+DNS=192.168.10.2
+DNS=1.1.1.1
+DNS=8.8.8.8
+Domains=boyfriend.network
