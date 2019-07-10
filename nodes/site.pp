@@ -3,13 +3,15 @@ node "nuc" {
   include docker_common
   include homeassistant
   include nginx_proxy
+  include misc::network::nuc
+  include systemd
 }
 
 node "lcars" {
   include docker_common
   include pihole
   include misc
-  include misc::network
+  include misc::network::lcars
   include wireguard
   include zfs
   include systemd
