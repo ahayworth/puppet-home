@@ -1,16 +1,16 @@
 devices:
-  - host: 192.168.20.3 # living_room
+  - host: 192.168.0.62 # living_room
     track_devices: false
     track_alarms: true
-  - host: 192.168.20.7 # kitchen
+  - host: 192.168.0.66 # kitchen
     track_devices: false
     track_alarms: true
-  - host: 192.168.20.10 # master bedroom
+  - host: 192.168.0.63 # master bedroom
     track_devices: false
     track_alarms: true
-  - host: 192.168.20.8 # guest bedroom
+  - host: 192.168..65 # guest bedroom
     track_devices: false
     track_alarms: true
-  - host: 192.168.20.4 # office
+  - host: 192.168.0.64 # office
     track_devices: false
     track_alarms: true
