@@ -8,6 +8,8 @@ class misc(
     'tmux',
     'htop',
     'mosh',
+    'tcpdump',
+    'dnsutils',
   ]
   $misc_packages.each |String $pkg| {
     package { $pkg:
