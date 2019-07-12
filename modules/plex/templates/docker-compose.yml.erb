@@ -1,0 +1,15 @@
+version: '3'
+services:
+  plex:
+    container_name: plex
+    image: plexinc/pms-docker:plexpass
+    network_mode: host
+    environment:
+      - TZ=America/Chicago
+      - PLEX_UID=1000
+      - PLEX_GID=1000
+    restart: always
+    volumes:
+      - <%= @plex_dir %>/config:/config
+      - <%= @plex_dir %>/transcode:/transcode
+      - <%= @media %>:/data
