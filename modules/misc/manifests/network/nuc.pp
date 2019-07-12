@@ -1,8 +1,6 @@
 # Temporary
 class misc::network::nuc {
   $network_unit_files = [
-    'vlan10.netdev',
-    'vlan10.network',
     'eno1.network',
   ]
 

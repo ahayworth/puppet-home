@@ -1,6 +1,6 @@
 - platform: onkyo
   name: Receiver
-  host: 192.168.10.4
+  host: 192.168.0.50
   sources:
     strm-box: 'Apple TV'
     video6: 'Games'
@@ -14,7 +14,7 @@
       mac: "e4:3e:d7:73:a2:2d"
 - platform: xboxone
   device: !secret xboxone_device_id
-  ip_address: 192.168.0.186
+  ip_address: 192.168.0.82
   name: Xbox One
 - platform: universal
   name: Living Room
