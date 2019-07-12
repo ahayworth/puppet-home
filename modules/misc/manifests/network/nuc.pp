@@ -8,13 +8,6 @@ class misc::network::nuc {
     systemd::network { $file:
       source          => "puppet:///modules/misc/nuc/$file",
       restart_service => true,
-      require         => [
-        Package['ifenslave'],
-      ]
     }
-  }
-
-  package { 'ifenslave':
-    ensure => latest,
   }
 }
