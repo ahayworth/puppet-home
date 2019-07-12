@@ -2,6 +2,11 @@
 Name=bond1
 
 [Network]
-VLAN=vlan10
 BindCarrier=enp1s0
 BindCarrier=enp5s0
+DNS=192.168.0.6
+DNS=1.1.1.1
+DNS=8.8.8.8
+
+[Address]
+Address=192.168.0.6/24
