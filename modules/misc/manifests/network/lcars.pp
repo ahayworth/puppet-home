@@ -11,13 +11,6 @@ class misc::network::lcars {
     systemd::network { $file:
       source          => "puppet:///modules/misc/lcars/$file",
       restart_service => true,
-      require         => [
-        Package['ifenslave'],
-      ]
     }
-  }
-
-  package { 'ifenslave':
-    ensure => latest,
   }
 }

@@ -1,6 +1,5 @@
 [NetDev]
 Name=bond1
-Description=Uplink bond to USW
 Kind=bond
 
 [Bond]
