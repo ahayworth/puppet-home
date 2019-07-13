@@ -1,7 +1,8 @@
 #!/bin/bash
 
 dir=$(pwd)
-distro=$(lsb_release -cs)
+distro=$(lsb_release -is)
+distro_version=$(lsb_release -cs)
 puppet_major_version='5'
 agent_version=''
 
@@ -9,7 +10,9 @@ release_pkg="puppet$puppet_major_version-release"
 agent_pkg="puppet-agent$agent_version"
 puppet_bin='/opt/puppetlabs/bin/puppet'
 
-dependencies='jq hiera-eyaml librarian-puppet'
+debian_dependencies='jq hiera-eyaml librarian-puppet'
+arch_dependencies='jq ruby'
+arch_gems='hiera-eyaml librarian-puppet'
 
 function section() {
   echo
@@ -23,23 +26,45 @@ function section() {
   echo
 }
 
-function installed() {
+function debian_installed() {
   [[ `dpkg -s "$@" 2>&1 | grep -c 'is not installed'` == '0' ]]
 }
 
-function apt() {
-  if ! installed "$@"; then
-    sudo apt-get install -qq "$@"
+function apt_install() {
+  sudo apt-get install -qq "$@"
+}
+
+function pacman_install() {
+  yay -Syq --needed "$@"
+}
+
+function gem_install() {
+  sudo gem install -n /usr/bin --no-user-install "$@"
+}
+
+function package() {
+  if [[ $distro = "Arch" ]]; then
+    pacman_install $@
+  else
+    apt_install $@
   fi
 }
 
-section "bootstrapping puppet for debian $distro"
-section "installing dependencies: $dependencies"
-apt $dependencies
+section "bootstrapping puppet for $distro $distro_version"
 
-if [[ "$distro" == "stretch" ]]; then
+if [[ "$distro" = "Arch" ]]; then
+  section "installing dependencies: $arch_dependencies"
+  package $arch_dependencies
+  section "installing gems: $arch_gems"
+  gem_install $arch_gems
+else
+  section "installing dependencies: $debian_dependencies"
+  package $debian_dependencies
+fi
+
+if [[ "$distro_version" == "stretch" ]]; then
   section "installing $release_pkg apt repo"
-  if ! installed $release_pkg ; then
+  if ! debian_installed $release_pkg ; then
     cd /tmp
     wget "http://apt.puppetlabs.com/$release_pkg-$distro.deb"
     sudo dpkg -i ./$release_pkg-$distro.deb
@@ -49,12 +74,14 @@ if [[ "$distro" == "stretch" ]]; then
   fi
 
   section "installing puppet"
-  apt "$agent_pkg"
+  package "$agent_pkg"
   sudo systemctl stop puppet || /bin/true
   sudo systemctl disable puppet || /bin/true
   sudo systemctl disable mcollective || /bin/true
+elif [[ "$distro" = "Arch" ]]; then
+  package "puppet$puppet_major_version"
 else
-  installed "puppet" || apt "puppet"
+  debian_installed "puppet" || package "puppet"
 fi
 
 section "installing puppet module dependencies"
