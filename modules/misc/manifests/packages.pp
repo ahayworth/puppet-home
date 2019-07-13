@@ -1,9 +1,16 @@
 class misc::packages(
-  $packages = lookup('misc::packages', {merge => 'unique'}),
+  $installed = lookup('misc::packages::installed', {merge => 'unique'}),
+  $purged = lookup('misc::packages::purged', {merge => 'unique'}),
 ) {
-  $packages.each |String $pkg| {
+  $installed.each |String $pkg| {
     package { $pkg:
       ensure => latest,
+    }
+  }
+
+  $purged.each |String $pkg| {
+    package { $pkg:
+      ensure => purged,
     }
   }
 }

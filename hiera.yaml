@@ -6,7 +6,8 @@ hierarchy:
   - name: "Not Secret"
     data_hash: yaml_data
     paths:
-      - "os/%{facts.os.distro.codename}/common.yaml"
+      - "os/%{facts.os.family}/common.yaml"
+      - "os/%{facts.os.family}/%{facts.os.distro.codename}/common.yaml"
       - "node/%{trusted.certname}/common.yaml"
       - 'common.yaml'
   - name: "Secrets"

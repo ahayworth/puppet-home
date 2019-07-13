@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ "$(lsb_release -sc)" != "buster" ]]; then
+if [[ "$(lsb_release -sc)" = "stretch" ]]; then
   prefix="/opt/puppetlabs/bin/"
 fi
 

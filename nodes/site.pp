@@ -17,9 +17,15 @@ node "lcars" {
   include plex
 }
 
+/*
 node "janeway" {
   include docker_common
-  include misc::firmware
   include misc::packages
   include misc::alacritty
+}
+*/
+
+node "janeway" {
+  include users::andrew
+  include misc::archlinux::bootloader
 }
