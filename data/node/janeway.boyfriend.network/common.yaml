@@ -2,4 +2,7 @@ misc::packages:
   - rustc
   - uuid-runtime
   - fonts-inconsolata
-  - fonts-firacode
+  - fonts-hack
+  - fonts-croscore
+  - fonts-ibm-plex
+# ryanoasis/nerd-fonts
