@@ -1,0 +1,6 @@
+misc::packages:
+  - tmux
+  - htop
+  - mosh
+  - tcpdump
+  - dnsutils

@@ -20,6 +20,5 @@ apt::sources:
     include:
       src: true
       deb: true
-misc::install_nodejs: false
 misc::firmware::packages:
   - firmware-linux

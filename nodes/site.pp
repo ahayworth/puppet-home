@@ -1,5 +1,4 @@
 node "nuc" {
-  include misc
   include docker_common
   include homeassistant
   include nginx_proxy
@@ -10,7 +9,7 @@ node "nuc" {
 node "lcars" {
   include docker_common
   include pihole
-  include misc
+  include misc::packages
   include misc::network::lcars
   include wireguard
   include zfs
@@ -20,7 +19,7 @@ node "lcars" {
 
 node "janeway" {
   include docker_common
-  include misc
   include misc::firmware
-  include misc::laptop
+  include misc::packages
+  include misc::alacritty
 }

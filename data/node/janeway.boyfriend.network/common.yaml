@@ -1,0 +1,5 @@
+misc::packages:
+  - rustc
+  - uuid-runtime
+  - fonts-inconsolata
+  - fonts-firacode
