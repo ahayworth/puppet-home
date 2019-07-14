@@ -1,13 +1,9 @@
 misc::packages::installed:
   - git
-  - ssh
+  - openssh
   - python-pip
-  - tmux
-  - vim
   - lsb-release
   - sudo
   - lsof
   - strace
   - efibootmgr
-misc::packages::purged:
-  - vi

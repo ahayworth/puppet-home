@@ -3,7 +3,7 @@ class misc::firmware(
 ){
   $packages.each |String $pkg| {
     package { $pkg:
-      ensure => latest,
+      ensure => installed,
     }
   }
 }

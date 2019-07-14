@@ -10,7 +10,7 @@ release_pkg="puppet$puppet_major_version-release"
 agent_pkg="puppet-agent$agent_version"
 
 debian_dependencies='jq hiera-eyaml librarian-puppet'
-arch_dependencies='jq ruby'
+arch_dependencies='jq ruby ruby-augeas'
 arch_gems='hiera-eyaml librarian-puppet'
 
 function section() {

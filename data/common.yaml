@@ -1,6 +1,5 @@
-misc::packages:
+misc::packages::installed:
   - tmux
   - htop
   - mosh
   - tcpdump
-  - dnsutils

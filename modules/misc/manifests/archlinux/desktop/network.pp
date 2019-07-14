@@ -6,7 +6,7 @@ class misc::archlinux::desktop::network {
   ]
   $packages.each |String $pkg| {
     package { $pkg:
-      ensure => latest,
+      ensure => installed,
     }
   }
 

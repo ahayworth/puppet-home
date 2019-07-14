@@ -1,8 +1,13 @@
-misc::packages:
-  - rustc
-  - uuid-runtime
-  - fonts-inconsolata
-  - fonts-hack
-  - fonts-croscore
-  - fonts-ibm-plex
-# ryanoasis/nerd-fonts
+misc::packages::installed:
+  - tmux
+  - vim
+  - alacritty
+  - alacritty-terminfo
+  - nerd-fonts-fira-mono
+  - nerd-fonts-fira-code
+  - nerd-fonts-hack
+  - nerd-fonts-inconsolata
+  - nerd-fonts-source-code-pro
+  - nerd-fonts-terminus
+misc::packages::removed:
+  - vi
