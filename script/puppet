@@ -12,4 +12,4 @@ sudo ${prefix}puppet \
   --modulepath=modules:vendor \
   --hiera_config=hiera.yaml \
   --show_diff \
-  nodes/site.pp
+  nodes/

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo -u andrew -H /bin/bash -c "/usr/bin/yay $*"
