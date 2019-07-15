@@ -1,6 +1,7 @@
 class misc::archlinux::desktop::gnome {
   $packages = [
     'gnome',
+    'gnome-tweaks',
     'gdm',
     'xorg-server-xwayland',
   ]

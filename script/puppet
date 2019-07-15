@@ -4,12 +4,12 @@ if [[ "$(lsb_release -sc)" = "stretch" ]]; then
   prefix="/opt/puppetlabs/bin/"
 fi
 
-if [[ ! -z "$DEBUG" ]]; then debug='--debug'; fi
+[[ ! -z "$DEBUG" ]] && debug='--debug'
 sudo ${prefix}puppet \
   apply \
-  $1 \
   $debug \
+  $* \
+  --test \
   --modulepath=modules:vendor \
   --hiera_config=hiera.yaml \
-  --show_diff \
   nodes/

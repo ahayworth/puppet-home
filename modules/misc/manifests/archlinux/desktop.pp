@@ -3,4 +3,5 @@ class misc::archlinux::desktop {
   include misc::archlinux::desktop::gnome
   include misc::archlinux::desktop::network
   include misc::archlinux::desktop::graphics
+  include misc::archlinux::desktop::firefox
 }

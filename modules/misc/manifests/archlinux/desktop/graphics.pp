@@ -17,10 +17,4 @@ class misc::archlinux::desktop::graphics {
   file { '/etc/modprobe.d/i915.conf':
     content => 'options i915 enable_guc=3 enable_fbc=1'
   }
-
-  augeas { 'LIBVA_DRIVER_NAME':
-    changes => [
-      'set /files/etc/environment/LIBVA_DRIVER_NAME iHD',
-    ]
-  }
 }

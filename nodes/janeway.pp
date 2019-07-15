@@ -3,4 +3,5 @@ node "janeway" {
   include misc::packages
   include misc::archlinux::bootloader
   include misc::archlinux::desktop
+  include misc::archlinux::environment
 }
