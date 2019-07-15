@@ -11,7 +11,6 @@ misc::packages::installed:
   - nerd-fonts-terminus
 misc::packages::removed:
   - vi
-  - epiphany
 misc::archlinux::environment::variables:
   LIBVA_DRIVER_NAME: iHD
   MOZ_ENABLE_WAYLAND: 1
