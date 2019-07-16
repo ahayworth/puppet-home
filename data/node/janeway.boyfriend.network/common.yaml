@@ -1,6 +1,8 @@
 misc::packages::installed:
   - tmux
   - vim
+  - zsh
+  - lastpass-cli
   - alacritty
   - alacritty-terminfo
   - nerd-fonts-fira-mono
