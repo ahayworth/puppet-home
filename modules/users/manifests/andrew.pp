@@ -4,6 +4,7 @@ class users::andrew {
     uid     => '1000',
     gid     => '1000',
     groups  => ['wheel'],
+    shell   => '/usr/bin/zsh',
     require => Group['andrew'],
   }
 
