@@ -23,9 +23,13 @@ misc::packages::installed:
   - ttf-ubuntu-font-family
   - ttf-inconsolata
   - ttf-google-fonts-git
+  - i7z
+  - linux-zen
 misc::packages::removed:
   - vi
 misc::archlinux::environment::variables:
   LIBVA_DRIVER_NAME: iHD
   MOZ_ENABLE_WAYLAND: 1
   MOZ_USE_XINPUT2: 1
+misc::archlinux::bootloader::loader: 'vmlinuz-linux-zen'
+misc::archlinux::bootloader::initrd: 'initramfs-linux-zen.img'

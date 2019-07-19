@@ -2,6 +2,7 @@ class misc::archlinux::desktop::gnome {
   $packages = [
     'gnome',
     'gnome-tweaks',
+    'gnome-power-manager',
     'gdm',
     'xorg-server-xwayland',
   ]

@@ -3,7 +3,7 @@ class users::andrew {
     ensure  => present,
     uid     => '1000',
     gid     => '1000',
-    groups  => ['wheel'],
+    groups  => ['wheel', 'optical'],
     shell   => '/usr/bin/zsh',
     require => Group['andrew'],
   }
