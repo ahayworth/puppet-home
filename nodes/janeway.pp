@@ -1,8 +1,8 @@
 node "janeway" {
+  include bootloader::uefi
+  include desktop
+  include pacman
+  include pacman::aur
   include users::andrew
   include misc::packages
-  include misc::archlinux::bootloader
-  include misc::archlinux::pacman
-  include misc::archlinux::desktop
-  include misc::archlinux::environment
 }

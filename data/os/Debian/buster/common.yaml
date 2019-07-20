@@ -20,5 +20,3 @@ apt::sources:
     include:
       src: true
       deb: true
-misc::firmware::packages:
-  - firmware-linux

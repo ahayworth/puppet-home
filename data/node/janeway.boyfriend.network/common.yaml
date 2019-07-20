@@ -1,10 +1,14 @@
-misc::packages::installed:
-  - tmux
-  - vim
-  - zsh
-  - lastpass-cli
-  - alacritty
-  - alacritty-terminfo
+bootloader::uefi::efi_disk: /dev/nvme0n1
+bootloader::uefi::efi_partition: 1
+bootloader::uefi::root: /dev/nvme0n1p3
+bootloader::uefi::label: Arch Linux
+bootloader::uefi::loader: vmlinuz-linux-zen
+bootloader::uefi::kernel_opts: rw quiet loglevel=3 rd.systemd.show_status=auto rd.udev.log_priority=3 i915.fastboot=1 vga=current
+bootloader::uefi::initrd: initramfs-linux-zen.img
+bootloader::uefi::ucode_initrd: intel-ucode.img
+bootloader::uefi::ucode_package: intel-ucode
+desktop::applications::firefox::channel: nightly
+desktop::fonts::packages:
   - nerd-fonts-fira-mono
   - nerd-fonts-fira-code
   - nerd-fonts-hack
@@ -23,13 +27,19 @@ misc::packages::installed:
   - ttf-ubuntu-font-family
   - ttf-inconsolata
   - ttf-google-fonts-git
+  - fonts-meta-extended-lt
+environment::variables:
+  LIBVA_DRIVER_NAME: iHD
+  MOZ_ENABLE_WAYLAND: 1
+  MOZ_USE_XINPUT2: 1
+misc::packages::installed:
+  - tmux
+  - vim
+  - zsh
+  - lastpass-cli
+  - alacritty
+  - alacritty-terminfo
   - i7z
   - linux-zen
 misc::packages::removed:
   - vi
-misc::archlinux::environment::variables:
-  LIBVA_DRIVER_NAME: iHD
-  MOZ_ENABLE_WAYLAND: 1
-  MOZ_USE_XINPUT2: 1
-misc::archlinux::bootloader::loader: 'vmlinuz-linux-zen'
-misc::archlinux::bootloader::initrd: 'initramfs-linux-zen.img'
