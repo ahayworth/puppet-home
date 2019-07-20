@@ -1,4 +1,6 @@
-class desktop::gnome {
+class desktop::gnome(
+  Hash $gconf_settings = {},
+){
   $packages = [
     'gnome',
     'gnome-tweaks',
@@ -28,5 +30,16 @@ class desktop::gnome {
     ensure  => running,
     enable  => true,
     require => Package['gdm'],
+  }
+
+  $gconf_settings.each |String $schema, Hash $kv| {
+    $kv.each |String $key, Any $value| {
+      exec { "set-$schema-$key-$value":
+        command     => "/usr/bin/gsettings set $schema $key $value",
+        unless      => "/usr/bin/gsettings get $schema $key | /usr/bin/grep -q $value",
+        user        => 'andrew',
+        environment => ['HOME=/home/andrew', 'XDG_RUNTIME_DIR=/run/user/1000'],
+      }
+    }
   }
 }

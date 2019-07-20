@@ -28,6 +28,42 @@ desktop::fonts::packages:
   - ttf-inconsolata
   - ttf-google-fonts-git
   - fonts-meta-extended-lt
+desktop::gnome::gconf_settings:
+  org.gnome.settings-daemon.plugins.color:
+    night-light-temperature: 5285
+    night-light-enabled: true
+    night-light-schedule-to: 7.0
+    night-light-schedule-from: 22.0
+    night-light-schedule-automatic: false
+  org.gnome.desktop.datetime:
+    automatic-timezone: true
+  org.gnome.clocks:
+    geolocation: true
+  org.gnome.shell:
+    favorite-apps: >
+      "\['org.gnome.Nautilus.desktop', 'alacritty.desktop', 'firefox-nightly.desktop'\]"
+  org.gnome.Weather:
+    automatic-location: true
+  org.gnome.desktop.input-sources:
+    xkb-options: >
+      '["caps:escape"]'
+    sources: >
+      '[("xkb", "us")]'
+  org.gtk.Settings.FileChooser:
+    clock-format: '12h'
+  org.gnome.desktop.wm.preferences:
+    audible-bell: false
+    button-layout: 'appmenu:minimize,close'
+  org.gnome.settings-daemon.plugins.media-keys:
+    screenshot: "''"
+  org.gnome.settings-daemon.plugins.power:
+    sleep-inactive-ac-type: 'nothing'
+  org.gnome.desktop.interface:
+    clock-format: '12h'
+    clock-show-date: true
+    show-battery-percentage: true
+  org.gnome.software:
+    download-updates: false
 environment::variables:
   LIBVA_DRIVER_NAME: iHD
   MOZ_ENABLE_WAYLAND: 1
