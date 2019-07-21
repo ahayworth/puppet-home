@@ -15,4 +15,11 @@ class desktop::misc {
   package { 'fprintd':
     ensure => installed,
   }
+  file { '/etc/pam.d/sudo':
+    content => "auth sufficient pam_fprintd.so\nauth include system-auth\naccount include system-auth\nsession include system-auth",
+    require => [
+      Package['libfprint-vfs0090-git'],
+      Package['fprintd'],
+    ],
+  }
 }
