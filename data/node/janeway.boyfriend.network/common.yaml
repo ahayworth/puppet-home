@@ -69,13 +69,29 @@ environment::variables:
   MOZ_ENABLE_WAYLAND: 1
   MOZ_USE_XINPUT2: 1
 misc::packages::installed:
+  - linux-zen # necessitates different bootloader options
   - tmux
   - vim
   - zsh
+  - jq
   - lastpass-cli
   - alacritty
   - alacritty-terminfo
   - i7z
-  - linux-zen
+  - mpv
+  - a52dec
+  - libmad
+  - gst-plugins-base
+  - gst-plugins-bad
+  - gst-plugins-good
+  - gst-plugins-ugly
+  - gst-libav
+  - gstreamer-vaapi
+  - gst-plugins-intel-msdk
+  - intel-media-sdk
+  # vlc chromecast support
+  - vlc
+  - libmicrodns
+  - protobuf
 misc::packages::removed:
   - vi

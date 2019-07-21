@@ -15,4 +15,14 @@ class desktop::cpupower {
       File['/etc/default/cpupower'],
     ],
   }
+
+  package { 'thermald':
+    ensure => installed,
+  }
+
+  service { 'thermald':
+    ensure  => running,
+    enable  => true,
+    require => Package['thermald'],
+  }
 }

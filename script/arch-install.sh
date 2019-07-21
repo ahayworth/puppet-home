@@ -26,7 +26,7 @@ EOF
   mkfs.btrfs -L root ${DISK}p3
 
   swapon ${DISK}p2
-  mount ${DISK}p3 /mnt
+  mount -o noatime,compress=zstd,autodefrag ${DISK}p3 /mnt
   mkdir /mnt/boot
   mount ${DISK}p1 /mnt/boot
 
