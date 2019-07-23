@@ -16,7 +16,6 @@ class desktop::network {
   }
 
   service { 'NetworkManager':
-    ensure  => running,
     enable  => true,
     require => [
       Package['gnome'],
