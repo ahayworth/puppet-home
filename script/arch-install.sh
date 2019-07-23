@@ -58,7 +58,7 @@ if [[ $1 == '--stage-two' ]]; then
   pacman -Sy efibootmgr git openssh python-pip tmux vim lsb-release sudo
   efibootmgr --disk ${DISK} --part 1 --create \
     --label 'Arch Linux' --loader /vmlinuz-linux \
-    --unicode='root=/dev/nvme0n1p3 rw quiet loglevel=3 rd.systemd.show_status=auto rd.udev.log_priority=3 i915.fastboot=1 vga=current initrd=\initramfs-linux.img' \
+    --unicode 'root=/dev/nvme0n1p3 rw quiet loglevel=3 rd.systemd.show_status=auto rd.udev.log_priority=3 i915.fastboot=1 vga=current initrd=\initramfs-linux.img' \
     --verbose
   systemctl enable iwd
   useradd -m -u 1000 andrew
