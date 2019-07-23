@@ -5,7 +5,10 @@ class users::andrew {
     gid     => '1000',
     groups  => ['wheel', 'optical'],
     shell   => '/usr/bin/zsh',
-    require => Group['andrew'],
+    require => [
+      Group['andrew'],
+      Package['zsh'],
+    }
   }
 
   group { 'andrew':

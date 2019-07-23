@@ -3,6 +3,6 @@ node "janeway" {
   include bootloader::uefi
   include desktop
   include pacman
-  include users::andrew
   include misc::packages
+  include users::andrew
 }
