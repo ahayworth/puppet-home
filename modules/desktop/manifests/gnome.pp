@@ -27,7 +27,6 @@ class desktop::gnome(
   }
 
   service { 'gdm':
-    ensure  => running,
     enable  => true,
     require => Package['gdm'],
   }
