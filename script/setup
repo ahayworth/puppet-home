@@ -34,7 +34,7 @@ function apt_install() {
 }
 
 function pacman_install() {
-  yay -Syq --needed "$@"
+  sudo pacman -Syq --needed "$@"
 }
 
 function gem_install() {
