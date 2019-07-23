@@ -23,7 +23,7 @@ EOF
 
   mkfs.fat -F32 -n efi ${DISK}p1
   mkswap -L swap ${DISK}p2
-  mkfs.btrfs -L root ${DISK}p3
+  mkfs.btrfs -f -L root ${DISK}p3
 
   swapon ${DISK}p2
   mount -o noatime,compress=zstd,autodefrag ${DISK}p3 /mnt
