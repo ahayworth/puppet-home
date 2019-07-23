@@ -48,14 +48,14 @@ if [[ $1 == '--stage-two' ]]; then
   echo '127.0.0.1 janeway.boyfriend.network janeway' > /etc/hosts
   echo '::1       janeway.boyfriend.network janeway' >>/etc/hosts
   echo '127.0.1.1 janeway.boyfriend.network janeway' >>/etc/hosts
-  echo 'KEYMAP=us' /etc/vconsole.conf
+  echo 'KEYMAP=us' > /etc/vconsole.conf
   echo 'MODULES=(i915)' > /etc/mkinitcpio.conf
   echo 'BINARIES=()' >> /etc/mkinitcpio.conf
   echo 'FILES=()' >> /etc/mkinitcpio.conf
   echo 'HOOKS=(systemd autodetect block filesystems modconf sd-vconsole keyboard)' >> /etc/mkinitcpio.conf
   echo 'COMPRESSION="cat"' >> /etc/mkinitcpio.conf
   mkinitcpio -p linux
-  pacman -Sy efibootmgr git ssh python-pip tmux vim lsb-release sudo
+  pacman -Sy efibootmgr git openssh python-pip tmux vim lsb-release sudo
   efibootmgr --disk ${DISK} --part 1 --create \
     --label 'Arch Linux' --loader /vmlinuz-linux \
     --unicode='root=/dev/nvme0n1p3 rw quiet loglevel=3 rd.systemd.show_status=auto rd.udev.log_priority=3 i915.fastboot=1 vga=current initrd=\initramfs-linux.img' \
