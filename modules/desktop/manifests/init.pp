@@ -1,5 +1,6 @@
 class desktop {
   include desktop::applications::firefox
+  include desktop::environment
   include desktop::fonts
   include desktop::gnome
   include desktop::graphics

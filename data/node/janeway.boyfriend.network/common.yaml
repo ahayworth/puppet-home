@@ -41,7 +41,7 @@ desktop::gnome::gconf_settings:
     geolocation: true
   org.gnome.shell:
     favorite-apps: >
-      "\['org.gnome.Nautilus.desktop', 'alacritty.desktop', 'firefox-nightly.desktop'\]"
+      "['org.gnome.Nautilus.desktop', 'alacritty.desktop', 'firefox-nightly.desktop']"
   org.gnome.Weather:
     automatic-location: true
   org.gnome.desktop.input-sources:
@@ -64,7 +64,7 @@ desktop::gnome::gconf_settings:
     show-battery-percentage: true
   org.gnome.software:
     download-updates: false
-environment::variables:
+desktop::environment::variables:
   LIBVA_DRIVER_NAME: iHD
   MOZ_ENABLE_WAYLAND: 1
   MOZ_USE_XINPUT2: 1
