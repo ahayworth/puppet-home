@@ -1,0 +1,9 @@
+version: '3'
+services:
+  airconnect:
+    image: ahayworth/docker-airconnect:latest
+    container_name: airconnect
+    restart: always
+    network_mode: host
+    environment:
+      - TZ=America/Chicago

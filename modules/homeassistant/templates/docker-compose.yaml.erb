@@ -27,39 +27,3 @@ services:
         syslog-address: "udp://localhost:514"
         syslog-format: "rfc3164"
         tag: "docker/homeassistant"
-  xbox_smartglass_rest:
-    image: openxbox/xbox-smartglass-rest:<%= @xbox_smartglass_version %>
-    container_name: xbox_smartglass_rest
-    restart: always
-    healthcheck:
-      test: ["CMD", "wget", "-O-", "127.0.0.1:5557"]
-      interval: 30s
-      timeout: 10s
-      retries: 6
-    ports:
-      - 5557:5557
-    network_mode: host
-    environment:
-      - TZ=America/Chicago
-    volumes:
-      - <%= @config_mount %>
-    command: ["xbox-rest-server", "-t", "/config/xbox_tokens"]
-    logging:
-      driver: syslog
-      options:
-        syslog-address: "udp://localhost:514"
-        syslog-format: "rfc3164"
-        tag: "docker/xbox_smartglass_rest"
-  airconnect:
-    image: ahayworth/docker-airconnect:latest
-    container_name: airconnect
-    restart: always
-    network_mode: host
-    environment:
-      - TZ=America/Chicago
-    logging:
-      driver: syslog
-      options:
-        syslog-address: "udp://localhost:514"
-        syslog-format: "rfc3164"
-        tag: "docker/airconnect"
