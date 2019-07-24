@@ -3,7 +3,7 @@ class homeassistant::docker(
   String $config_dir = lookup('homeassistant::config::config_dir'),
   String $homeassistant_version,
   String $homeassistant_docker_repo,
-  String $url,
+  String $url = 'https://home.boyfriend.network',
   String $zwave_device,
   String $xbox_smartglass_version,
   Integer $homeassistant_port,
