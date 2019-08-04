@@ -1,5 +1,6 @@
 class pihole(
   String $password,
+  Hash $ipam = lookup('ipam::networks'),
 ){
   $pihole_dir = '/etc/pihole'
   $dnsmasq_dir = '/etc/dnsmasq.d'
@@ -11,6 +12,11 @@ class pihole(
 
   file { $dnsmasq_dir:
     ensure => directory,
+  }
+
+  file { "$dnsmasq_dir/99-custom.conf":
+    content => template('pihole/99-custom.conf.erb'),
+    require => File[$dnsmasq_dir],
   }
 
   file { $compose_file:
@@ -26,14 +32,8 @@ class pihole(
       File[$compose_file],
       File[$pihole_dir],
       File[$dnsmasq_dir],
+      File["$dnsmasq_dir/99-custom.conf"],
     ],
-    subscribe     => File["$dnsmasq_dir/99-dhcp.conf"],
-  }
-
-  file { "$dnsmasq_dir/99-dhcp.conf":
-    source  => 'puppet:///modules/pihole/99-dhcp.conf',
-    #ensure  => present,
-    ensure  => absent,
-    require => File[$pihole_dir],
+    subscribe     => File["$dnsmasq_dir/99-custom.conf"],
   }
 }

@@ -19,11 +19,3 @@ services:
     network_mode: host
     environment:
       - TZ=America/Chicago
-    depends_on:
-      - xbox_smartglass_rest
-    logging:
-      driver: syslog
-      options:
-        syslog-address: "udp://localhost:514"
-        syslog-format: "rfc3164"
-        tag: "docker/homeassistant"

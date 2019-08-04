@@ -1,0 +1,6 @@
+<%- @ipam.each do |name, network| -%>
+# <%= name %>.<%= network['domain'] %>
+<%-   network['hosts'].each do |ip, host| -%>
+host-record=<%= host['name'] %>,<%= host['name'] %>.<%= network['domain'] %>,<%= ip %>
+<%-   end -%>
+<%- end -%>

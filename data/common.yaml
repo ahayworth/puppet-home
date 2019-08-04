@@ -4,3 +4,173 @@ misc::packages::installed:
   - mosh
   - tcpdump
   - dstat
+# TODO rename in unifi gateway
+ipam::networks:
+  home:
+    domain: boyfriend.network
+    cidr: 192.168.0.0/24
+    gateway: 192.168.0.1
+    broadcast: 255.255.255.0
+    dhcp: '192.168.0.100-192.168.0.254'
+    hosts:
+      #### Network Devices
+      # 192.168.0.1 - 192.168.0.19
+      192.168.0.1:
+        name: router01
+        description: UniFi Security Gateway 3P
+      192.168.0.2:
+        name: switch01
+        description: UniFi Switch 24 POE-250W
+      192.168.0.3:
+        name: ap01
+        description: UniFi AP-nanoHD
+      192.168.0.4:
+        name: ap02
+        description: UniFi AP-AC-Lite
+      192.168.0.5:
+        name: cloudkey01
+        description: UniFi Cloud Key
+      192.168.0.6:
+        name: lcars
+        description: NAS, compute server
+      192.168.0.7:
+        name: padd # TODO name it
+        description: Compute server
+      192.168.0.8:
+        name: printer01
+        description: HP LaserJet - Office
+      192.168.0.9:
+        name: switch02
+        description: Games Switch
+
+      #### Home automation
+      # 192.168.0.20 - 192.168.0.49
+      192.168.0.20:
+        name: tricorder
+        description: Auxilliary home automation server
+      # 192.168.0.21:
+      # name: ???
+      # description: Pi Zero W - HDMI TTY Server
+      192.168.0.22:
+        name: abode01
+        description: Abode Security Gateway
+      192.168.0.23:
+        name: abode02
+        description: Abode IP Cam
+      192.168.0.24:
+        name: ring01
+        description: Ring Video Doorbell
+      192.168.0.25:
+        name: ring02
+        description: Ring Chime
+      192.168.0.26:
+        name: nest01
+        description: Nest Thermostat
+      192.168.0.27:
+        name: nest02
+        description: Nest Protect - Downstairs
+      192.168.0.28:
+        name: nest03
+        description: Nest Protect - Upstairs
+      192.168.0.29:
+        name: awair01
+        description: Awair
+      192.168.0.30:
+        name: harmony01
+        description: Harmony Hub
+      192.168.0.31:
+        name: furbo01
+        description: Furbo Dog Cam
+      192.168.0.32:
+        name: nanoleaf01
+        description: Nanoleaf Panels
+      192.168.0.33:
+        name: withings01
+        description: Withings Scale
+
+      #### Media
+      # 192.168.0.50 - 192.168.0.79
+      192.168.0.50:
+        name: receiver01
+        description: Onkyo TX-NR656 Receiver
+      192.168.0.51:
+        name: tv01
+        description: LG WebOS TV - Living Room
+      192.168.0.52:
+        name: tv02
+        description: Sony TV - Master Bedroom
+      192.168.0.53:
+        name: appletv01
+        description: Apple TV - Living Room
+      192.168.0.54:
+        name: appletv02
+        description: Apple TV - Master Bedroom
+      192.168.0.55:
+        name: roku01
+        description: Roku - Workbench
+      192.168.0.56:
+        name: chromecast01
+        description: Chromecast Audio - Master Bedroom
+      192.168.0.57:
+        name: chromecast02
+        description: Chromecast Audio - Master Bathroom
+      192.168.0.58:
+        name: chromecast03
+        description: Chromecast Audio - Kitchen
+      192.168.0.59:
+        name: chromecast04
+        description: Chromecast Audio - Deck
+      192.168.0.60:
+        name: chromecast50
+        description: Chromecast Audio - Office
+      192.168.0.61:
+        name: chromecast06
+        description: Chromecast Ultra - Living Room
+      192.168.0.62:
+        name: googlehome01
+        description: Google Home - Living Room
+      192.168.0.63:
+        name: googlehome02
+        description: Google Home Mini - Master Bedroom
+      192.168.0.64:
+        name: googlehome03
+        description: Google Home Mini - Office
+      192.168.0.65:
+        name: googlehome04
+        description: Google Home Mini - Guest Bedroom
+      192.168.0.66:
+        name: googlehome05
+        description: Google Home Hub - Kitchen
+      192.168.0.67:
+        name: kindle01
+        description: Kindle Voyager
+      192.168.0.68:
+        name: kindle02
+        description: Kindle Paperwhite
+
+      #### Games
+      # 192.168.0.80 - 192.168.0.99
+      192.168.0.80:
+        name: holosuite01
+        description: Windows Steam/VR Rig
+      192.168.0.81:
+        name: playstation01
+        description: PS4
+      192.168.0.82:
+        name: xbox01
+        description: XBox One
+      192.168.0.83:
+        name: xbox02
+        description: XBox 360
+      192.168.0.84:
+        name: nintendo01
+        description: Nintendo Switch
+      192.168.0.85:
+        name: nintendo02
+        description: Nintendo Wii U
+      192.168.0.86:
+        name: nintendo03
+        description: Nintendo 3DS
+
+    #### Humans
+    # 192.168.0.100 - 192.168.0.254
