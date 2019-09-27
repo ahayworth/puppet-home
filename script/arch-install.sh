@@ -32,7 +32,7 @@ EOF
 
   grep -A1 'United States' /etc/pacman.d/mirrorlist | egrep -v '(\-\-|United States)' > /tmp/foo
   mv /tmp/foo /etc/pacman.d/mirrorlist
-  pacstrap /mnt base base-devel iwd btrfs-progs
+  pacstrap /mnt base base-devel iwd btrfs-progs terminus-font
   genfstab -L /mnt >> /mnt/etc/fstab
   echo 'copy the script into the partition and arch-chroot'
   read
@@ -40,6 +40,7 @@ fi
 
 if [[ $1 == '--stage-two' ]]; then
   ln -sf /usr/share/zoneinfo/America/Chicago /etc/localtime
+  setfont ter-v22n
   hwclock --systohc
   echo 'en_US.UTF-8 UTF-8' > /etc/locale.gen
   echo 'LANG=en_US.UTF-8' > /etc/locale.conf
@@ -49,6 +50,7 @@ if [[ $1 == '--stage-two' ]]; then
   echo '::1       janeway.boyfriend.network janeway' >>/etc/hosts
   echo '127.0.1.1 janeway.boyfriend.network janeway' >>/etc/hosts
   echo 'KEYMAP=us' > /etc/vconsole.conf
+  echo 'FONT=ter-v22n' >> /etc/vconsole.conf
   echo 'MODULES=(i915)' > /etc/mkinitcpio.conf
   echo 'BINARIES=()' >> /etc/mkinitcpio.conf
   echo 'FILES=()' >> /etc/mkinitcpio.conf
