@@ -59,7 +59,7 @@ else
   echo 'HOOKS=(systemd autodetect block filesystems modconf sd-vconsole keyboard)' >> /etc/mkinitcpio.conf
   echo 'COMPRESSION="cat"' >> /etc/mkinitcpio.conf
   mkinitcpio -p linux
-  pacman -Rnu --no-confirm vi
+  pacman -Rnu --noconfirm vi
   ln -sf /usr/bin/vim /usr/bin/vi
   efibootmgr --disk ${DISK} --part 1 --create \
     --label 'Arch Linux' --loader /vmlinuz-linux \
