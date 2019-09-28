@@ -10,7 +10,7 @@ release_pkg="puppet$puppet_major_version-release"
 agent_pkg="puppet-agent$agent_version"
 
 debian_dependencies='jq hiera-eyaml librarian-puppet'
-arch_dependencies='jq ruby ruby-augeas'
+arch_dependencies='jq ruby ruby-augeas puppet'
 arch_gems='hiera-eyaml librarian-puppet'
 
 function section() {
@@ -52,8 +52,8 @@ function package() {
 section "bootstrapping puppet for $distro $distro_version"
 
 if [[ "$distro" = "Arch" ]]; then
-  section "installing dependencies: $arch_dependencies"
-  package $arch_dependencies
+  section "installing: $arch_dependencies"
+  package "$arch_dependencies"
   section "installing gems: $arch_gems"
   gem_install $arch_gems
 else
@@ -61,26 +61,26 @@ else
   package $debian_dependencies
 fi
 
-if [[ "$distro_version" == "stretch" ]]; then
-  section "installing $release_pkg apt repo"
-  if ! debian_installed $release_pkg ; then
-    cd /tmp
-    wget "http://apt.puppetlabs.com/$release_pkg-$distro.deb"
-    sudo dpkg -i ./$release_pkg-$distro.deb
-    rm ./$release_pkg-$distro.deb
-    sudo apt-get update 2>/dev/null
-    cd $dir
-  fi
+if [[ "$distro" != "Arch" ]]; then
+  if [[ "$distro_version" == "stretch" ]]; then
+    section "installing $release_pkg apt repo"
+    if ! debian_installed $release_pkg ; then
+      cd /tmp
+      wget "http://apt.puppetlabs.com/$release_pkg-$distro.deb"
+      sudo dpkg -i ./$release_pkg-$distro.deb
+      rm ./$release_pkg-$distro.deb
+      sudo apt-get update 2>/dev/null
+      cd $dir
+    fi
 
-  section "installing puppet"
-  package "$agent_pkg"
-  sudo systemctl stop puppet || /bin/true
-  sudo systemctl disable puppet || /bin/true
-  sudo systemctl disable mcollective || /bin/true
-elif [[ "$distro" = "Arch" ]]; then
-  package "puppet"
-else
+    section "installing puppet"
+    package "$agent_pkg"
+    sudo systemctl stop puppet || /bin/true
+    sudo systemctl disable puppet || /bin/true
+    sudo systemctl disable mcollective || /bin/true
+  else
   debian_installed "puppet" || package "puppet"
+  fi
 fi
 
 section "installing puppet module dependencies"
