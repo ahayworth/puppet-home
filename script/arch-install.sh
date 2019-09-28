@@ -38,7 +38,7 @@ EOF
   genfstab -L /mnt >> /mnt/etc/fstab
 
   cp "$0" /mnt/
-  arch-chroot /mnt /mnt/$(basename "$0") --stage-two
+  arch-chroot /mnt /$(basename "$0") --stage-two
 else
 
   ln -sf /usr/share/zoneinfo/America/Chicago /etc/localtime
