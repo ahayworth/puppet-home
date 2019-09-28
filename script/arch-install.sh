@@ -32,7 +32,7 @@ EOF
   mkdir /mnt/boot
   mount ${DISK}p1 /mnt/boot
 
-  grep -A1 'United States' /etc/pacman.d/mirrorlist | egrep -v '(\-\-|United States)' > /tmp/foo
+  grep -A1 'United States' /etc/pacman.d/mirrorlist | egrep -v '(\-\-|United States)' | grep -v archlinux-br  > /tmp/foo
   mv /tmp/foo /etc/pacman.d/mirrorlist
   pacstrap /mnt base base-devel iwd btrfs-progs terminus-font git openssh python-pip tmux vim lsb-release sudo efibootmgr
   genfstab -L /mnt >> /mnt/etc/fstab
