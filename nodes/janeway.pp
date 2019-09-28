@@ -1,8 +1,9 @@
 node "janeway" {
-  require pacman::aur
-  include bootloader::uefi
-  include desktop
+  #include desktop
+  include pacman::aur
   include pacman
+  include bootloader::uefi
   include misc::packages
   include users::andrew
+  Class['Misc::Packages'] -> Class['Pacman::Aur'] -> Class['Pacman']
 }

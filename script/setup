@@ -3,7 +3,7 @@
 dir=$(pwd)
 distro=$(lsb_release -is)
 distro_version=$(lsb_release -cs)
-puppet_major_version='5'
+puppet_major_version='6'
 agent_version=''
 
 release_pkg="puppet$puppet_major_version-release"
@@ -78,7 +78,7 @@ if [[ "$distro_version" == "stretch" ]]; then
   sudo systemctl disable puppet || /bin/true
   sudo systemctl disable mcollective || /bin/true
 elif [[ "$distro" = "Arch" ]]; then
-  package "puppet$puppet_major_version"
+  package "puppet"
 else
   debian_installed "puppet" || package "puppet"
 fi

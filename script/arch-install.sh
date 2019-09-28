@@ -1,11 +1,13 @@
-#!/bin/bash -x
+#!/bin/bash
+
+set -e
 
 DISK='/dev/nvme0n1'
 
-echo 'set up wifi please'
-read
-
-if [[ $1 == '--stage-one' ]]; then
+if [[ "$1" != "--stage-two" ]]; then
+  systemctl start iwd
+  iwctl station wlan0 connect skynet
+  dhcpcd
   timedatectl set-ntp true
 
   sfdisk $DISK <<EOF
@@ -34,11 +36,11 @@ EOF
   mv /tmp/foo /etc/pacman.d/mirrorlist
   pacstrap /mnt base base-devel iwd btrfs-progs terminus-font
   genfstab -L /mnt >> /mnt/etc/fstab
-  echo 'copy the script into the partition and arch-chroot'
-  read
-fi
 
-if [[ $1 == '--stage-two' ]]; then
+  cp "$0" /mnt/
+  arch-chroot /mnt /mnt/$(basename "$0")
+else
+
   ln -sf /usr/share/zoneinfo/America/Chicago /etc/localtime
   setfont ter-v22n
   hwclock --systohc
@@ -58,6 +60,8 @@ if [[ $1 == '--stage-two' ]]; then
   echo 'COMPRESSION="cat"' >> /etc/mkinitcpio.conf
   mkinitcpio -p linux
   pacman -Sy efibootmgr git openssh python-pip tmux vim lsb-release sudo
+  pacman -Rnu vi
+  ln -sf /usr/bin/vim /usr/bin/vi
   efibootmgr --disk ${DISK} --part 1 --create \
     --label 'Arch Linux' --loader /vmlinuz-linux \
     --unicode 'root=/dev/nvme0n1p3 rw quiet loglevel=3 rd.systemd.show_status=auto rd.udev.log_priority=3 i915.fastboot=1 vga=current initrd=\initramfs-linux.img' \
@@ -65,12 +69,11 @@ if [[ $1 == '--stage-two' ]]; then
   systemctl enable iwd
   useradd -m -u 1000 andrew
   usermod -G wheel -a andrew
-  pacman -Rnu vi
-  ln -sf $(which vim) /usr/bin/vi
   echo 'set root password'
-  read
+  passwd
   echo 'set user password'
-  read
-  echo 'visudo pls'
-  read
+  passwd andrew
+  echo '%wheel ALL=(ALL) ALL' >> /etc/sudoers
 fi
+
+echo "finished, I think"

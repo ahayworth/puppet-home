@@ -9,25 +9,25 @@ bootloader::uefi::ucode_initrd: intel-ucode.img
 bootloader::uefi::ucode_package: intel-ucode
 desktop::applications::firefox::channel: nightly
 desktop::fonts::packages:
-  - nerd-fonts-fira-mono
-  - nerd-fonts-fira-code
   - nerd-fonts-hack
-  - nerd-fonts-inconsolata
-  - nerd-fonts-source-code-pro
-  - nerd-fonts-terminus
-  - ttf-croscore
-  - ttf-tahoma
-  - ttf-roboto
-  - noto-fonts
-  - ttf-liberation
-  - tex-gyre-fonts
-  - ttf-gelasio-ib
-  - terminus-font
-  - ttf-bitstream-vera
-  - ttf-ubuntu-font-family
-  - ttf-inconsolata
-  - ttf-google-fonts-git
-  - fonts-meta-extended-lt
+  - nerd-fonts-fira-mono
+  # - nerd-fonts-fira-code
+  # - nerd-fonts-inconsolata
+  # - nerd-fonts-source-code-pro
+  # - nerd-fonts-terminus
+  # - ttf-croscore
+  # - ttf-tahoma
+  # - ttf-roboto
+  # - noto-fonts
+  # - ttf-liberation
+  # - tex-gyre-fonts
+  # - ttf-gelasio-ib
+  # - terminus-font
+  # - ttf-bitstream-vera
+  # - ttf-ubuntu-font-family
+  # - ttf-inconsolata
+  # - ttf-google-fonts-git
+  # - fonts-meta-extended-lt
 desktop::gnome::gconf_settings:
   org.gnome.settings-daemon.plugins.color:
     night-light-temperature: 5285
@@ -87,7 +87,7 @@ misc::packages::installed:
   - gst-plugins-ugly
   - gst-libav
   - gstreamer-vaapi
-  - gst-plugins-intel-msdk
+  #- gst-plugins-intel-msdk
   - intel-media-sdk
   # vlc chromecast support
   - vlc

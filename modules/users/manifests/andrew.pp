@@ -8,7 +8,7 @@ class users::andrew {
     require => [
       Group['andrew'],
       Package['zsh'],
-    }
+    ]
   }
 
   group { 'andrew':
