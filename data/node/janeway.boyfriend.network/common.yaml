@@ -77,21 +77,21 @@ misc::packages::installed:
   - lastpass-cli
   - alacritty
   - alacritty-terminfo
-  - i7z
-  - mpv
-  - a52dec
-  - libmad
-  - gst-plugins-base
-  - gst-plugins-bad
-  - gst-plugins-good
-  - gst-plugins-ugly
-  - gst-libav
-  - gstreamer-vaapi
+  # - i7z
+  # - mpv
+  # - a52dec
+  # - libmad
+  # - gst-plugins-base
+  # - gst-plugins-bad
+  # - gst-plugins-good
+  # - gst-plugins-ugly
+  # - gst-libav
+  # - gstreamer-vaapi
   #- gst-plugins-intel-msdk
   - intel-media-sdk
   # vlc chromecast support
-  - vlc
-  - libmicrodns
-  - protobuf
+  # - vlc
+  # - libmicrodns
+  # - protobuf
 misc::packages::removed:
   - vi

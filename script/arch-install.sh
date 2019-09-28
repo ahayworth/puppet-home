@@ -34,7 +34,7 @@ EOF
 
   grep -A1 'United States' /etc/pacman.d/mirrorlist | egrep -v '(\-\-|United States)' > /tmp/foo
   mv /tmp/foo /etc/pacman.d/mirrorlist
-  pacstrap /mnt base base-devel iwd btrfs-progs terminus-font
+  pacstrap /mnt base base-devel iwd btrfs-progs terminus-font git openssh python-pip tmux vim lsb-release sudo
   genfstab -L /mnt >> /mnt/etc/fstab
 
   cp "$0" /mnt/
@@ -59,8 +59,7 @@ else
   echo 'HOOKS=(systemd autodetect block filesystems modconf sd-vconsole keyboard)' >> /etc/mkinitcpio.conf
   echo 'COMPRESSION="cat"' >> /etc/mkinitcpio.conf
   mkinitcpio -p linux
-  pacman -Sy efibootmgr git openssh python-pip tmux vim lsb-release sudo
-  pacman -Rnu vi
+  pacman -Rnu --no-confirm vi
   ln -sf /usr/bin/vim /usr/bin/vi
   efibootmgr --disk ${DISK} --part 1 --create \
     --label 'Arch Linux' --loader /vmlinuz-linux \

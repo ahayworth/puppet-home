@@ -12,7 +12,7 @@ class pacman::aur {
   exec { 'vcsrepo_yay':
     refreshonly => true,
     user        => 'andrew',
-    command     => '/usr/bin/git clone https://aur.archlinux.org/yay.git',
+    command     => '/usr/bin/git clone https://aur.archlinux.org/yay.git /tmp/yay',
     notify      => Exec['makepkg_yay'],
   }
 
